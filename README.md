@@ -12,9 +12,10 @@ This repository contains the PSLab-Mini hardware design files. PSLab Mini is a s
 ## Platform
 
 * Microcontroller Platform : [STM32H563ZIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h563zi.html#overview)
-* IDE: [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html) (Supported on Linux/Windows/Mac)
 * Compiler: [gcc-arm-none-eabi](https://developer.arm.com/downloads/-/gnu-rm)
-* Programming Tool: [STLink](https://www.st.com/en/development-tools/st-link-v2.html)
+* Programming Tool:
+  * For uploading the Boatloader onto the board: [STLink](https://www.st.com/en/development-tools/st-link-v2.html)/Any other ARM programmer
+  * For uploading the firmware onto the board: Directly using USB ([OpenBLT](https://github.com/feaser/openblt) Boatloader is already present on the board)
 
 ## Parts list
 
@@ -28,7 +29,7 @@ This repository contains the PSLab-Mini hardware design files. PSLab Mini is a s
 ### Core functionalities
 
 * Oscilloscope 
-  * Atleast 2 channels, 12-bit ADC
+  * At least 2 channels, 12-bit ADC
   * Higher sampling rate than the current PSLab Board
 
 * Logic Analyser
@@ -42,7 +43,7 @@ This repository contains the PSLab-Mini hardware design files. PSLab Mini is a s
 * Interfaces
   * Open Toolchain : compiles with gcc([gcc-arm-none-eabi](https://developer.arm.com/downloads/-/gnu-rm))
   * ADC : ≥ 2 channels, ≥ 10-bit
-  * 1x UART, 1x I2C, 2x SPI
+  * 2x UART, 1x I2C, 3x SPI
 
 ### Mechanical & Production Constraints
 
