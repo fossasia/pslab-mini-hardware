@@ -1,6 +1,6 @@
 # pslab-mini-hardware
 
-This repository contains the PSLab-Mini hardware design files. PSLab Mini is a scaled down version of PSLab board aiming to provide instruments for doing science and engineering experiments. It is planned to consist of Oscilloscope, Logic Analyser and Multimeter. 
+This repository contains the PSLab-Mini hardware design files. PSLab Mini is a scaled-down version of the PSLab board, aiming to provide instruments for doing signal measurements. It is planned to consist of an Oscilloscope, a Logic analyzer, and a Multimeter. 
 
 * Firmware: https://github.com/fossasia/pslab-mini-firmware
 
@@ -11,15 +11,15 @@ This repository contains the PSLab-Mini hardware design files. PSLab Mini is a s
 
 ## Platform
 
-* Microcontroller Platform : [STM32H563ZIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h563zi.html#overview)
+* Microcontroller Platform : [STM32H563RIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h563ri.html)
 * Compiler: [gcc-arm-none-eabi](https://developer.arm.com/downloads/-/gnu-rm)
 * Programming Tool:
-  * For uploading the Boatloader onto the board: [STLink](https://www.st.com/en/development-tools/st-link-v2.html)/Any other ARM programmer
+  * For uploading the boatloader onto the board: [STLink](https://www.st.com/en/development-tools/st-link-v2.html)/Any other ARM programmer
   * For uploading the firmware onto the board: Directly using USB ([OpenBLT](https://github.com/feaser/openblt) Boatloader is already present on the board)
 
 ## Parts list
 
-* [STM32H563ZIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h563zi.html#overview) - Microcontroller
+* [STM32H563RIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h563ri.html) - Microcontroller
 
 ## Details of the project 
 
@@ -33,10 +33,10 @@ This repository contains the PSLab-Mini hardware design files. PSLab Mini is a s
   * Higher sampling rate than the current PSLab Board
 
 * Logic Analyser
-  * ≥ 4 channels via GPIO
+  * ≥ 4 channels
 
 * Multimeter
-	* AC/DC voltage, current, resistance, capacitance
+  * AC/DC voltage, current, resistance, capacitance
 
 ### Technical Requirements
 
@@ -44,16 +44,6 @@ This repository contains the PSLab-Mini hardware design files. PSLab Mini is a s
   * Open Toolchain : compiles with gcc([gcc-arm-none-eabi](https://developer.arm.com/downloads/-/gnu-rm))
   * ADC : ≥ 2 channels, ≥ 10-bit
   * 2x UART, 1x I2C, 3x SPI
-
-### Mechanical & Production Constraints
-
-* All components must be mounted on a single side of the PCB
-  * Enables cost-efficient SMD assembly
-* Reserved cutout or gap at top edge for:  
-  * Clean cable routing (e.g. oscilloscope probes or logic wires)  
-* Mounting holes for:  
-  * Case integration and accessory attachment 
-* Flat back side
 
 
 ## Documentation related to the microcontroller 
