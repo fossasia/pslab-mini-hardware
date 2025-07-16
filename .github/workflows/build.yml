@@ -1,0 +1,60 @@
+name: Build
+
+on:
+  push:
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - '**.kicad_pro'
+      - '.github/workflows/build.yml'
+  pull_request:
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - '**.kicad_pro'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get current user id
+        id: user
+        run: |
+          echo "uid=$(id -u)" >> $GITHUB_OUTPUT
+          echo "gid=$(id -g)" >> $GITHUB_OUTPUT
+
+      - name: Run KiCAD build in container
+        uses: addnab/docker-run-action@v3
+        with:
+          image: kicad/kicad:9.0.3-full
+          options: >-
+            -v ${{ github.workspace }}:/workspace
+            -w /workspace
+            --user ${{ steps.user.outputs.uid }}:${{ steps.user.outputs.gid }}
+          run: |
+            export HOME=/workspace
+            mkdir -p reports
+
+            echo "Running electrical rule checks"
+            for sch in $(find . -name '*.kicad_sch'); do
+              echo "ERC for $sch"
+              kicad-cli sch erc "$sch" --output reports/erc-$(basename "$sch" .kicad_sch).txt
+            done
+
+            echo "Running design rule checks"
+            for pcb in $(find . -name '*.kicad_pcb'); do
+              echo "DRC for $pcb"
+              kicad-cli pcb drc "$pcb" --output reports/drc-$(basename "$pcb" .kicad_pcb).txt
+            done
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/
