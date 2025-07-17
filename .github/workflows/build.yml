@@ -43,7 +43,7 @@ jobs:
             --user ${{ steps.user.outputs.uid }}:${{ steps.user.outputs.gid }}
           run: |
             export HOME=/workspace
-            mkdir -p reports
+            mkdir -p reports/schematics reports/layouts
 
             echo "Running ERC"
             > reports/erc-report.txt
@@ -150,7 +150,7 @@ jobs:
           run: |
             export HOME=/workspace
 
-            mkdir -p reports
+            mkdir -p reports/schematics reports/layouts
 
             echo "Generating PDFs for main branch schematics"
             for sch in $(find . -name '*.kicad_sch'); do
@@ -207,9 +207,11 @@ jobs:
         with:
           name: schematic-diffs
           path: reports/schematics/*.pdf
+          if-no-files-found: ignore
 
       - name: Upload layout pdf-diffs
         uses: actions/upload-artifact@v4
         with:
           name: layout-diffs
           path: reports/layouts/*.pdf
+          if-no-files-found: ignore
