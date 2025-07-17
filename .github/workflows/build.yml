@@ -1,24 +1,28 @@
-name: Build
+name: KiCAD CI with PDF Diff
 
 on:
-  push:
-    paths:
-      - '**.kicad_sch'
-      - '**.kicad_pcb'
-      - '**.kicad_pro'
-      - '.github/workflows/build.yml'
   pull_request:
     paths:
       - '**.kicad_sch'
       - '**.kicad_pcb'
       - '**.kicad_pro'
+      - '.github/workflows/build.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - '**.kicad_pro'
+      - '.github/workflows/build.yml'
 
 jobs:
-  build:
+  build-current:
+    name: ERC and DRC Reports
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout current branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -29,10 +33,10 @@ jobs:
           echo "uid=$(id -u)" >> $GITHUB_OUTPUT
           echo "gid=$(id -g)" >> $GITHUB_OUTPUT
 
-      - name: Run KiCAD build in container
+      - name: Run ERC, DRC, and generate PDFs
         uses: addnab/docker-run-action@v3
         with:
-          image: kicad/kicad:9.0.3-full
+          image: cloudypadmal/pslab-mini-kicad:1.0.0
           options: >-
             -v ${{ github.workspace }}:/workspace
             -w /workspace
@@ -41,20 +45,171 @@ jobs:
             export HOME=/workspace
             mkdir -p reports
 
-            echo "Running electrical rule checks"
+            echo "Running ERC"
+            > reports/erc-report.txt
             for sch in $(find . -name '*.kicad_sch'); do
-              echo "ERC for $sch"
-              kicad-cli sch erc "$sch" --output reports/erc-$(basename "$sch" .kicad_sch).txt
+              outfile="reports/erc_$(basename "$sch" .kicad_sch).txt"
+              kicad-cli sch erc "$sch" --output "$outfile"
+              echo "=== ERC Report for $(basename "$sch") ===" >> reports/erc-report.txt
+              cat "$outfile" >> reports/erc-report.txt
+              echo "" >> reports/erc-report.txt
             done
 
-            echo "Running design rule checks"
+            echo "Running DRC"
+            > reports/drc-report.txt
             for pcb in $(find . -name '*.kicad_pcb'); do
-              echo "DRC for $pcb"
-              kicad-cli pcb drc "$pcb" --output reports/drc-$(basename "$pcb" .kicad_pcb).txt
+              outfile="reports/drc_$(basename "$pcb" .kicad_pcb).txt"
+              kicad-cli pcb drc "$pcb" --output "$outfile"
+              echo "=== DRC Report for $(basename "$pcb") ===" >> reports/drc-report.txt
+              cat "$outfile" >> reports/drc-report.txt
+              echo "" >> reports/drc-report.txt
             done
 
-      - name: Upload build artifacts
+            echo "Generating PDFs for schematics"
+            for sch in $(find . -name '*.kicad_sch'); do
+              outfile="reports/schematics/$(basename "$sch" .kicad_sch).pdf"
+              kicad-cli sch export pdf "$sch" --output "$outfile"
+            done
+
+            echo "Generating PDFs for layouts"
+            for pcb in $(find . -name '*.kicad_pcb'); do
+              base_name="reports/layouts/$(basename "$pcb" .kicad_pcb)"
+
+              for layer in F.Cu B.Cu F.SilkS B.SilkS F.Mask B.Mask Edge.Cuts; do
+                outfile="${base_name}_${layer}.pdf"
+                echo "Exporting $pcb layer $layer to $outfile"
+                kicad-cli pcb export pdf "$pcb" \
+                  --output "$outfile" \
+                  --layers "$layer" \
+                  --include-border-title
+              done
+            done
+
+      - name: Upload ERC reports
         uses: actions/upload-artifact@v4
         with:
-          name: reports
-          path: reports/
+          name: erc-report
+          path: reports/erc-report.txt
+
+      - name: Upload DRC reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: drc-report
+          path: reports/drc-report.txt
+
+      - name: Upload schematic PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: schematic-pdfs
+          path: reports/schematics/*.pdf
+
+      - name: Upload layout PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: layout-pdfs
+          path: reports/layouts/*.pdf
+
+  build-main-and-diff:
+    name: PDF Diffs
+    runs-on: ubuntu-latest
+    needs: build-current
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download current branch schematic PDFs
+        uses: actions/download-artifact@v4
+        with:
+          name: schematic-pdfs
+          path: schematic-pdfs
+
+      - name: Download current branch layout PDFs
+        uses: actions/download-artifact@v4
+        with:
+          name: layout-pdfs
+          path: layout-pdfs
+
+      - name: Get current user id
+        id: user
+        run: |
+          echo "uid=$(id -u)" >> $GITHUB_OUTPUT
+          echo "gid=$(id -g)" >> $GITHUB_OUTPUT
+
+      - name: Generate main branch PDFs and diff
+        uses: addnab/docker-run-action@v3
+        with:
+          image: cloudypadmal/pslab-mini-kicad:1.0.0
+          options: >-
+            -v ${{ github.workspace }}:/workspace
+            -w /workspace
+            --user ${{ steps.user.outputs.uid }}:${{ steps.user.outputs.gid }}
+          run: |
+            export HOME=/workspace
+
+            mkdir -p reports
+
+            echo "Generating PDFs for main branch schematics"
+            for sch in $(find . -name '*.kicad_sch'); do
+              outfile="reports/schematics/$(basename "$sch" .kicad_sch)-old.pdf"
+              kicad-cli sch export pdf "$sch" --output "$outfile"
+            done
+
+            echo "Generating PDFs for main branch layouts"
+            for pcb in $(find . -name '*.kicad_pcb'); do
+              base_name="reports/layouts/$(basename "$pcb" .kicad_pcb)"
+
+              for layer in F.Cu B.Cu F.SilkS B.SilkS F.Mask B.Mask Edge.Cuts; do
+                outfile="${base_name}-${layer}-old.pdf"
+                echo "Exporting $pcb layer $layer to $outfile"
+                kicad-cli pcb export pdf "$pcb" \
+                  --output "$outfile" \
+                  --layers "$layer" \
+                  --include-border-title
+              done
+            done
+
+            echo "Comparing schematics for changes"
+            for base_pdf in reports/schematics/*-old.pdf; do
+              name=$(basename "$base_pdf" -old.pdf)
+              current_pdf="schematic-pdfs/${name}.pdf"
+              diff_pdf="reports/schematics/diff-${name}.pdf"
+
+              if [ -f "$current_pdf" ]; then
+                echo "Creating PDF diff for $name"
+                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$base_pdf" "$current_pdf" || echo "No diff generated for $name"
+                rm -rf "$base_pdf" "$current_pdf"
+              else
+                echo "No current branch PDF found for $name"
+              fi
+            done
+
+            echo "Comparing layouts for changes"
+            for base_pdf in reports/layouts/*-old.pdf; do
+              name=$(basename "$base_pdf" -old.pdf)
+              current_pdf="layout-pdfs/${name}.pdf"
+              diff_pdf="reports/layouts/diff-${name}.pdf"
+
+              if [ -f "$current_pdf" ]; then
+                echo "Creating PDF diff for $name"
+                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$base_pdf" "$current_pdf" || echo "No diff generated for $name"
+                rm -rf "$base_pdf" "$current_pdf"
+              else
+                echo "No current branch PDF found for $name"
+              fi
+            done
+
+      - name: Upload schematic pdf-diffs
+        uses: actions/upload-artifact@v4
+        with:
+          name: schematic-diffs
+          path: reports/schematics/*.pdf
+
+      - name: Upload layout pdf-diffs
+        uses: actions/upload-artifact@v4
+        with:
+          name: layout-diffs
+          path: reports/layouts/*.pdf
