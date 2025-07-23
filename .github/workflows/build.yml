@@ -17,8 +17,8 @@ on:
       - '.github/workflows/build.yml'
 
 jobs:
-  build-current:
-    name: ERC and DRC Reports
+  build:
+    name: Reports and PDF Diffs
     runs-on: ubuntu-latest
 
     steps:
@@ -44,8 +44,9 @@ jobs:
           run: |
             export HOME=/workspace
             mkdir -p reports/schematics reports/layouts
+            rm -rf parent-repo
 
-            echo "Running ERC"
+            echo "Running ERC ===============================================>"
             > reports/erc-report.txt
             for sch in $(find . -name '*.kicad_sch'); do
               outfile="reports/erc_$(basename "$sch" .kicad_sch).txt"
@@ -55,7 +56,7 @@ jobs:
               echo "" >> reports/erc-report.txt
             done
 
-            echo "Running DRC"
+            echo "Running DRC ===============================================>"
             > reports/drc-report.txt
             for pcb in $(find . -name '*.kicad_pcb'); do
               outfile="reports/drc_$(basename "$pcb" .kicad_pcb).txt"
@@ -65,24 +66,79 @@ jobs:
               echo "" >> reports/drc-report.txt
             done
 
-            echo "Generating PDFs for schematics"
+            echo "Generating PDFs for schematics ============================>"
             for sch in $(find . -name '*.kicad_sch'); do
               outfile="reports/schematics/$(basename "$sch" .kicad_sch).pdf"
               kicad-cli sch export pdf "$sch" --output "$outfile"
             done
 
-            echo "Generating PDFs for layouts"
+            echo "Generating PDFs for layouts ===============================>"
             for pcb in $(find . -name '*.kicad_pcb'); do
               base_name="reports/layouts/$(basename "$pcb" .kicad_pcb)"
-
-              for layer in F.Cu B.Cu F.SilkS B.SilkS F.Mask B.Mask Edge.Cuts; do
-                outfile="${base_name}_${layer}.pdf"
-                echo "Exporting $pcb layer $layer to $outfile"
+              layers="F.Cu In1.Cu In2.Cu B.Cu F.SilkS B.SilkS F.Mask B.Mask Edge.Cuts"
+              for layer in $layers; do
+                outfile="${base_name}-${layer}.pdf"
                 kicad-cli pcb export pdf "$pcb" \
                   --output "$outfile" \
                   --layers "$layer" \
+                  --negative \
                   --include-border-title
               done
+            done
+
+            echo "Fetching parent repository ================================"
+            git clone https://github.com/fossasia/pslab-mini-hardware.git parent-repo --depth 1 --branch main
+
+            echo "Generating PDFs for parent schematics =====================>"
+            for sch in $(find parent-repo -name '*.kicad_sch'); do
+              outfile="reports/schematics/$(basename "$sch" .kicad_sch)-old.pdf"
+              kicad-cli sch export pdf "$sch" --output "$outfile"
+            done
+
+            echo "Generating PDFs for parent layouts ========================>"
+            for pcb in $(find parent-repo -name '*.kicad_pcb'); do
+              base_name="reports/layouts/$(basename "$pcb" .kicad_pcb)"
+              layers="F.Cu In1.Cu In2.Cu B.Cu F.SilkS B.SilkS F.Mask B.Mask Edge.Cuts"
+              for layer in $layers; do
+                outfile="${base_name}-${layer}-old.pdf"
+                kicad-cli pcb export pdf "$pcb" \
+                  --output "$outfile" \
+                  --layers "$layer" \
+                  --negative \
+                  --include-border-title
+              done
+            done
+
+            echo "Compare schematics with parent repository ===================>"
+            for old_sch in $(find reports/schematics/ -name '*-old.pdf'); do
+              base_name="$(basename "$old_sch" -old.pdf)"
+              current_pdf="reports/schematics/${base_name}.pdf"
+              old_pdf="reports/schematics/${base_name}-old.pdf"
+              diff_pdf="reports/schematics/${base_name}-diff.pdf"
+
+              if [ -f "$old_pdf" ] && [ -f "$current_pdf" ]; then
+                echo "Creating PDF diff for $base_name"
+                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$old_pdf" "$current_pdf"
+                rm -rf "$old_pdf"
+              else
+                echo "No PDF found for ${base_name}"
+              fi
+            done
+
+            echo "Compare layouts with parent repository ===================>"
+            for old_pcb in $(find reports/layouts/ -name '*-old.pdf'); do
+              base_name="$(basename "$old_pcb" -old.pdf)"
+              current_pdf="reports/layouts/${base_name}.pdf"
+              old_pdf="reports/layouts/${base_name}-old.pdf"
+              diff_pdf="reports/layouts/${base_name}-diff.pdf"
+
+              if [ -f "$old_pdf" ] && [ -f "$current_pdf" ]; then
+                echo "Creating PDF diff for $base_name"
+                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$old_pdf" "$current_pdf"
+                rm -rf "$old_pdf"
+              else
+                echo "No PDF found for ${base_name}"
+              fi
             done
 
       - name: Upload ERC reports
@@ -108,110 +164,3 @@ jobs:
         with:
           name: layout-pdfs
           path: reports/layouts/*.pdf
-
-  build-main-and-diff:
-    name: PDF Diffs
-    runs-on: ubuntu-latest
-    needs: build-current
-
-    steps:
-      - name: Checkout main branch
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
-
-      - name: Download current branch schematic PDFs
-        uses: actions/download-artifact@v4
-        with:
-          name: schematic-pdfs
-          path: schematic-pdfs
-
-      - name: Download current branch layout PDFs
-        uses: actions/download-artifact@v4
-        with:
-          name: layout-pdfs
-          path: layout-pdfs
-
-      - name: Get current user id
-        id: user
-        run: |
-          echo "uid=$(id -u)" >> $GITHUB_OUTPUT
-          echo "gid=$(id -g)" >> $GITHUB_OUTPUT
-
-      - name: Generate main branch PDFs and diff
-        uses: addnab/docker-run-action@v3
-        with:
-          image: cloudypadmal/pslab-mini-kicad:1.0.0
-          options: >-
-            -v ${{ github.workspace }}:/workspace
-            -w /workspace
-            --user ${{ steps.user.outputs.uid }}:${{ steps.user.outputs.gid }}
-          run: |
-            export HOME=/workspace
-
-            mkdir -p reports/schematics reports/layouts
-
-            echo "Generating PDFs for main branch schematics"
-            for sch in $(find . -name '*.kicad_sch'); do
-              outfile="reports/schematics/$(basename "$sch" .kicad_sch)-old.pdf"
-              kicad-cli sch export pdf "$sch" --output "$outfile"
-            done
-
-            echo "Generating PDFs for main branch layouts"
-            for pcb in $(find . -name '*.kicad_pcb'); do
-              base_name="reports/layouts/$(basename "$pcb" .kicad_pcb)"
-
-              for layer in F.Cu B.Cu F.SilkS B.SilkS F.Mask B.Mask Edge.Cuts; do
-                outfile="${base_name}-${layer}-old.pdf"
-                echo "Exporting $pcb layer $layer to $outfile"
-                kicad-cli pcb export pdf "$pcb" \
-                  --output "$outfile" \
-                  --layers "$layer" \
-                  --include-border-title
-              done
-            done
-
-            echo "Comparing schematics for changes"
-            for base_pdf in reports/schematics/*-old.pdf; do
-              name=$(basename "$base_pdf" -old.pdf)
-              current_pdf="schematic-pdfs/${name}.pdf"
-              diff_pdf="reports/schematics/diff-${name}.pdf"
-
-              if [ -f "$current_pdf" ]; then
-                echo "Creating PDF diff for $name"
-                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$base_pdf" "$current_pdf" || echo "No diff generated for $name"
-                rm -rf "$base_pdf" "$current_pdf"
-              else
-                echo "No current branch PDF found for $name"
-              fi
-            done
-
-            echo "Comparing layouts for changes"
-            for base_pdf in reports/layouts/*-old.pdf; do
-              name=$(basename "$base_pdf" -old.pdf)
-              current_pdf="layout-pdfs/${name}.pdf"
-              diff_pdf="reports/layouts/diff-${name}.pdf"
-
-              if [ -f "$current_pdf" ]; then
-                echo "Creating PDF diff for $name"
-                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$base_pdf" "$current_pdf" || echo "No diff generated for $name"
-                rm -rf "$base_pdf" "$current_pdf"
-              else
-                echo "No current branch PDF found for $name"
-              fi
-            done
-
-      - name: Upload schematic pdf-diffs
-        uses: actions/upload-artifact@v4
-        with:
-          name: schematic-diffs
-          path: reports/schematics/*.pdf
-          if-no-files-found: ignore
-
-      - name: Upload layout pdf-diffs
-        uses: actions/upload-artifact@v4
-        with:
-          name: layout-diffs
-          path: reports/layouts/*.pdf
-          if-no-files-found: ignore
