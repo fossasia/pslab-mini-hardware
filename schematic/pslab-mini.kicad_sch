@@ -13262,6 +13262,16 @@
 	)
 	(wire
 		(pts
+			(xy 346.71 233.68) (xy 354.33 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30a3299a-c119-4ab0-9ced-7f80aa552363")
+	)
+	(wire
+		(pts
 			(xy 297.18 134.62) (xy 297.18 139.7)
 		)
 		(stroke
@@ -15222,6 +15232,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 233.68) (xy 321.31 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ff8e825-209f-42dd-bd0f-c84ae8222fbe")
+	)
+	(wire
+		(pts
 			(xy 515.62 154.94) (xy 515.62 157.48)
 		)
 		(stroke
@@ -17034,6 +17054,16 @@
 		)
 		(uuid "137cebdc-d039-4aef-bb50-0652a54c89a1")
 	)
+	(label "CH1"
+		(at 314.96 233.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b612722-d412-4477-8bd5-bfc124645dff")
+	)
 	(label "SPI2_SCK"
 		(at 339.09 121.92 180)
 		(effects
@@ -17283,6 +17313,16 @@
 			(justify left bottom)
 		)
 		(uuid "68135988-4708-4a15-a7c4-8d02a57bcf35")
+	)
+	(label "CH2"
+		(at 346.71 233.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "68d99f12-8d84-462d-a12b-4755743b63f6")
 	)
 	(label "LD2"
 		(at 173.99 138.43 180)
