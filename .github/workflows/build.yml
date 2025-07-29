@@ -1,4 +1,6 @@
 name: Build
+permissions:
+  contents: write
 
 on:
   pull_request:
@@ -168,11 +170,6 @@ jobs:
           name: layout-pdfs
           path: reports/layouts/*.pdf
 
-      - name: Set preview branch name
-        if: github.event_name == 'pull_request'
-        id: set-output
-        run: echo "branch=gh-preview-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
-
       - name: Configure Git
         if: github.event_name == 'pull_request'
         run: |
@@ -185,6 +182,7 @@ jobs:
           COMMIT_SHA=${{ github.event.pull_request.head.sha }}
           COMMIT_SHA_SHORT=${COMMIT_SHA:0:7}
           BRANCH=gh-preview-${{ github.event.pull_request.number }}
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git fetch origin
           if git ls-remote --exit-code --heads origin "$BRANCH"; then
             git checkout -B "$BRANCH" "origin/$BRANCH"
