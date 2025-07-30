@@ -39,12 +39,14 @@ jobs:
           git config --global user.name "GitHub Action"
 
       - name: Get current user id
+        if: github.event.action != 'closed'
         id: user
         run: |
           echo "uid=$(id -u)" >> $GITHUB_OUTPUT
           echo "gid=$(id -g)" >> $GITHUB_OUTPUT
 
       - name: Generate schematic PDFs
+        if: github.event.action != 'closed'
         uses: addnab/docker-run-action@v3
         with:
           image: cloudypadmal/pslab-mini-kicad:1.0.0
