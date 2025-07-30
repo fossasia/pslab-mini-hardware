@@ -1,0 +1,122 @@
+name: Schematic Preview
+
+on:
+  workflow_run:
+    workflows: [ Pull Request Build ]
+    types:
+      - completed
+
+jobs:
+  schematic-preview:
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Download workflow artifacts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let all_artifact = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: context.payload.workflow_run.id,
+            });
+            let match_pr_number_artifact = all_artifact.data.artifacts.filter((artifact) => {
+              return artifact.name == "pr_number"
+            })[0];
+            let match_commit_sha_artifact = all_artifact.data.artifacts.filter((artifact) => {
+              return artifact.name == "commit_sha"
+            })[0];
+            let match_schematic_artifact = all_artifact.data.artifacts.filter((artifact) => {
+              return artifact.name == "schematics"
+            })[0];
+
+            const fs = require('fs');
+
+            let download_pr_number = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: match_pr_number_artifact.id,
+               archive_format: 'zip',
+            });
+            fs.writeFileSync('${{ github.workspace }}/pr_number.zip', Buffer.from(download_pr_number.data));
+
+            let download_commit_sha = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: match_commit_sha_artifact.id,
+               archive_format: 'zip',
+            });
+            fs.writeFileSync('${{ github.workspace }}/commit_sha.zip', Buffer.from(download_commit_sha.data));
+
+            let download_schematic = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: match_schematic_artifact.id,
+               archive_format: 'zip',
+            });
+            fs.writeFileSync('${{ github.workspace }}/schematics.zip', Buffer.from(download_schematic.data));
+
+      - name: Unzip artifact
+        shell: bash
+        run: |
+          unzip pr_number.zip
+          unzip commit_sha.zip
+          mkdir -p schematics
+          unzip schematics.zip -d schematics/
+
+      - name: Fetch PR Number
+        id: fetch-pr-number
+        uses: actions/github-script@v7
+        with:
+          script: |
+            var fs = require('fs')
+            var issue_number = Number(fs.readFileSync('./pr-number.txt'));
+            core.setOutput("issue_number", issue_number);
+            var commit_sha = fs.readFileSync('./commit-sha.txt', 'utf8').trim();
+            commit_sha = commit_sha.substring(0, 7);
+            core.setOutput("commit_sha", commit_sha);
+
+      - name: Upload schematics
+        shell: bash
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git clone --branch=schematic-previews --depth=1 https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }} previews
+          cd previews
+
+          for file in ../schematics/*.png; do
+            if [[ -f "$file" ]]; then
+              cp -f "$file" "./schematic-${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}.png"
+            fi
+          done
+
+          # Force push to schematic-previews branch
+          git checkout --orphan temporary
+          git add *.png
+          git commit -am "schematic previews for #${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}"
+          git branch -D schematic-previews
+          git branch -m schematic-previews
+          git push --force origin schematic-previews
+
+      - name: Comment on PR with schematics
+        uses: actions/github-script@v7
+        env:
+          issue_number: ${{ steps.fetch-pr-number.outputs.issue_number }}
+          commit_sha: ${{ steps.fetch-pr-number.outputs.commit_sha }}
+        with:
+          script: |
+            const issue_number = process.env.issue_number;
+            const commit_sha = process.env.commit_sha;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const schematic_links = `![Schematic Preview](https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/schematic-${issue_number}:${commit_sha}.png)`;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: Number(issue_number),
+              body: schematic_links
+            });
