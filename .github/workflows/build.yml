@@ -7,7 +7,6 @@ on:
       - '**.kicad_sch'
       - '**.kicad_pcb'
       - '**.kicad_pro'
-      - '.github/workflows/build.yml'
   push:
     branches:
       - main
@@ -15,11 +14,11 @@ on:
       - '**.kicad_sch'
       - '**.kicad_pcb'
       - '**.kicad_pro'
-      - '.github/workflows/build.yml'
 
 jobs:
   build:
     name: Reports and PDF Diffs
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
 
     steps:

@@ -1,0 +1,123 @@
+name: Preview
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, closed]
+    paths:
+      - '**.kicad_sch'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  comment-schematic-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set variables
+        id: vars
+        run: |
+          echo "pr_number=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+          echo "repo=${{ github.repository }}" >> $GITHUB_OUTPUT
+          echo "sha_short=$(echo '${{ github.event.pull_request.head.sha }}' | cut -c1-7)" >> $GITHUB_OUTPUT
+          echo "search_string=Schematic preview for" >> $GITHUB_OUTPUT
+          echo "branch_name=gh-preview-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+
+      - name: Checkout PR code
+        if: github.event.action != 'closed'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set up Git user
+        if: github.event.action != 'closed'
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
+      - name: Get current user id
+        id: user
+        run: |
+          echo "uid=$(id -u)" >> $GITHUB_OUTPUT
+          echo "gid=$(id -g)" >> $GITHUB_OUTPUT
+
+      - name: Generate schematic PDFs
+        uses: addnab/docker-run-action@v3
+        with:
+          image: cloudypadmal/pslab-mini-kicad:1.0.0
+          options: >-
+            -v ${{ github.workspace }}:/workspace
+            -w /workspace
+            --user ${{ steps.user.outputs.uid }}:${{ steps.user.outputs.gid }}
+          run: |
+            export HOME=/workspace
+            mkdir -p reports/schematics
+            for sch in $(find . -name '*.kicad_sch'); do
+              outfile="reports/schematics/$(basename "$sch" .kicad_sch).pdf"
+              kicad-cli sch export pdf "$sch" --output "$outfile"
+              pdftoppm "$outfile" "reports/schematics/$(basename "$sch" .kicad_sch)" -png -singlefile
+            done
+
+      - name: Push schematic images to preview branch
+        if: github.event.action != 'closed'
+        run: |
+          BRANCH="gh-preview-${{ steps.vars.outputs.pr_number }}"
+          COMMIT_SHA_SHORT="${{ steps.vars.outputs.sha_short }}"
+
+          if git ls-remote --exit-code --heads origin "$BRANCH"; then
+            git checkout -B "$BRANCH" "origin/$BRANCH"
+          else
+            git checkout --orphan "$BRANCH"
+            git rm -rf .
+          fi
+
+          cp reports/schematics/*.png schematic-${COMMIT_SHA_SHORT}.png
+          git add schematic-${COMMIT_SHA_SHORT}.png
+          git commit -m "schematic preview for ${{ steps.vars.outputs.sha_short }}"
+          git push -f https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ steps.vars.outputs.repo }} $BRANCH
+
+      - name: Remove previous preview comments
+        if: github.event.action != 'closed'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          SEARCH_STRING="${{ steps.vars.outputs.search_string }}"
+          REPO="${{ steps.vars.outputs.repo }}"
+          gh api repos/$REPO/issues/${{ steps.vars.outputs.pr_number }}/comments \
+            --paginate --jq ".[] | select(.body | contains(\"$SEARCH_STRING\")) | .id" | while read -r comment_id; do
+              echo "Deleting comment ID: $comment_id"
+              gh api --method DELETE repos/$REPO/issues/comments/$comment_id
+          done
+
+      - name: Comment with preview images
+        if: github.event.action != 'closed'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          BRANCH="gh-preview-${{ steps.vars.outputs.pr_number }}"
+          REPO="${{ steps.vars.outputs.repo }}"
+          SHA="${{ steps.vars.outputs.sha_short }}"
+          COMMENT="${{ steps.vars.outputs.search_string }} $SHA"
+          COMMENT+="\n\n![schematic-${SHA}](https://raw.githubusercontent.com/${REPO}/${BRANCH}/schematic-${SHA}.png)"
+          echo -e "$COMMENT" > comment.txt
+          
+          gh pr comment ${{ steps.vars.outputs.pr_number }} --repo "${{ github.repository }}" --body-file comment.txt
+
+      - name: Delete preview branch on PR close
+        if: github.event.action == 'closed'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          SEARCH_STRING="${{ steps.vars.outputs.search_string }}"
+          REPO="${{ steps.vars.outputs.repo }}"
+          BRANCH_NAME="${{ steps.vars.outputs.branch_name }}"
+
+          gh api repos/$REPO/issues/${{ steps.vars.outputs.pr_number }}/comments \
+            --paginate --jq ".[] | select(.body | contains(\"$SEARCH_STRING\")) | .id" | while read -r comment_id; do
+              echo "Deleting comment ID: $comment_id"
+              gh api --method DELETE repos/$REPO/issues/comments/$comment_id
+          done
+          gh api -X DELETE /repos/$REPO/git/refs/heads/$BRANCH_NAME || echo "Branch already deleted"
