@@ -13,6 +13,7 @@ permissions:
 jobs:
   comment-schematic-preview:
     runs-on: ubuntu-latest
+    if: github.event.action != 'closed'
 
     steps:
       - name: Set variables
@@ -25,7 +26,6 @@ jobs:
           echo "branch_name=gh-preview-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
 
       - name: Checkout PR code
-        if: github.event.action != 'closed'
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref }}
@@ -33,7 +33,6 @@ jobs:
           token: ${{ secrets.GH_PAT }}
 
       - name: Set up Git user
-        if: github.event.action != 'closed'
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
@@ -46,7 +45,6 @@ jobs:
           echo "gid=$(id -g)" >> $GITHUB_OUTPUT
 
       - name: Generate schematic PDFs
-        if: github.event.action != 'closed'
         uses: addnab/docker-run-action@v3
         with:
           image: cloudypadmal/pslab-mini-kicad:1.0.0
@@ -64,7 +62,6 @@ jobs:
             done
 
       - name: Push schematic images to preview branch
-        if: github.event.action != 'closed'
         run: |
           BRANCH="gh-preview-${{ steps.vars.outputs.pr_number }}"
           COMMIT_SHA_SHORT="${{ steps.vars.outputs.sha_short }}"
@@ -82,7 +79,6 @@ jobs:
           git push -f https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ steps.vars.outputs.repo }} $BRANCH
 
       - name: Remove previous preview comments
-        if: github.event.action != 'closed'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
@@ -95,7 +91,6 @@ jobs:
           done
 
       - name: Comment with preview images
-        if: github.event.action != 'closed'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
@@ -107,6 +102,20 @@ jobs:
           echo -e "$COMMENT" > comment.txt
           
           gh pr comment ${{ steps.vars.outputs.pr_number }} --repo "${{ github.repository }}" --body-file comment.txt
+
+  cleanup-previews:
+    runs-on: ubuntu-latest
+    if: github.event.action == 'closed'
+
+    steps:
+      - name: Set variables
+        id: vars
+        run: |
+          echo "pr_number=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+          echo "repo=${{ github.repository }}" >> $GITHUB_OUTPUT
+          echo "sha_short=$(echo '${{ github.event.pull_request.head.sha }}' | cut -c1-7)" >> $GITHUB_OUTPUT
+          echo "search_string=Schematic preview for" >> $GITHUB_OUTPUT
+          echo "branch_name=gh-preview-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
 
       - name: Delete preview branch on PR close
         if: github.event.action == 'closed'
