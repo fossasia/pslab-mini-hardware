@@ -92,10 +92,9 @@ jobs:
             fi
           done
 
-          # Force push to schematic-previews branch
           git checkout --orphan temporary
           git add *.png
-          git commit -am "schematic previews for #${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}"
+          git commit -am "schematic previews for PR${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}"
           git branch -D schematic-previews
           git branch -m schematic-previews
           git push --force origin schematic-previews

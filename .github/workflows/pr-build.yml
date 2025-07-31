@@ -17,7 +17,7 @@ jobs:
         run: echo "${{ github.event.number }}" > pr-number.txt
 
       - name: Expose commit SHA
-        run: echo "${{ github.sha }}" > commit-sha.txt
+        run: echo "${{ github.event.pull_request.head.sha }}" > commit-sha.txt
 
       - name: Upload PR ID
         uses: actions/upload-artifact@v4
