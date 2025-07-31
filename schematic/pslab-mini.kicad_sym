@@ -15,14 +15,14 @@
 			)
 		)
 		(property "Value" "ANT"
-			(at -6.35 -3.556 90)
+			(at -7.874 -4.318 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 0 0 0)
 			(effects
 				(font
@@ -31,7 +31,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2410121903_Walsin-RFECA3216060A1T_C127620.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -50,20 +50,9 @@
 			)
 		)
 		(symbol "ANT_0_1"
-			(rectangle
-				(start -5.08 -1.27)
-				(end 5.08 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
-					(xy -2.54 -6.35) (xy -2.54 -8.89) (xy -2.54 -10.16)
+					(xy -6.35 -2.54) (xy 0 -8.89) (xy 6.35 -2.54) (xy -6.35 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -75,7 +64,19 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 -6.35) (xy 2.54 -8.89)
+					(xy 0 -2.54) (xy 0 -12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -11.43) (xy 2.54 -11.43) (xy 2.54 -12.7)
 				)
 				(stroke
 					(width 0)
@@ -87,8 +88,8 @@
 			)
 		)
 		(symbol "ANT_1_1"
-			(pin passive line
-				(at -2.54 -11.43 90)
+			(pin input line
+				(at 0 -13.97 90)
 				(length 2.54)
 				(name ""
 					(effects
@@ -105,8 +106,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 2.54 -11.43 90)
+			(pin power_in line
+				(at 2.54 -13.97 90)
 				(length 2.54)
 				(name ""
 					(effects
@@ -305,19 +306,19 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Flash_3.3v"
+	(symbol "Flash_W25Q32JV"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "FLASH"
-			(at 4.572 2.794 0)
+			(at 4.318 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "FLASH3V3"
+		(property "Value" "W25Q32JV"
 			(at 6.35 0.508 0)
 			(effects
 				(font
@@ -325,7 +326,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -334,7 +335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2410121530_Winbond-W25Q32JVSSIQ_C179173.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -352,7 +353,34 @@
 				(hide yes)
 			)
 		)
-		(symbol "Flash_3.3v_1_1"
+		(property "Mfr No." "  W25Q32JVSSIQ "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PartNumber" "C179173"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.35"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Flash_W25Q32JV_1_1"
 			(rectangle
 				(start -8.89 -1.27)
 				(end 8.89 -13.97)
