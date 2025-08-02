@@ -20796,7 +20796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 102.87 242.57 90)
 			(effects
 				(font
@@ -20987,7 +20987,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 110.49 184.15 90)
 			(effects
 				(font
@@ -21241,7 +21241,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 91.44 116.84 0)
 			(effects
 				(font
