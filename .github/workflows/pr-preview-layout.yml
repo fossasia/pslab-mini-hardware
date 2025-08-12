@@ -89,7 +89,10 @@ jobs:
           for file in ../layouts/*.png; do
             if [[ -f "$file" ]]; then
               base_name=$(basename "$file" .png)
-              base_name=${base_name#pslab-mini-}
+              prefix="pslab-mini-"
+              if [[ "$base_name" == $prefix* ]]; then
+                base_name=${base_name#$prefix}
+              fi
               cp -f "$file" "./layout-${base_name}-${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}.png"
             fi
           done
