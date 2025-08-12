@@ -1,0 +1,152 @@
+name: Build Layout
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - '**.kicad_pcb'
+
+jobs:
+  expose-pr-number:
+    name: Expose PR Number
+    runs-on: ubuntu-latest
+    steps:
+      - name: Expose PR ID
+        run: echo "${{ github.event.number }}" > pr-number.txt
+
+      - name: Expose commit SHA
+        run: echo "${{ github.event.pull_request.head.sha }}" > commit-sha.txt
+
+      - name: Upload PR ID
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr_number
+          path: pr-number.txt
+
+      - name: Upload commit SHA
+        uses: actions/upload-artifact@v4
+        with:
+          name: commit_sha
+          path: commit-sha.txt
+
+  build:
+    name: Reports and PDF Diffs
+    runs-on: ubuntu-latest
+    needs: expose-pr-number
+
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get current user id
+        id: user
+        run: |
+          echo "uid=$(id -u)" >> $GITHUB_OUTPUT
+          echo "gid=$(id -g)" >> $GITHUB_OUTPUT
+
+      - name: Run ERC, DRC, and generate PDFs
+        uses: addnab/docker-run-action@v3
+        with:
+          image: cloudypadmal/pslab-mini-kicad:1.0.0
+          options: >-
+            -v ${{ github.workspace }}:/workspace
+            -w /workspace
+            --user ${{ steps.user.outputs.uid }}:${{ steps.user.outputs.gid }}
+          run: |
+            export HOME=/workspace
+            mkdir -p reports/layouts
+            rm -rf parent-repo
+
+            echo "Running DRC ===============================================>"
+            > reports/drc-report.txt
+            for pcb in $(find . -name '*.kicad_pcb'); do
+              outfile="reports/drc_$(basename "$pcb" .kicad_pcb).txt"
+              kicad-cli pcb drc "$pcb" --output "$outfile"
+              echo "=== DRC Report for $(basename "$pcb") ===" >> reports/drc-report.txt
+              cat "$outfile" >> reports/drc-report.txt
+              echo "" >> reports/drc-report.txt
+            done
+            
+            echo "Generating PDFs for layouts ===============================>"
+            for pcb in $(find . -name '*.kicad_pcb'); do
+              base_name="reports/layouts/$(basename "$pcb" .kicad_pcb)"
+              layers="F.Cu In1.Cu In2.Cu F.SilkS F.Mask Edge.Cuts"
+              for layer in $layers; do
+                outfile="${base_name}-${layer}.pdf"
+                kicad-cli pcb export pdf "$pcb" \
+                  --output "$outfile" \
+                  --layers "$layer" \
+                  --black-and-white \
+                  --include-border-title
+                pdftoppm "$outfile" "reports/layouts/$(basename "$outfile" .pdf)" -png -singlefile
+              done
+              mirror_layers="B.Cu B.SilkS B.Mask"
+              for layer in $mirror_layers; do
+                outfile="${base_name}-${layer}.pdf"
+                kicad-cli pcb export pdf "$pcb" \
+                  --output "$outfile" \
+                  --layers "$layer" \
+                  --black-and-white \
+                  --mirror \
+                  --include-border-title
+                pdftoppm "$outfile" "reports/layouts/$(basename "$outfile" .pdf)" -png -singlefile
+              done
+            done
+
+            echo "Fetching parent repository ================================"
+            git clone https://github.com/fossasia/pslab-mini-hardware.git parent-repo --depth 1 --branch main
+
+            echo "Generating PDFs for parent layouts ========================>"
+            for pcb in $(find parent-repo -name '*.kicad_pcb'); do
+              base_name="reports/layouts/$(basename "$pcb" .kicad_pcb)"
+              layers="F.Cu In1.Cu In2.Cu F.SilkS F.Mask Edge.Cuts"
+              for layer in $layers; do
+                outfile="${base_name}-${layer}-old.pdf"
+                kicad-cli pcb export pdf "$pcb" \
+                  --output "$outfile" \
+                  --layers "$layer" \
+                  --black-and-white \
+                  --include-border-title
+              done
+              mirror_layers="B.Cu B.SilkS B.Mask"
+              for layer in $mirror_layers; do
+                outfile="${base_name}-${layer}-old.pdf"
+                kicad-cli pcb export pdf "$pcb" \
+                  --output "$outfile" \
+                  --layers "$layer" \
+                  --black-and-white \
+                  --mirror \
+                  --include-border-title
+              done
+            done
+            
+            echo "Compare layouts with parent repository ===================>"
+            for old_pcb in $(find reports/layouts/ -name '*-old.pdf'); do
+              base_name="$(basename "$old_pcb" -old.pdf)"
+              current_pdf="reports/layouts/${base_name}.pdf"
+              old_pdf="reports/layouts/${base_name}-old.pdf"
+              diff_pdf="reports/layouts/${base_name}-diff.pdf"
+
+              if [ -f "$old_pdf" ] && [ -f "$current_pdf" ]; then
+                echo "Creating PDF diff for $base_name"
+                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$old_pdf" "$current_pdf"
+                pdftoppm "$diff_pdf" "reports/layouts/${base_name}-diff" -png -singlefile
+                rm -rf "$old_pdf"
+              else
+                echo "No PDF found for ${base_name}"
+              fi
+            done
+
+      - name: Upload DRC reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: drc-report
+          path: reports/drc-report.txt
+
+      - name: Upload layout PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: layouts
+          path: reports/layouts/*
