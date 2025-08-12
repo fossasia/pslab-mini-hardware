@@ -2,7 +2,7 @@ name: Schematic Preview
 
 on:
   workflow_run:
-    workflows: [ Pull Request Build ]
+    workflows: [ Build Schematic ]
     types:
       - completed
 
@@ -88,7 +88,9 @@ jobs:
 
           for file in ../schematics/*.png; do
             if [[ -f "$file" ]]; then
-              cp -f "$file" "./schematic-${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}.png"
+              base_name=$(basename "$file" .png)
+              base_name=${base_name#pslab-mini-}
+              cp -f "$file" "./${base_name}-${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}.png"
             fi
           done
 
@@ -111,7 +113,27 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
-            const schematic_links = `![Schematic Preview](https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/schematic-${issue_number}:${commit_sha}.png)`;
+            const schematic_links = `<details>
+              <summary>Schematic Preview for <tt>${commit_sha}</tt></summary>
+              <table>
+                <tr>
+                  <th>Schematic</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/schematic-${issue_number}:${commit_sha}.png" alt="Schematic Preview" width="600" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+              </table>
+            </details><details>
+              <summary>Schematic Diff for <tt>#${commit_sha}</tt></summary>
+              <table>
+                <tr>
+                  <th>Schematic Diff</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/diff-${issue_number}:${commit_sha}.png" alt="Schematic Diff Preview" width="600" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+              </table>
+            </details>`;
 
             await github.rest.issues.createComment({
               owner,

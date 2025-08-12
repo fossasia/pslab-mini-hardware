@@ -1,0 +1,182 @@
+name: Layout Preview
+
+on:
+  workflow_run:
+    workflows: [ Build Layout ]
+    types:
+      - completed
+
+jobs:
+  layout-preview:
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Download workflow artifacts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let all_artifact = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: context.payload.workflow_run.id,
+            });
+            let match_pr_number_artifact = all_artifact.data.artifacts.filter((artifact) => {
+              return artifact.name == "pr_number"
+            })[0];
+            let match_commit_sha_artifact = all_artifact.data.artifacts.filter((artifact) => {
+              return artifact.name == "commit_sha"
+            })[0];
+            let match_layout_artifact = all_artifact.data.artifacts.filter((artifact) => {
+              return artifact.name == "layouts"
+            })[0];
+
+            const fs = require('fs');
+
+            let download_pr_number = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: match_pr_number_artifact.id,
+               archive_format: 'zip',
+            });
+            fs.writeFileSync('${{ github.workspace }}/pr_number.zip', Buffer.from(download_pr_number.data));
+
+            let download_commit_sha = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: match_commit_sha_artifact.id,
+               archive_format: 'zip',
+            });
+            fs.writeFileSync('${{ github.workspace }}/commit_sha.zip', Buffer.from(download_commit_sha.data));
+
+            let download_layouts = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: match_layout_artifact.id,
+               archive_format: 'zip',
+            });
+            fs.writeFileSync('${{ github.workspace }}/layouts.zip', Buffer.from(download_layouts.data));
+
+      - name: Unzip artifact
+        shell: bash
+        run: |
+          unzip pr_number.zip
+          unzip commit_sha.zip
+          mkdir -p layouts
+          unzip layouts.zip -d layouts/
+
+      - name: Fetch PR Number
+        id: fetch-pr-number
+        uses: actions/github-script@v7
+        with:
+          script: |
+            var fs = require('fs')
+            var issue_number = Number(fs.readFileSync('./pr-number.txt'));
+            core.setOutput("issue_number", issue_number);
+            var commit_sha = fs.readFileSync('./commit-sha.txt', 'utf8').trim();
+            commit_sha = commit_sha.substring(0, 7);
+            core.setOutput("commit_sha", commit_sha);
+
+      - name: Upload layouts
+        shell: bash
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git clone --branch=layout-previews --depth=1 https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }} previews
+          cd previews
+
+          for file in ../layouts/*.png; do
+            if [[ -f "$file" ]]; then
+              base_name=$(basename "$file" .png)
+              prefix="pslab-mini-"
+              if [[ "$base_name" == $prefix* ]]; then
+                base_name=${base_name#$prefix}
+              fi
+              cp -f "$file" "./layout-${base_name}-${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}.png"
+            fi
+          done
+
+          git checkout --orphan temporary
+          git add *.png
+          git commit -am "layout previews for PR${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}"
+          git branch -D layout-previews
+          git branch -m layout-previews
+          git push --force origin layout-previews
+
+      - name: Comment on PR with layouts
+        uses: actions/github-script@v7
+        env:
+          issue_number: ${{ steps.fetch-pr-number.outputs.issue_number }}
+          commit_sha: ${{ steps.fetch-pr-number.outputs.commit_sha }}
+        with:
+          script: |
+            const issue_number = process.env.issue_number;
+            const commit_sha = process.env.commit_sha;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const layout_links = `<details>
+              <summary>Layout Previews for <tt>${commit_sha}</tt></summary>
+              <table>
+                <tr>
+                  <th>Front Copper</th>
+                  <th>Front Silk</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-F.Cu-${issue_number}:${commit_sha}.png" alt="Front Copper" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-F.SilkS-${issue_number}:${commit_sha}.png" alt="Front Silk" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+                <tr>
+                  <th>Bottom Copper</th>
+                  <th>Bottom Silk</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-B.Cu-${issue_number}:${commit_sha}.png" alt="Bottom Copper" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-B.SilkS-${issue_number}:${commit_sha}.png" alt="Bottom Silk" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+                <tr>
+                  <th>Front Mask</th>
+                  <th>Bottom Mask</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-F.Mask-${issue_number}:${commit_sha}.png" alt="Front Mask" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-B.Mask-${issue_number}:${commit_sha}.png" alt="Bottom Mask" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+              </table>
+            </details><details>
+              <summary>Diff Previews for <tt>${commit_sha}</tt></summary>
+              <table>
+                <tr>
+                  <th>Front Copper Diff</th>
+                  <th>Front Silk Diff</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-F.Cu-diff-${issue_number}:${commit_sha}.png" alt="Front Copper Diff" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-F.SilkS-diff-${issue_number}:${commit_sha}.png" alt="Front Silk Diff" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+                <tr>
+                  <th>Bottom Copper Diff</th>
+                  <th>Bottom Silk Diff</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-B.Cu-diff-${issue_number}:${commit_sha}.png" alt="Bottom Copper Diff" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-B.SilkS-diff-${issue_number}:${commit_sha}.png" alt="Bottom Silk Diff" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+                <tr>
+                  <th>Front Mask Diff</th>
+                  <th>Bottom Mask Diff</th>
+                </tr>
+                <tr>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-F.Mask-diff-${issue_number}:${commit_sha}.png" alt="Front Mask Diff" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/layout-previews/layout-B.Mask-diff-${issue_number}:${commit_sha}.png" alt="Bottom Mask Diff" width="500" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                </tr>
+              </table>
+            </details>`;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: Number(issue_number),
+              body: layout_links
+            });
