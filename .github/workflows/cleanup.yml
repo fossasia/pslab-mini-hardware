@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: schematic-previews
-          path: schematic-previews
+          path: sch-previews
 
       - name: Clean schematic-previews branch
         run: |
@@ -49,12 +49,13 @@ jobs:
             fi
           done
           
-          cp schematic-previews/*.png . 2>/dev/null || true
+          find . -name "*.png" -exec mv -v '{}' . \; || true
+          rm -rf sch-previews
           git config user.name "actions-cleanup[bot]"
           git config user.email "actions-cleanup[bot]@users.noreply.github.com"
           git checkout --orphan temp-clean
           git rm -rf . > /dev/null 2>&1 || true
-          git add *.png 2>/dev/null || true
+          git add ./*.png 2>/dev/null || true
           git commit --allow-empty -m "Cleanup schematic previews" || echo "No changes"
           git branch -M schematic-previews
           git push -f origin schematic-previews
@@ -66,7 +67,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: layout-previews
-          path: layout-previews
+          path: pcb-previews
 
       - name: Clean layout-previews branch
         run: |
@@ -89,12 +90,13 @@ jobs:
             fi
           done
 
-          cp layout-previews/*.png . 2>/dev/null || true
+          find . -name "*.png" -exec mv -v '{}' . \; || true
+          rm -rf pcb-previews
           git config user.name "actions-cleanup[bot]"
           git config user.email "actions-cleanup[bot]@users.noreply.github.com"
           git checkout --orphan temp-clean
           git rm -rf . > /dev/null 2>&1 || true
-          git add *.png 2>/dev/null || true
+          git add ./*.png 2>/dev/null || true
           git commit --allow-empty -m "Cleanup layout previews" || echo "No changes"
           git branch -M layout-previews
           git push -f origin layout-previews
