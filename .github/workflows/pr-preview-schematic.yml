@@ -80,16 +80,19 @@ jobs:
       - name: Upload schematics
         shell: bash
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+          git config --global user.name "actions-schematic[bot]"
+          git config --global user.email "actions-schematic[bot]@users.noreply.github.com"
+
           git clone --branch=schematic-previews --depth=1 https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }} previews
           cd previews
 
           for file in ../schematics/*.png; do
             if [[ -f "$file" ]]; then
               base_name=$(basename "$file" .png)
-              base_name=${base_name#pslab-mini-}
+              prefix="pslab-mini-"
+              if [[ "$base_name" == $prefix* ]]; then
+                base_name=${base_name#$prefix}
+              fi
               cp -f "$file" "./${base_name}-${{ steps.fetch-pr-number.outputs.issue_number }}:${{ steps.fetch-pr-number.outputs.commit_sha }}.png"
             fi
           done
@@ -120,17 +123,17 @@ jobs:
                   <th>Schematic</th>
                 </tr>
                 <tr>
-                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/schematic-${issue_number}:${commit_sha}.png" alt="Schematic Preview" width="600" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/schematic-${issue_number}:${commit_sha}.png" alt="Schematic Preview" width="1000" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
                 </tr>
               </table>
             </details><details>
-              <summary>Schematic Diff for <tt>#${commit_sha}</tt></summary>
+              <summary>Diff Previews for <tt>${commit_sha}</tt></summary>
               <table>
                 <tr>
                   <th>Schematic Diff</th>
                 </tr>
                 <tr>
-                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/diff-${issue_number}:${commit_sha}.png" alt="Schematic Diff Preview" width="600" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
+                  <td><img src="https://raw.githubusercontent.com/${owner}/${repo}/schematic-previews/schematic-diff-${issue_number}:${commit_sha}.png" alt="Schematic Diff Preview" width="1000" style="margin: 10px; cursor: pointer;" onclick="window.open(this.src, '_blank');"></td>
                 </tr>
               </table>
             </details>`;

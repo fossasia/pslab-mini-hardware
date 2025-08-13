@@ -80,9 +80,9 @@ jobs:
       - name: Upload layouts
         shell: bash
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+          git config --global user.name "actions-layouts[bot]"
+          git config --global user.email "actions-layouts[bot]@users.noreply.github.com"
+
           git clone --branch=layout-previews --depth=1 https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }} previews
           cd previews
 

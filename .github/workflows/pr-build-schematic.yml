@@ -90,12 +90,12 @@ jobs:
               base_name="$(basename "$old_sch" -old.pdf)"
               current_pdf="reports/schematics/${base_name}.pdf"
               old_pdf="reports/schematics/${base_name}-old.pdf"
-              diff_pdf="reports/schematics/${base_name}-diff.pdf"
+              diff_pdf="reports/schematics/${base_name}-schematic-diff.pdf"
 
               if [ -f "$old_pdf" ] && [ -f "$current_pdf" ]; then
                 echo "Creating PDF diff for $base_name"
                 xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$old_pdf" "$current_pdf"
-                pdftoppm "$diff_pdf" "reports/schematics/${base_name}-diff" -png -singlefile
+                pdftoppm "$diff_pdf" "reports/schematics/${base_name}-schematic-diff" -png -singlefile
                 rm -rf "$old_pdf"
               else
                 echo "No PDF found for ${base_name}"
