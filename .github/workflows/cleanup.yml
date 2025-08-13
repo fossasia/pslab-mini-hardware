@@ -1,0 +1,108 @@
+name: Weekly Cleanup
+
+on:
+  schedule:
+    - cron: "0 0 * * 0,3"
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout for PR list
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: List open PRs
+        id: open_prs
+        run: |
+          OPEN_PRS=$(gh pr list --state open --json number --jq '.[].number')
+          echo "open_prs=$OPEN_PRS" >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout schematic-previews
+        uses: actions/checkout@v4
+        with:
+          ref: schematic-previews
+          path: schematic-previews
+
+      - name: Clean schematic-previews branch
+        run: |
+          cd schematic-previews
+          echo "$open_prs" | tr ' ' '\n' > /tmp/open_prs.txt
+
+          for f in $(find . -type f); do
+            if [[ $f =~ schematic-([0-9]+):[a-f0-9]+\.png ]]; then
+              prnum="${BASH_REMATCH[1]}"
+              if ! grep -q "^$prnum$" /tmp/open_prs.txt; then
+                if [[ -e "$f" || -L "$f" ]]; then
+                  echo "Deleting $f (PR #$prnum closed)"
+                  rm -rf "$f"
+                fi
+              fi
+            else
+              if [[ -e "$f" || -L "$f" ]]; then
+                echo "Deleting $f (does not match schematic preview pattern)"
+                rm -rf "$f"
+              fi
+            fi
+          done
+
+          find . -mindepth 1 -type d ! -path './.git*' -exec rm -rf {} +
+          
+
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git checkout --orphan temp-clean
+          git rm -rf . > /dev/null 2>&1 || true
+          git add *.png 2>/dev/null || true
+          git commit -m "Cleanup schematic previews" || echo "No changes"
+          git branch -M schematic-previews
+          git push -f origin schematic-previews
+        env:
+          open_prs: ${{ env.open_prs }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout layout-previews
+        uses: actions/checkout@v4
+        with:
+          ref: layout-previews
+          path: layout-previews
+
+      - name: Clean layout-previews branch
+        run: |
+          cd layout-previews
+          echo "$open_prs" | tr ' ' '\n' > /tmp/open_prs.txt
+
+          for f in $(find . -type f); do
+            if [[ $f =~ layout-.*-([0-9]+):[a-f0-9]+\.png ]]; then
+              prnum="${BASH_REMATCH[1]}"
+              if ! grep -q "^$prnum$" /tmp/open_prs.txt; then
+                if [[ -e "$f" || -L "$f" ]]; then
+                  echo "Deleting $f (PR #$prnum closed)"
+                  rm -rf "$f"
+                fi
+              fi
+            else
+              if [[ -e "$f" || -L "$f" ]]; then
+                echo "Deleting $f (does not match layout preview pattern)"
+                rm -rf "$f"
+              fi
+            fi
+          done
+
+          find . -mindepth 1 -type d ! -path './.git*' -exec rm -rf {} +
+
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git checkout --orphan temp-clean
+          git rm -rf . > /dev/null 2>&1 || true
+          git add *.png 2>/dev/null || true
+          git commit -m "Cleanup layout previews" || echo "No changes"
+          git branch -M layout-previews
+          git push -f origin layout-previews
+        env:
+          open_prs: ${{ env.open_prs }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
