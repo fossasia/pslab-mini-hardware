@@ -173,4 +173,15 @@
 		(uuid "e977124b-f4a1-4944-afde-5558e2875d49")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/3DModels/BNC_Connector.stp"
+		(offset
+			(xyz -23 0 6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
 )
