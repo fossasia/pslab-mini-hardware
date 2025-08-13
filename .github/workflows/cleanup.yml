@@ -30,11 +30,10 @@ jobs:
 
       - name: Clean schematic-previews branch
         run: |
-          cd schematic-previews
           echo "$open_prs" | tr ' ' '\n' > /tmp/open_prs.txt
 
-          for f in $(find . -type f); do
-            if [[ $f =~ schematic-([0-9]+):[a-f0-9]+\.png ]]; then
+          for f in $(find . -type f -not -path "./.git/*"); do
+            if [[ $f =~ schematic-.*-([0-9]+):[a-f0-9]+\.png ]]; then
               prnum="${BASH_REMATCH[1]}"
               if ! grep -q "^$prnum$" /tmp/open_prs.txt; then
                 if [[ -e "$f" || -L "$f" ]]; then
@@ -49,16 +48,14 @@ jobs:
               fi
             fi
           done
-
-          find . -mindepth 1 -type d ! -path './.git*' -exec rm -rf {} +
           
-
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          cp schematic-previews/*.png . 2>/dev/null || true
+          git config user.name "actions-cleanup[bot]"
+          git config user.email "actions-cleanup[bot]@users.noreply.github.com"
           git checkout --orphan temp-clean
           git rm -rf . > /dev/null 2>&1 || true
           git add *.png 2>/dev/null || true
-          git commit -m "Cleanup schematic previews" || echo "No changes"
+          git commit --allow-empty -m "Cleanup schematic previews" || echo "No changes"
           git branch -M schematic-previews
           git push -f origin schematic-previews
         env:
@@ -73,10 +70,9 @@ jobs:
 
       - name: Clean layout-previews branch
         run: |
-          cd layout-previews
           echo "$open_prs" | tr ' ' '\n' > /tmp/open_prs.txt
 
-          for f in $(find . -type f); do
+          for f in $(find . -type f -not -path "./.git/*"); do
             if [[ $f =~ layout-.*-([0-9]+):[a-f0-9]+\.png ]]; then
               prnum="${BASH_REMATCH[1]}"
               if ! grep -q "^$prnum$" /tmp/open_prs.txt; then
@@ -93,14 +89,13 @@ jobs:
             fi
           done
 
-          find . -mindepth 1 -type d ! -path './.git*' -exec rm -rf {} +
-
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          cp layout-previews/*.png . 2>/dev/null || true
+          git config user.name "actions-cleanup[bot]"
+          git config user.email "actions-cleanup[bot]@users.noreply.github.com"
           git checkout --orphan temp-clean
           git rm -rf . > /dev/null 2>&1 || true
           git add *.png 2>/dev/null || true
-          git commit -m "Cleanup layout previews" || echo "No changes"
+          git commit --allow-empty -m "Cleanup layout previews" || echo "No changes"
           git branch -M layout-previews
           git push -f origin layout-previews
         env:
