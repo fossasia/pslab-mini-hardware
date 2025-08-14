@@ -46,7 +46,7 @@ jobs:
           echo "uid=$(id -u)" >> $GITHUB_OUTPUT
           echo "gid=$(id -g)" >> $GITHUB_OUTPUT
 
-      - name: Run ERC, DRC, and generate PDFs
+      - name: Run ERC and generate PDFs
         uses: addnab/docker-run-action@v3
         with:
           image: cloudypadmal/pslab-mini-kicad:1.0.0
@@ -67,6 +67,7 @@ jobs:
               echo "=== ERC Report for $(basename "$sch") ===" >> reports/erc-report.txt
               cat "$outfile" >> reports/erc-report.txt
               echo "" >> reports/erc-report.txt
+              rm -f "$outfile"
             done
 
             echo "Generating PDFs for schematics ============================>"
@@ -113,3 +114,14 @@ jobs:
         with:
           name: schematics
           path: reports/schematics/*
+
+      - name: Build status from ERC report
+        run: |
+          errors=$(grep -oP 'Errors\s+\K[0-9]+' reports/erc-report.txt)
+          if [ "$errors" -ne 0 ]; then
+            echo "❌ ERC errors detected"
+            cat reports/erc-report.txt
+            exit 1
+          else
+            echo "✅ No ERC errors detected."
+          fi

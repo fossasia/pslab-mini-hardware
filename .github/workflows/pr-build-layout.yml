@@ -46,7 +46,7 @@ jobs:
           echo "uid=$(id -u)" >> $GITHUB_OUTPUT
           echo "gid=$(id -g)" >> $GITHUB_OUTPUT
 
-      - name: Run ERC, DRC, and generate PDFs
+      - name: Run DRC and generate PDFs
         uses: addnab/docker-run-action@v3
         with:
           image: cloudypadmal/pslab-mini-kicad:1.0.0
@@ -67,6 +67,7 @@ jobs:
               echo "=== DRC Report for $(basename "$pcb") ===" >> reports/drc-report.txt
               cat "$outfile" >> reports/drc-report.txt
               echo "" >> reports/drc-report.txt
+              rm -f "$outfile"
             done
             
             echo "Generating PDFs for layouts ===============================>"
@@ -150,3 +151,19 @@ jobs:
         with:
           name: layouts
           path: reports/layouts/*
+
+      - name: Build status from DRC report
+        run: |
+          violations=$(grep -oP 'Found [1-9][0-9]* DRC violations' reports/drc-report.txt | wc -l)
+          footprint_errors=$(grep -oP 'Found [1-9][0-9]* Footprint errors' reports/drc-report.txt | wc -l)
+          if [ "$violations" -ne 0 ]; then
+            echo "❌ DRC violations detected"
+            cat reports/drc-report.txt
+            exit 1
+          elif [ "$footprint_errors" -ne 0 ]; then
+            echo "❌ Footprint errors detected"
+            cat reports/drc-report.txt
+            exit 1
+          else
+            echo "✅ No DRC violations or footprint errors detected."
+          fi
