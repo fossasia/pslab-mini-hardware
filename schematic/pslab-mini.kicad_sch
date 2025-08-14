@@ -25756,7 +25756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 245.11 214.63 0)
 			(effects
 				(font
@@ -25765,7 +25765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200RL_C114664.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C114764.pdf"
 			(at 245.11 214.63 0)
 			(effects
 				(font
@@ -25783,7 +25783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "RC0603FR-07200RL"
+		(property "Mfr Number" "RC0402FR-07200RL"
 			(at 245.11 214.63 90)
 			(effects
 				(font
@@ -25792,7 +25792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C114664"
+		(property "Part Number (LCSC)" "C114764"
 			(at 245.11 214.63 90)
 			(effects
 				(font
@@ -30329,7 +30329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 264.16 214.63 0)
 			(effects
 				(font
@@ -30338,7 +30338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200RL_C114664.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C114764.pdf"
 			(at 264.16 214.63 0)
 			(effects
 				(font
@@ -30356,7 +30356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "RC0603FR-07200RL"
+		(property "Mfr Number" "RC0402FR-07200RL"
 			(at 264.16 214.63 90)
 			(effects
 				(font
@@ -30365,7 +30365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C114664"
+		(property "Part Number (LCSC)" "C114764"
 			(at 264.16 214.63 90)
 			(effects
 				(font
@@ -37014,7 +37014,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 273.05 214.63 0)
 			(effects
 				(font
@@ -37023,7 +37023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200RL_C114664.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C114764.pdf"
 			(at 273.05 214.63 0)
 			(effects
 				(font
@@ -37041,7 +37041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "RC0603FR-07200RL"
+		(property "Mfr Number" "RC0402FR-07200RL"
 			(at 273.05 214.63 90)
 			(effects
 				(font
@@ -37050,7 +37050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C114664"
+		(property "Part Number (LCSC)" "C114764"
 			(at 273.05 214.63 90)
 			(effects
 				(font
@@ -40546,7 +40546,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 255.27 214.63 0)
 			(effects
 				(font
@@ -40555,7 +40555,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200RL_C114664.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C114764.pdf"
 			(at 255.27 214.63 0)
 			(effects
 				(font
@@ -40573,7 +40573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "RC0603FR-07200RL"
+		(property "Mfr Number" "RC0402FR-07200RL"
 			(at 255.27 214.63 90)
 			(effects
 				(font
@@ -40582,7 +40582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C114664"
+		(property "Part Number (LCSC)" "C114764"
 			(at 255.27 214.63 90)
 			(effects
 				(font

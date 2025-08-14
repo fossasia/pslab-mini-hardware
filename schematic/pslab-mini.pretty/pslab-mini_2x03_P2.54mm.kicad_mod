@@ -55,8 +55,8 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start -1.22 -2.19)
-		(end -1.22 -1.19)
+		(start -1.43 -2.225)
+		(end -1.43 -1.225)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -65,8 +65,8 @@
 		(uuid "656c4e59-a5d6-4b0f-ba9f-916e7e87d2bc")
 	)
 	(fp_line
-		(start -1.22 -2.19)
-		(end -0.22 -2.19)
+		(start -1.43 -2.225)
+		(end -0.43 -2.225)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -75,7 +75,7 @@
 		(uuid "7909714a-d62c-492f-a82a-f03c500f89b4")
 	)
 	(fp_line
-		(start -1.11 -2.07)
+		(start -1.265 -2.07)
 		(end 6.24 -2.07)
 		(stroke
 			(width 0.12)
@@ -85,8 +85,8 @@
 		(uuid "cae9651c-e90c-407d-b42e-68fc11db1c35")
 	)
 	(fp_line
-		(start -1.11 7.63)
-		(end -1.11 -2.07)
+		(start -1.265 7.63)
+		(end -1.265 -2.07)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -96,7 +96,7 @@
 	)
 	(fp_line
 		(start 6.24 7.63)
-		(end -1.11 7.63)
+		(end -1.265 7.63)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -115,8 +115,8 @@
 		(uuid "a639d761-62c6-4b9d-9c57-54f1337a09ab")
 	)
 	(fp_line
-		(start -1.4 7.9)
-		(end -1.39 -2.45)
+		(start -1.555 7.9)
+		(end -1.545 -2.45)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -125,7 +125,7 @@
 		(uuid "00774be6-9d53-4b2d-ba50-6caa4d2d1bf5")
 	)
 	(fp_line
-		(start -1.39 -2.45)
+		(start -1.545 -2.45)
 		(end 6.41 -2.45)
 		(stroke
 			(width 0.05)
@@ -146,7 +146,7 @@
 	)
 	(fp_line
 		(start 6.41 7.9)
-		(end -1.4 7.9)
+		(end -1.555 7.9)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -155,7 +155,7 @@
 		(uuid "97f3e77a-2f2c-4b6d-b6ea-87fa34866996")
 	)
 	(fp_line
-		(start -1 -1.97)
+		(start -1.155 -1.97)
 		(end 6.15 -1.97)
 		(stroke
 			(width 0.1)
@@ -165,8 +165,8 @@
 		(uuid "865391e4-96ea-444e-bd41-011ba45f2c6d")
 	)
 	(fp_line
-		(start -1 7.53)
-		(end -1 -1.97)
+		(start -1.155 7.53)
+		(end -1.155 -1.97)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -175,7 +175,7 @@
 		(uuid "eaa0f98b-a96d-428c-abca-e1812aa41385")
 	)
 	(fp_line
-		(start -1 7.53)
+		(start -1.155 7.53)
 		(end -0.5 7.53)
 		(stroke
 			(width 0.1)
@@ -264,7 +264,7 @@
 		(at 0 0)
 		(size 1.8 3.2)
 		(drill 1.1)
-		(layers "*.Cu" "*.Mask" "B.SilkS")
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.1388888889)
 		(uuid "6a0131e6-afa4-41cf-bbb5-55ba0b1c1dda")
