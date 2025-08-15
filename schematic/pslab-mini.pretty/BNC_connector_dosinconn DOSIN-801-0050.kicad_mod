@@ -55,48 +55,37 @@
 	)
 	(attr smd)
 	(fp_arc
-		(start -2.8 -4.4)
-		(mid 0 -5.215362)
-		(end 2.8 -4.4)
+		(start -2.2 -4.725)
+		(mid -0.027931 -5.211988)
+		(end 2.149232 -4.748303)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "537f5c89-86b2-48b3-8aec-a1144f0c445e")
+		(uuid "988d5f7c-4506-4b32-81a9-82865092ef3b")
 	)
 	(fp_arc
-		(start 2.800002 4.399997)
-		(mid 0.000002 5.21536)
-		(end -2.799999 4.4)
+		(start 2.150001 4.750001)
+		(mid 0.000001 5.213925)
+		(end -2.15 4.750002)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "7acd98d2-4fc8-48d0-9220-314a6c770f8c")
+		(uuid "18e0334b-93a8-4c9a-91cc-80da9d06f0ba")
 	)
 	(fp_arc
-		(start 4.399997 -2.800002)
-		(mid 5.21536 -0.000002)
-		(end 4.4 2.799999)
+		(start 4.725 -2.2)
+		(mid 5.212065 0)
+		(end 4.725001 2.2)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "0319cac7-4ea8-4d0f-8e10-eb83f473f5b4")
-	)
-	(fp_rect
-		(start -25.5 -7.28)
-		(end -10.45 7.22)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.CrtYd")
-		(uuid "92b974e3-19a3-4afd-a243-512fde80af2b")
+		(uuid "a1a2656e-8117-4825-abb4-b3dc0036887a")
 	)
 	(fp_rect
 		(start -22.05 -4.7)
@@ -173,4 +162,15 @@
 		(uuid "e977124b-f4a1-4944-afde-5558e2875d49")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/3DModels/BNC_Connector.stp"
+		(offset
+			(xyz -23 0 6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
 )

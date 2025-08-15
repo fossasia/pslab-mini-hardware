@@ -26,9 +26,9 @@
         },
         "fab_line_width": 0.1,
         "fab_text_italic": false,
-        "fab_text_size_h": 1.0,
-        "fab_text_size_v": 1.0,
-        "fab_text_thickness": 0.15,
+        "fab_text_size_h": 0.5,
+        "fab_text_size_v": 0.5,
+        "fab_text_thickness": 0.1,
         "fab_text_upright": false,
         "other_line_width": 0.1,
         "other_text_italic": false,
@@ -43,16 +43,39 @@
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_h": 0.5,
+        "silk_text_size_v": 0.5,
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "hole_clearance|157295000|101950000|a4184bd3-c010-4b42-a040-7722f17f1890|0ae81d84-a19d-49a2-84f9-47b32209d817",
+          ""
+        ],
+        [
+          "hole_clearance|157295000|101950000|a4184bd3-c010-4b42-a040-7722f17f1890|693d17b9-9910-4786-a92f-1d54fc437132",
+          ""
+        ],
+        [
+          "hole_clearance|157295000|96150000|fe302f05-993c-48a0-94cc-1d1acdb54052|776fdb34-c188-4cab-903f-7fa937fea96b",
+          ""
+        ],
+        [
+          "hole_clearance|157295000|96150000|fe302f05-993c-48a0-94cc-1d1acdb54052|fb39eda5-7ccb-44be-96d6-3f29f0549028",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -121,18 +144,18 @@
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.5,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.13,
-        "min_via_diameter": 0.7,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -180,7 +203,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +232,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -226,7 +256,20 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|787400|1117600|2d185f7f-cb2f-4a79-b63b-77793cdadc9c|011c0fdf-6e91-477a-925b-95eea4639a41|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        ""
+      ],
+      [
+        "pin_to_pin|787400|1168400|b02db4b5-1d9d-486b-9c4c-c6cdb8f17751|ec661da8-8ed2-4a96-882d-2929c72e9112|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        ""
+      ],
+      [
+        "pin_to_pin|787400|1193800|ec661da8-8ed2-4a96-882d-2929c72e9112|6e891a26-aae5-4bd8-9a6e-496627a7fe12|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -534,19 +577,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
