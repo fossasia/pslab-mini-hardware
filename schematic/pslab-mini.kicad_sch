@@ -31331,7 +31331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C384594.pdf"
 			(at 48.26 186.69 0)
 			(effects
 				(font
@@ -31341,6 +31341,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 48.26 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "MT2496"
+			(at 48.26 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C384594"
 			(at 48.26 186.69 0)
 			(effects
 				(font
