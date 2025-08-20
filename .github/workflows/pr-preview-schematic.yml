@@ -9,6 +9,8 @@ on:
 jobs:
   schematic-preview:
     runs-on: ubuntu-latest
+    outputs:
+      has_schematic_diffs: ${{ steps.check-schematics.outputs.has_diffs }}
     if: github.event.workflow_run.conclusion == 'success'
 
     steps:
@@ -65,7 +67,18 @@ jobs:
           mkdir -p schematics
           unzip schematics.zip -d schematics/
 
+      - name: Check for schematic files
+        id: check-schematics
+        run: |
+          if ! find ./schematics/ -name "*-diff.png" -type f | grep -q .; then
+              echo "No schematic differences found. Exiting without further action."
+              echo "has_diffs=false" >> $GITHUB_OUTPUT
+          else
+              echo "has_diffs=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Fetch PR Number
+        if: ${{ steps.check-schematics.outputs.has_diffs == 'true' }}
         id: fetch-pr-number
         uses: actions/github-script@v7
         with:
@@ -78,6 +91,7 @@ jobs:
             core.setOutput("commit_sha", commit_sha);
 
       - name: Upload schematics
+        if: ${{ steps.check-schematics.outputs.has_diffs == 'true' }}
         shell: bash
         run: |
           git config --global user.name "actions-schematic[bot]"
@@ -105,6 +119,7 @@ jobs:
           git push --force origin schematic-previews
 
       - name: Comment on PR with schematics
+        if: ${{ steps.check-schematics.outputs.has_diffs == 'true' }}
         uses: actions/github-script@v7
         env:
           issue_number: ${{ steps.fetch-pr-number.outputs.issue_number }}
