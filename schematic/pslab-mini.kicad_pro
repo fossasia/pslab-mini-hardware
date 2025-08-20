@@ -395,7 +395,7 @@
         0,
         1,
         0,
-        2,
+        1,
         2,
         2,
         2
@@ -515,13 +515,47 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "Ground",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 0, 0)"
+      },
+      {
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(194, 0, 0)"
+      },
+      {
+        "name": "USB_Data",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(132, 0, 132)"
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/D+": [
+        "USB_Data"
+      ],
+      "/D-": [
+        "USB_Data"
+      ],
+      "/VINPUT": [
+        "Power"
+      ],
+      "GND": [
+        "Ground"
+      ],
+      "VBUS": [
+        "Power"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
