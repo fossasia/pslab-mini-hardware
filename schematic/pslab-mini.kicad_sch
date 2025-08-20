@@ -20247,7 +20247,7 @@
 		(at 373.38 246.38 90)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)
@@ -20333,11 +20333,11 @@
 		)
 		(uuid "c54e54f9-ba47-4903-844e-79e686eb5c61")
 	)
-	(label "VUSBIN"
+	(label "VBUS"
 		(at 350.52 246.38 90)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)
@@ -20527,7 +20527,7 @@
 		(at 361.95 246.38 90)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)
