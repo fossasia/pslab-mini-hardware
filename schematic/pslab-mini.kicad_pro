@@ -529,7 +529,6 @@
         "schematic_color": "rgb(194, 0, 0)"
       },
       {
-        "line_style": 0,
         "name": "USB_Data",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
