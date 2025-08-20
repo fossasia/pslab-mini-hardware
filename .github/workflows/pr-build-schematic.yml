@@ -94,9 +94,14 @@ jobs:
               diff_pdf="reports/schematics/${base_name}-schematic-diff.pdf"
 
               if [ -f "$old_pdf" ] && [ -f "$current_pdf" ]; then
-                echo "Creating PDF diff for $base_name"
-                xvfb-run diff-pdf --output-diff="$diff_pdf" -g "$old_pdf" "$current_pdf"
-                pdftoppm "$diff_pdf" "reports/schematics/${base_name}-schematic-diff" -png -singlefile
+                xvfb-run diff-pdf --output-diff="$diff_pdf" -g --skip-identical "$old_pdf" "$current_pdf"
+                if gs -dBATCH -dNOPAUSE -dQUIET -sDEVICE=bbox "$diff_pdf" 2>&1 | grep -q "BoundingBox: 0 0 0 0"; then
+                    echo "No differences found in $base_name"
+                    rm -f "$diff_pdf"
+                else
+                    echo "Creating PDF diff for $base_name"
+                    pdftoppm "$diff_pdf" "reports/schematics/${base_name}-schematic-diff" -png -singlefile
+                fi
                 rm -rf "$old_pdf"
               else
                 echo "No PDF found for ${base_name}"
