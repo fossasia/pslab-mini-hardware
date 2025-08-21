@@ -258,16 +258,12 @@
   "erc": {
     "erc_exclusions": [
       [
-        "pin_to_pin|787400|1117600|2d185f7f-cb2f-4a79-b63b-77793cdadc9c|011c0fdf-6e91-477a-925b-95eea4639a41|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|-330200|1409700|a0f67732-6165-4c3c-b347-15a104cbc2bd|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ],
       [
-        "pin_to_pin|787400|1168400|b02db4b5-1d9d-486b-9c4c-c6cdb8f17751|ec661da8-8ed2-4a96-882d-2929c72e9112|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
-        ""
-      ],
-      [
-        "pin_to_pin|787400|1193800|ec661da8-8ed2-4a96-882d-2929c72e9112|6e891a26-aae5-4bd8-9a6e-496627a7fe12|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
-        ""
+        "multiple_net_names|863600|1371600|5efb54e6-a672-4cee-8ba5-b21bb1e62219|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "We do not do much input sensing in the BMIC, therefore the grounds are tied together."
       ]
     ],
     "meta": {
@@ -540,11 +536,20 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/BC_BATT": [
+        "Power"
+      ],
+      "/BC_VDD": [
+        "Power"
+      ],
       "/D+": [
         "USB_Data"
       ],
       "/D-": [
         "USB_Data"
+      ],
+      "/LX": [
+        "Power"
       ],
       "/VINPUT": [
         "Power"
@@ -554,9 +559,29 @@
       ],
       "VBUS": [
         "Power"
+      ],
+      "VIN": [
+        "Power"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "VIN"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "Ground",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -730,7 +755,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../output/schematics/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
