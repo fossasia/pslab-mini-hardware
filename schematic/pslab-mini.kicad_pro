@@ -60,27 +60,19 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|157660000|101540000|8b1b8b5d-b5de-413a-b519-6cdac9d49a5e|37f8f368-8de3-4e07-a2fb-41baa5082551",
+          "hole_clearance|157660000|101540000|37f8f368-8de3-4e07-a2fb-41baa5082551|8b1b8b5d-b5de-413a-b519-6cdac9d49a5e",
           ""
         ],
         [
-          "hole_clearance|157660000|101540000|e68f2d3d-eb01-4c12-86f0-b3412dd99be8|37f8f368-8de3-4e07-a2fb-41baa5082551",
+          "hole_clearance|157660000|101540000|37f8f368-8de3-4e07-a2fb-41baa5082551|e68f2d3d-eb01-4c12-86f0-b3412dd99be8",
           ""
         ],
         [
-          "hole_clearance|157660000|95740000|909fa9d9-4f58-47b0-b1cd-9dbe355a5ee1|8f436e84-0bea-4cdf-9286-93ee54d95712",
+          "hole_clearance|157660000|95740000|8f436e84-0bea-4cdf-9286-93ee54d95712|909fa9d9-4f58-47b0-b1cd-9dbe355a5ee1",
           ""
         ],
         [
-          "hole_clearance|157660000|95740000|a83e554e-192e-44ba-8f0a-27ca259e361e|8f436e84-0bea-4cdf-9286-93ee54d95712",
-          ""
-        ],
-        [
-          "silk_overlap|152351596|87508307|b4603e98-87d8-41dc-bfc6-6bcba996cca2|e358a2a8-c4bb-47f6-957f-1ae0834f0a24",
-          ""
-        ],
-        [
-          "silk_overlap|87108456|77650315|2ee04e9e-ab27-4d0c-bb9e-780d44bc29bf|42763413-039f-4c17-844e-74f37caff819",
+          "hole_clearance|157660000|95740000|8f436e84-0bea-4cdf-9286-93ee54d95712|a83e554e-192e-44ba-8f0a-27ca259e361e",
           ""
         ]
       ],
@@ -273,11 +265,7 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|-330200|1409700|a0f67732-6165-4c3c-b347-15a104cbc2bd|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
-        ""
-      ],
-      [
-        "multiple_net_names|863600|1371600|5efb54e6-a672-4cee-8ba5-b21bb1e62219|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|863600|1397000|a895e22a-eaed-47f6-96ed-7889a347109c|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         "We do not do much input sensing in the BMIC, therefore the grounds are tied together."
       ]
     ],
