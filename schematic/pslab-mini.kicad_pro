@@ -60,19 +60,19 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|157295000|101950000|a4184bd3-c010-4b42-a040-7722f17f1890|0ae81d84-a19d-49a2-84f9-47b32209d817",
+          "hole_clearance|157660000|101540000|37f8f368-8de3-4e07-a2fb-41baa5082551|8b1b8b5d-b5de-413a-b519-6cdac9d49a5e",
           ""
         ],
         [
-          "hole_clearance|157295000|101950000|a4184bd3-c010-4b42-a040-7722f17f1890|693d17b9-9910-4786-a92f-1d54fc437132",
+          "hole_clearance|157660000|101540000|37f8f368-8de3-4e07-a2fb-41baa5082551|e68f2d3d-eb01-4c12-86f0-b3412dd99be8",
           ""
         ],
         [
-          "hole_clearance|157295000|96150000|fe302f05-993c-48a0-94cc-1d1acdb54052|776fdb34-c188-4cab-903f-7fa937fea96b",
+          "hole_clearance|157660000|95740000|8f436e84-0bea-4cdf-9286-93ee54d95712|909fa9d9-4f58-47b0-b1cd-9dbe355a5ee1",
           ""
         ],
         [
-          "hole_clearance|157295000|96150000|fe302f05-993c-48a0-94cc-1d1acdb54052|fb39eda5-7ccb-44be-96d6-3f29f0549028",
+          "hole_clearance|157660000|95740000|8f436e84-0bea-4cdf-9286-93ee54d95712|a83e554e-192e-44ba-8f0a-27ca259e361e",
           ""
         ]
       ],
@@ -204,7 +204,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.4,
+        0.8
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -236,6 +239,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -258,11 +265,7 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|-330200|1409700|a0f67732-6165-4c3c-b347-15a104cbc2bd|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
-        ""
-      ],
-      [
-        "multiple_net_names|863600|1371600|5efb54e6-a672-4cee-8ba5-b21bb1e62219|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|863600|1397000|a895e22a-eaed-47f6-96ed-7889a347109c|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         "We do not do much input sensing in the BMIC, therefore the grounds are tied together."
       ]
     ],
@@ -708,6 +711,18 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC#",
+          "name": "LCSC#",
           "show": false
         }
       ],
