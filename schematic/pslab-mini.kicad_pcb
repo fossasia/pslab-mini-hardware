@@ -284,13 +284,12 @@
 	(net 132 "Net-(R31-Pad1)")
 	(net 133 "/SPI2_MISO")
 	(net 134 "unconnected-(U6-PC13-Pad2)")
-	(net 135 "Net-(U1-BST)")
+	(net 135 "Net-(U1-BS)")
 	(net 136 "Net-(U1-SW)")
 	(net 137 "Net-(U1-FB)")
-	(net 138 "Net-(U1-EN)")
-	(net 139 "Net-(C44-Pad2)")
-	(net 140 "Net-(L5-Pad1)")
-	(net 141 "unconnected-(PCB_ANT1-Pad2)")
+	(net 138 "Net-(C44-Pad2)")
+	(net 139 "Net-(L5-Pad1)")
+	(net 140 "unconnected-(PCB_ANT1-Pad2)")
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0097d718-d013-43c3-b037-59c4d61f32f9")
@@ -5598,7 +5597,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161055_YAGEO-RC0603FR-07100KL_C14675.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5610,7 +5609,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7602,7 +7601,7 @@
 			(size 1.2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 140 "Net-(L5-Pad1)")
+			(net 139 "Net-(L5-Pad1)")
 			(pintype "input")
 			(uuid "e1bc8744-9c66-4693-b061-170d7aabd329")
 		)
@@ -7611,7 +7610,7 @@
 			(size 1.2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 141 "unconnected-(PCB_ANT1-Pad2)")
+			(net 140 "unconnected-(PCB_ANT1-Pad2)")
 			(pintype "power_in+no_connect")
 			(uuid "c2927694-2043-42f2-b381-78b607387305")
 		)
@@ -8299,7 +8298,7 @@
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 139 "Net-(C44-Pad2)")
+			(net 138 "Net-(C44-Pad2)")
 			(pintype "passive")
 			(uuid "9f1960ef-5588-47dc-aff6-8067cede5b20")
 		)
@@ -13240,7 +13239,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C21122.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13252,7 +13251,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13420,7 +13419,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 135 "Net-(U1-BST)")
+			(net 135 "Net-(U1-BS)")
 			(pintype "passive")
 			(uuid "25fd1042-d525-4d5c-998d-fb34895e591f")
 		)
@@ -15388,7 +15387,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2006102223_Samsung-Electro-Mechanics-CL21A226MAYNNNE_C602037.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15400,7 +15399,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19532,7 +19531,7 @@
 			(size 0.59 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 139 "Net-(C44-Pad2)")
+			(net 138 "Net-(C44-Pad2)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "65c15c2d-bd78-45c1-a1b3-b35fe66e8aec")
@@ -19990,7 +19989,7 @@
 			(size 0.59 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 140 "Net-(L5-Pad1)")
+			(net 139 "Net-(L5-Pad1)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "24115f76-f5c1-4ced-aa40-c96ece890a87")
@@ -20000,7 +19999,7 @@
 			(size 0.59 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 139 "Net-(C44-Pad2)")
+			(net 138 "Net-(C44-Pad2)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "b17c5310-4e04-4a84-9554-461ab32e65c5")
@@ -20498,7 +20497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2006102223_Samsung-Electro-Mechanics-CL21A226MAYNNNE_C602037.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -20510,7 +20509,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -21186,7 +21185,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161055_YAGEO-RC0603FR-0710KL_C98220.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -21198,7 +21197,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Resistor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -23588,7 +23587,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Buck Adjustable 3A 4V~18V SOT-23-6 DC-DC Converters ROHS"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -23619,6 +23618,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6485a115-5987-47fa-9bb2-5b620affe836")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "MPN" "MT2496"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0013ad48-1237-4675-88a0-1fae536922f9")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "LCSC#" "C384594"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4c6f846-1b4f-4833-8b39-f025220ed5b5")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -23889,7 +23914,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+5V")
-			(pinfunction "IN")
+			(pinfunction "VIN")
 			(pintype "power_in")
 			(uuid "9d05a1f6-0f24-4944-9885-226336da21fc")
 		)
@@ -23908,7 +23933,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 138 "Net-(U1-EN)")
+			(net 2 "+5V")
 			(pinfunction "EN")
 			(pintype "input")
 			(uuid "8addc5ad-9fcb-4c57-bf40-cc5fab74218e")
@@ -23918,8 +23943,8 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 135 "Net-(U1-BST)")
-			(pinfunction "BST")
+			(net 135 "Net-(U1-BS)")
+			(pinfunction "BS")
 			(pintype "output")
 			(uuid "42bcbc50-d109-4582-959b-2a5bffe61280")
 		)
@@ -24633,7 +24658,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8V"
+		(property "Value" "6v8"
 			(at 1.3 -1.875 90)
 			(layer "F.Fab")
 			(uuid "42d85f7e-c7bb-4332-9203-7392de914ff2")
@@ -24644,7 +24669,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2410010302_onsemi-MMSZ6V8T1G_C132794.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24657,7 +24682,7 @@
 				)
 			)
 		)
-		(property "Description" "6.8V Zener"
+		(property "Description" "Zener diode, filled shape"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28690,7 +28715,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2410121957_muRata-LQM18PN3R3MFRL_C162581.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -28702,7 +28727,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Inductor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -28862,6 +28887,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 136 "Net-(U1-SW)")
+			(pinfunction "1")
 			(pintype "passive")
 			(uuid "416d5153-5476-43d3-ad66-e35f7988505c")
 		)
@@ -28871,6 +28897,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
+			(pinfunction "2")
 			(pintype "passive")
 			(uuid "d35e222e-0c98-4079-87d2-64d874106ed5")
 		)
@@ -32050,7 +32077,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131730_YAGEO-CC0603JRNPO9BN120_C107034.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -32062,7 +32089,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -33851,231 +33878,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
-		(layer "F.Cu")
-		(uuid "efa1df53-f4e4-49d2-8fb6-49dc7c25dd74")
-		(at 116 85.75)
-		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-		(tags "resistor")
-		(property "Reference" "R2"
-			(at 0 -1.075 0)
-			(layer "F.SilkS")
-			(uuid "8ee43f42-ac20-4340-9f51-6bdba2d0f5e0")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "200k"
-			(at -2.4625 0.0125 0)
-			(layer "F.Fab")
-			(uuid "5e734442-b01c-4976-b54b-90dc21d19d01")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200KL_C105574.pdf"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "860c551d-9a86-4eb5-91da-860f27159115")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "feb92a55-bfe7-4aff-a9da-690748b121c4")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Mfr Number" "RC0603FR-07200KL"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bab16d9f-a159-42da-842e-525ec3def592")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Part Number (LCSC)" "C105574"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "258a0f2c-76ec-4b04-ba3c-22acf0330947")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property ki_fp_filters "R_*")
-		(path "/ca2a0599-5c96-441c-9628-655f4dab9799")
-		(sheetname "/")
-		(sheetfile "pslab-mini.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -0.237258 -0.5225)
-			(end 0.237258 -0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "79584690-b996-4fd2-b103-eb3dde0572ca")
-		)
-		(fp_line
-			(start -0.237258 0.5225)
-			(end 0.237258 0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "90dbb94f-a7fa-47d1-ab5b-db214aa64f8a")
-		)
-		(fp_line
-			(start -1.48 -0.73)
-			(end 1.48 -0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "1a5d36d0-ee6e-4342-9393-42fbe6146c47")
-		)
-		(fp_line
-			(start -1.48 0.73)
-			(end -1.48 -0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "27d7315a-19a0-4ebd-b5eb-6a8278c17934")
-		)
-		(fp_line
-			(start 1.48 -0.73)
-			(end 1.48 0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8117dd9d-1e72-4121-96fb-d5862e832592")
-		)
-		(fp_line
-			(start 1.48 0.73)
-			(end -1.48 0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ae7b8d07-b406-4393-95d5-4d9c0f2f9c96")
-		)
-		(fp_line
-			(start -0.8 -0.4125)
-			(end 0.8 -0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9c96d0e8-5bdb-41f2-a54b-90d51dd53f18")
-		)
-		(fp_line
-			(start -0.8 0.4125)
-			(end -0.8 -0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b911759c-acc5-41c1-b218-6bbbf4814e70")
-		)
-		(fp_line
-			(start 0.8 -0.4125)
-			(end 0.8 0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "f63cd30b-ad9b-4a4f-af4d-aa05639e9bb0")
-		)
-		(fp_line
-			(start 0.8 0.4125)
-			(end -0.8 0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "12772a8c-b8f8-477a-b2cc-cc79e6a66cd8")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "b0d3f9ba-1097-454a-be1c-a84b8e5b837a")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.825 0)
-			(size 0.8 0.95)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 2 "+5V")
-			(pintype "passive")
-			(uuid "9675581b-71e9-4252-8343-28302b22d837")
-		)
-		(pad "2" smd roundrect
-			(at 0.825 0)
-			(size 0.8 0.95)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 138 "Net-(U1-EN)")
-			(pintype "passive")
-			(uuid "d1731d18-2178-40a1-bb43-bd3bc7dad9b8")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39267,6 +39069,14 @@
 		(uuid "1a6afbb2-b2b6-4e29-adae-694bf315f73b")
 	)
 	(segment
+		(start 118.55 84.8625)
+		(end 118.55 85.4538)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "24727971-fe3b-482d-aaf2-fd0ff24a49ea")
+	)
+	(segment
 		(start 118.275 93.225)
 		(end 123.475 93.225)
 		(width 0.4)
@@ -39369,6 +39179,14 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "7940952a-94c0-40b7-b9f5-e29f5b511c5c")
+	)
+	(segment
+		(start 119.5 86.4038)
+		(end 119.5 87.1375)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "8364b317-c0c9-4cc7-b518-c44a5e62ba4d")
 	)
 	(segment
 		(start 118.55 84.8625)
@@ -39497,6 +39315,14 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "e9721ab9-936c-47c5-82f5-9e8beb57eb2f")
+	)
+	(segment
+		(start 118.55 85.4538)
+		(end 119.5 86.4038)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "ec4e9712-34a3-43c3-a53b-833c3e45da09")
 	)
 	(via
 		(at 132 70.75)
@@ -47419,43 +47245,11 @@
 		(uuid "dcc60efe-7719-44fd-bdf1-eb4a17e44d2e")
 	)
 	(segment
-		(start 119.5 86.641612)
-		(end 119.5 87.1375)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 138)
-		(uuid "63d70130-fb80-4fc1-a633-286fac6c036a")
-	)
-	(segment
-		(start 117.149 86.074)
-		(end 118.932388 86.074)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 138)
-		(uuid "94e8a028-5cd2-44be-beda-00e7be1c148d")
-	)
-	(segment
-		(start 116.825 85.75)
-		(end 117.149 86.074)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 138)
-		(uuid "be9abd6e-1977-4d65-9677-eefb5d2d09ad")
-	)
-	(segment
-		(start 118.932388 86.074)
-		(end 119.5 86.641612)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 138)
-		(uuid "c2d59332-2ea9-48e0-bfec-d5d8e356a45b")
-	)
-	(segment
 		(start 89.47 89)
 		(end 87.25 89)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 139)
+		(net 138)
 		(uuid "cea001e0-45b6-401a-91b3-57cc08c70872")
 	)
 	(segment
@@ -47463,7 +47257,7 @@
 		(end 84.675 89)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 140)
+		(net 139)
 		(uuid "d78b33ca-efeb-4270-a8a1-81eaca9041aa")
 	)
 	(zone
