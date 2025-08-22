@@ -12504,16 +12504,6 @@
 		)
 		(uuid "1e9d3dab-66ea-43a8-8241-c96f566cea4d")
 	)
-	(text "Test Points and Fiducials\n"
-		(exclude_from_sim no)
-		(at 342.646 177.038 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2168b830-a6f4-4ae9-bdb7-232270b7a16a")
-	)
 	(text "V_{out} = 0.80 + [0.80 x R1/R2] = 8.80 V"
 		(exclude_from_sim no)
 		(at 37.084 216.154 0)
@@ -12750,9 +12740,9 @@
 		)
 		(uuid "d9368100-14ce-40b4-8d0f-e2833a3f3504")
 	)
-	(text "Mounting Holes\n"
+	(text "Mounting Options"
 		(exclude_from_sim no)
-		(at 303.53 176.53 0)
+		(at 197.866 223.774 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12761,16 +12751,6 @@
 			)
 		)
 		(uuid "e34064a0-11cb-4008-9dba-a701c2526024")
-	)
-	(text "Test points for USB\n"
-		(exclude_from_sim no)
-		(at 374.396 225.806 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e3cf9b68-cbf5-4b5d-a82f-1ef86e5a6402")
 	)
 	(text "USB Port\n"
 		(exclude_from_sim no)
@@ -12866,6 +12846,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "189a4805-6422-4687-a956-f04ad572830b")
+	)
+	(junction
+		(at 162.56 237.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19f2e8ab-7650-4f05-8bac-04eda42aeccd")
 	)
 	(junction
 		(at 177.8 119.38)
@@ -13120,6 +13106,12 @@
 		(uuid "748ad863-146e-4b84-bc1b-c80ecbad6525")
 	)
 	(junction
+		(at 76.2 234.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "763dc40e-4874-4a62-ade3-42cd91a1b6f4")
+	)
+	(junction
 		(at 426.72 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13184,6 +13176,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fa04443-1cd6-4c3c-a658-d6af4e88fc07")
+	)
+	(junction
+		(at 78.74 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91f7c2fc-b804-41c6-a0b2-41afa4187b5e")
 	)
 	(junction
 		(at 201.93 156.21)
@@ -13322,6 +13320,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bdd08fa2-9dd7-4605-a9f3-60a562e9ec48")
+	)
+	(junction
+		(at 36.83 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bffe96a7-c490-4aeb-91b2-426a14d42156")
 	)
 	(junction
 		(at 83.82 231.14)
@@ -13597,11 +13601,11 @@
 	)
 	(polyline
 		(pts
-			(xy 294.64 255.27) (xy 326.39 255.27)
+			(xy 187.96 264.16) (xy 214.63 264.16)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.254)
+			(type solid)
 		)
 		(uuid "02cd4aa0-a0fc-43d1-9c16-ec6e45b5c5fc")
 	)
@@ -13824,16 +13828,6 @@
 			(type default)
 		)
 		(uuid "0cd0c82d-b7f8-474f-b280-46cce89acbd1")
-	)
-	(wire
-		(pts
-			(xy 381 237.49) (xy 381 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d2888ce-bcd1-411c-90a2-2dfd98baaeba")
 	)
 	(wire
 		(pts
@@ -14177,6 +14171,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 237.49) (xy 162.56 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18f4e7bb-130a-4d03-aec3-741596978442")
+	)
+	(wire
+		(pts
 			(xy 426.72 166.37) (xy 426.72 168.91)
 		)
 		(stroke
@@ -14194,16 +14198,6 @@
 			(type default)
 		)
 		(uuid "19be5cee-170f-4234-81c3-8df27591e83c")
-	)
-	(wire
-		(pts
-			(xy 335.28 233.68) (xy 335.28 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a6ee235-4ff3-456d-bbb6-520f5eee426e")
 	)
 	(polyline
 		(pts
@@ -14425,16 +14419,6 @@
 		)
 		(uuid "22e45f48-ba92-43bf-b366-a396969c50c9")
 	)
-	(wire
-		(pts
-			(xy 303.53 205.74) (xy 303.53 201.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23096b6f-c53a-4aad-a671-c9a2d411659a")
-	)
 	(polyline
 		(pts
 			(xy 504.19 156.21) (xy 505.46 156.21)
@@ -14567,11 +14551,11 @@
 	)
 	(polyline
 		(pts
-			(xy 294.64 173.99) (xy 326.39 173.99)
+			(xy 187.96 220.98) (xy 214.63 220.98)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.254)
+			(type solid)
 		)
 		(uuid "27b88390-4465-4962-ac55-157caa83740e")
 	)
@@ -14797,16 +14781,6 @@
 	)
 	(polyline
 		(pts
-			(xy 328.93 173.99) (xy 401.32 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30816fd4-a0fe-4213-9bd8-18586b88087c")
-	)
-	(polyline
-		(pts
 			(xy 90.17 15.24) (xy 73.66 15.24)
 		)
 		(stroke
@@ -14915,16 +14889,6 @@
 		)
 		(uuid "35d2ca54-7e9a-4527-9516-545bcc8151e5")
 	)
-	(polyline
-		(pts
-			(xy 328.93 255.27) (xy 401.32 255.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3629259f-8e4e-4d07-8acf-182a88e80d1e")
-	)
 	(wire
 		(pts
 			(xy 447.04 163.83) (xy 439.42 163.83)
@@ -14984,16 +14948,6 @@
 			(type default)
 		)
 		(uuid "395fac6f-ac1b-46c0-853e-d8ce66667a0a")
-	)
-	(wire
-		(pts
-			(xy 369.57 237.49) (xy 369.57 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "397e595c-2c89-4f18-961e-b11e3e7ec5e6")
 	)
 	(wire
 		(pts
@@ -15104,16 +15058,6 @@
 			(type default)
 		)
 		(uuid "3eb6d5fd-dad6-4979-a497-983baa711081")
-	)
-	(wire
-		(pts
-			(xy 316.23 229.87) (xy 316.23 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4162b83c-3dff-4bec-afac-741bd88b9345")
 	)
 	(wire
 		(pts
@@ -15347,11 +15291,11 @@
 	)
 	(polyline
 		(pts
-			(xy 326.39 255.27) (xy 326.39 173.99)
+			(xy 214.63 264.16) (xy 214.63 220.98)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.254)
+			(type solid)
 		)
 		(uuid "4e030bab-6593-4c37-bf48-5bcb9dc4996c")
 	)
@@ -15907,16 +15851,6 @@
 	)
 	(wire
 		(pts
-			(xy 392.43 237.49) (xy 392.43 243.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "643ff6c2-554f-4a99-9244-4e6080521f40")
-	)
-	(wire
-		(pts
 			(xy 476.25 38.1) (xy 481.33 38.1)
 		)
 		(stroke
@@ -16234,16 +16168,6 @@
 			(type default)
 		)
 		(uuid "72bbf694-9e1b-4d97-90a1-cb36d45eb185")
-	)
-	(wire
-		(pts
-			(xy 303.53 229.87) (xy 303.53 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72f1ce20-1cc4-400e-b42a-056c2667f2ff")
 	)
 	(polyline
 		(pts
@@ -16777,7 +16701,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 236.22) (xy 162.56 241.3)
+			(xy 162.56 236.22) (xy 162.56 237.49)
 		)
 		(stroke
 			(width 0)
@@ -16827,7 +16751,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 240.03) (xy 76.2 231.14)
+			(xy 76.2 240.03) (xy 76.2 234.95)
 		)
 		(stroke
 			(width 0)
@@ -17357,16 +17281,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 205.74) (xy 316.23 201.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a345bd7d-a522-4b01-a90e-309b2d3b07e8")
-	)
-	(wire
-		(pts
 			(xy 471.17 38.1) (xy 476.25 38.1)
 		)
 		(stroke
@@ -17437,11 +17351,11 @@
 	)
 	(polyline
 		(pts
-			(xy 294.64 173.99) (xy 294.64 255.27)
+			(xy 187.96 220.98) (xy 187.96 264.16)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.254)
+			(type solid)
 		)
 		(uuid "a6142776-7826-44b0-8077-8a81f69f9e51")
 	)
@@ -17494,16 +17408,6 @@
 			(type default)
 		)
 		(uuid "a8fc59b1-08b3-4ab6-8b91-e517278ecc7d")
-	)
-	(wire
-		(pts
-			(xy 358.14 237.49) (xy 358.14 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9e6f881-d774-4dbf-92a7-8f1fcade8e91")
 	)
 	(wire
 		(pts
@@ -17684,16 +17588,6 @@
 			(type default)
 		)
 		(uuid "b3fb1037-cf16-4cfd-a0a5-44b8dfe8acea")
-	)
-	(polyline
-		(pts
-			(xy 328.93 173.99) (xy 328.93 255.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b45e46c6-314e-4500-a768-3d450dc3df90")
 	)
 	(wire
 		(pts
@@ -18064,16 +17958,6 @@
 			(type default)
 		)
 		(uuid "cecab8c1-142c-45c3-8433-f318d1ff7d11")
-	)
-	(wire
-		(pts
-			(xy 342.9 233.68) (xy 342.9 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cef927b9-f4a2-4592-93e6-a8225fdf396a")
 	)
 	(wire
 		(pts
@@ -18885,16 +18769,6 @@
 		)
 		(uuid "f0091102-68c3-4b09-a716-854889403c99")
 	)
-	(polyline
-		(pts
-			(xy 401.32 255.27) (xy 401.32 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f00e59db-b5b9-4e5e-bea4-9f18d5e1c8f0")
-	)
 	(wire
 		(pts
 			(xy 281.94 99.06) (xy 278.13 99.06)
@@ -19214,6 +19088,16 @@
 			(type default)
 		)
 		(uuid "ffb596e9-dbf1-42e1-b609-ce055786a546")
+	)
+	(wire
+		(pts
+			(xy 76.2 234.95) (xy 76.2 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fffdc96c-6cf2-49ca-8e6a-4aafe2632128")
 	)
 	(image
 		(at 551.18 260.35)
@@ -20373,16 +20257,6 @@
 		)
 		(uuid "b5b4047b-6c22-48bb-af5f-afc2212f30fc")
 	)
-	(label "D-"
-		(at 381 246.38 90)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5b5f844-0b89-4e5b-898a-00924c197931")
-	)
 	(label "GPIO0"
 		(at 447.04 176.53 180)
 		(effects
@@ -20462,16 +20336,6 @@
 			(justify left bottom)
 		)
 		(uuid "c54e54f9-ba47-4903-844e-79e686eb5c61")
-	)
-	(label "VBUS"
-		(at 358.14 246.38 90)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left bottom)
-		)
-		(uuid "c82685f7-706c-433d-8dde-e9ad2491fdc2")
 	)
 	(label "SPIQ"
 		(at 567.69 71.12 180)
@@ -20675,16 +20539,6 @@
 		)
 		(uuid "e4d6f52d-e13f-4f9c-a04e-7dadff487f59")
 	)
-	(label "D+"
-		(at 369.57 246.38 90)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left bottom)
-		)
-		(uuid "e81b7dd9-a532-47f9-a8dd-b46963b0afe8")
-	)
 	(label "LA1"
 		(at 281.94 99.06 180)
 		(effects
@@ -20794,7 +20648,6 @@
 		(length 2.54)
 		(shape round)
 		(at 58.42 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20803,7 +20656,7 @@
 		)
 		(uuid "1bc94c4d-4f67-4ba9-949f-17430116879c")
 		(property "Netclass" "USB_Data"
-			(at 59.1185 40.64 0)
+			(at 54.864 38.862 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -24820,73 +24673,6 @@
 		)
 	)
 	(symbol
-		(lib_name "-6V_1")
-		(lib_id "power:-6V")
-		(at 363.22 195.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "05dcbbc7-0654-4e4b-98de-0bd47d66df60")
-		(property "Reference" "#PWR063"
-			(at 363.22 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-6V"
-			(at 363.22 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 363.22 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-6V\""
-			(at 363.22 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c9024dcb-0e34-4c7b-bedb-9b4186a30f67")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 151.13 83.82 0)
 		(unit 1)
@@ -25802,72 +25588,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 392.43 243.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0dc9c6c0-4e2a-4962-b7a7-b467a5db217a")
-		(property "Reference" "#PWR067"
-			(at 392.43 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 392.43 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 392.43 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 392.43 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 392.43 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "38df6581-834b-42a4-bcba-a6989ece8fdf")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 156.21 160.02 0)
 		(unit 1)
@@ -26251,140 +25971,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "Y1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "VDDA_1")
-		(lib_id "power:VDDA")
-		(at 340.36 195.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1329653c-fa13-4b77-a563-23a7d9e7e4d9")
-		(property "Reference" "#PWR058"
-			(at 340.36 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDDA"
-			(at 340.36 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDDA\""
-			(at 340.36 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed766747-9a20-4f30-ab87-15ebcb8b6a79")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "+6V_1")
-		(lib_id "power:+6V")
-		(at 386.08 195.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "14cd4ee6-ec81-4232-9c7c-391963013517")
-		(property "Reference" "#PWR068"
-			(at 386.08 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+6V"
-			(at 386.08 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 386.08 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.08 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+6V\""
-			(at 386.08 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "461cf8da-3e0d-4f74-a8b5-fab7db0f1002")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -26811,72 +26397,6 @@
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "U10")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 374.65 195.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a08f427-c73a-43d8-a7ff-ec6c1d9c8aef")
-		(property "Reference" "TP7"
-			(at 372.872 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 370.586 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
-			(at 379.73 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 379.73 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 374.65 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2bf2af07-ad3b-484b-8620-4aecd1958d84")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP7")
-					(unit 1)
 				)
 			)
 		)
@@ -27708,72 +27228,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 392.43 237.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ba75d1e-9dec-4775-a06a-bb2bf38ab9f3")
-		(property "Reference" "TP8"
-			(at 390.652 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 390.398 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 397.51 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 397.51 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 392.43 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6c2811d2-7ba1-442d-a9a8-8f0a9029b9c6")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "LED_Small_1")
 		(lib_id "Device:LED_Small")
 		(at 254 212.09 270)
@@ -28132,73 +27586,6 @@
 		)
 	)
 	(symbol
-		(lib_name "-9V_1")
-		(lib_id "power:-9V")
-		(at 351.79 195.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f907ff5-01f3-4358-baf5-94aadb08cda8")
-		(property "Reference" "#PWR062"
-			(at 351.79 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-9V"
-			(at 351.79 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 351.79 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 351.79 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-9V\""
-			(at 351.79 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3d895c3-eaf5-47b2-8bd9-27cada851a7c")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 532.13 177.8 270)
 		(unit 1)
@@ -28359,7 +27746,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 303.53 205.74 0)
+		(at 193.04 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28367,7 +27754,7 @@
 		(dnp no)
 		(uuid "35584234-914e-497e-bedd-58fd8f134d85")
 		(property "Reference" "#PWR049"
-			(at 303.53 212.09 0)
+			(at 193.04 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28376,7 +27763,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 303.53 210.058 0)
+			(at 193.04 258.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28384,7 +27771,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 303.53 205.74 0)
+			(at 193.04 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28393,7 +27780,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 303.53 205.74 0)
+			(at 193.04 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28402,7 +27789,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 303.53 205.74 0)
+			(at 193.04 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28482,6 +27869,72 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 63.5 46.99 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3665bed0-652c-493f-a1f8-e3cbf46c716e")
+		(property "Reference" "TP12"
+			(at 65.532 50.038 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBD+"
+			(at 65.278 48.768 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 63.5 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb8730c3-dda6-44a5-ab68-5f6a0dd2c0bf")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -29790,6 +29243,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 36.83 208.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4aeff617-4d7c-463e-a33f-06cfa0b1ea65")
+		(property "Reference" "TP11"
+			(at 35.052 210.058 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "-9V"
+			(at 34.29 206.502 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 36.83 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 36.83 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16e5ca3e-913a-41d1-920c-ca0cd9dc1d02")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 175.26 254 0)
 		(mirror y)
@@ -30053,7 +29572,7 @@
 	(symbol
 		(lib_name "MountingHole_Pad_5")
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 303.53 199.39 0)
+		(at 193.04 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -30061,7 +29580,7 @@
 		(dnp no)
 		(uuid "558f6598-e811-4364-a7fd-2a9a312ee0a8")
 		(property "Reference" "MH1"
-			(at 304.8 204.724 90)
+			(at 191.008 247.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30070,7 +29589,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 306.07 199.3899 0)
+			(at 195.58 251.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30080,7 +29599,7 @@
 			)
 		)
 		(property "Footprint" "pslab-mini:MountingHole_2.75mm_Pad"
-			(at 303.53 199.39 0)
+			(at 193.04 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30089,7 +29608,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 303.53 199.39 0)
+			(at 193.04 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30098,7 +29617,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 303.53 199.39 0)
+			(at 193.04 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30120,7 +29639,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 381 237.49 0)
+		(at 78.74 29.21 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -30128,25 +29647,25 @@
 		(dnp no)
 		(uuid "5755a938-331f-4638-b385-580f28e43029")
 		(property "Reference" "TP6"
-			(at 379.222 228.6 0)
+			(at 81.026 27.432 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "VINBUS"
-			(at 377.698 231.14 0)
+		(property "Value" "VBUS"
+			(at 80.518 30.988 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 386.08 237.49 0)
+			(at 78.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30155,7 +29674,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 386.08 237.49 0)
+			(at 78.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30164,7 +29683,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 381 237.49 0)
+			(at 78.74 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31316,7 +30835,7 @@
 	(symbol
 		(lib_name "MountingHole_Pad_5")
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 316.23 223.52 0)
+		(at 209.55 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -31324,7 +30843,7 @@
 		(dnp no)
 		(uuid "6d3b797e-ad2c-4de0-8f7d-816b96b5ad14")
 		(property "Reference" "MH4"
-			(at 317.5 228.854 90)
+			(at 207.518 247.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31333,7 +30852,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 318.77 223.5199 0)
+			(at 212.09 251.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31343,7 +30862,7 @@
 			)
 		)
 		(property "Footprint" "pslab-mini:MountingHole_2.75mm_Pad"
-			(at 316.23 223.52 0)
+			(at 209.55 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31352,7 +30871,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 316.23 223.52 0)
+			(at 209.55 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31361,7 +30880,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 316.23 223.52 0)
+			(at 209.55 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31376,72 +30895,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "MH4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 369.57 237.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d64a9a2-5d92-40aa-9f38-5d4e1978e02c")
-		(property "Reference" "TP4"
-			(at 367.792 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D-"
-			(at 368.554 231.394 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 374.65 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 374.65 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 369.57 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "810e19b7-d03c-41c4-ae21-cdb39e3a1d12")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -31646,16 +31099,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 361.95 213.36 0)
+		(at 200.66 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "73347dce-925b-453b-9a3f-141cd2f460c9")
 		(property "Reference" "FID2"
-			(at 364.49 212.0899 0)
+			(at 198.374 231.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31663,8 +31115,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 364.49 214.6299 0)
+		(property "Value" "TR"
+			(at 199.39 237.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31673,7 +31125,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
-			(at 361.95 213.36 0)
+			(at 200.66 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31682,7 +31134,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 361.95 213.36 0)
+			(at 200.66 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31691,7 +31143,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 361.95 213.36 0)
+			(at 200.66 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31710,7 +31162,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 316.23 205.74 0)
+		(at 198.12 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -31718,7 +31170,7 @@
 		(dnp no)
 		(uuid "76fdaf16-1c26-43ba-8a92-fb9b582c16a8")
 		(property "Reference" "#PWR053"
-			(at 316.23 212.09 0)
+			(at 198.12 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31727,7 +31179,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 316.23 210.058 0)
+			(at 198.12 258.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31735,7 +31187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 316.23 205.74 0)
+			(at 198.12 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31744,7 +31196,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 316.23 205.74 0)
+			(at 198.12 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31753,7 +31205,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 316.23 205.74 0)
+			(at 198.12 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31994,7 +31446,7 @@
 	(symbol
 		(lib_name "MountingHole_Pad_5")
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 303.53 223.52 0)
+		(at 204.47 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -32002,7 +31454,7 @@
 		(dnp no)
 		(uuid "7c3e816e-89e8-4d79-a305-2298613ebb3b")
 		(property "Reference" "MH2"
-			(at 304.8 228.854 90)
+			(at 202.438 247.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32011,7 +31463,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 306.07 223.5199 0)
+			(at 207.01 251.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32021,7 +31473,7 @@
 			)
 		)
 		(property "Footprint" "pslab-mini:MountingHole_2.75mm_Pad"
-			(at 303.53 223.52 0)
+			(at 204.47 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32030,7 +31482,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 303.53 223.52 0)
+			(at 204.47 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32039,7 +31491,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 303.53 223.52 0)
+			(at 204.47 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32054,71 +31506,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "MH2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCOM")
-		(at 342.9 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c4f7813-7791-44ef-9fcb-408015bfd97d")
-		(property "Reference" "#PWR017"
-			(at 342.9 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VIN"
-			(at 342.9 229.616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 342.9 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 342.9 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Input power rail via Fuse"
-			(at 342.9 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0304c248-180a-4194-96a0-9bbc886404d8")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -32278,7 +31665,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 303.53 229.87 0)
+		(at 204.47 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32286,7 +31673,7 @@
 		(dnp no)
 		(uuid "7ef19d2d-b5cd-4d39-87e8-777adf5d80c4")
 		(property "Reference" "#PWR050"
-			(at 303.53 236.22 0)
+			(at 204.47 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32295,7 +31682,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 303.53 234.188 0)
+			(at 204.47 258.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32303,7 +31690,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 303.53 229.87 0)
+			(at 204.47 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32312,7 +31699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 303.53 229.87 0)
+			(at 204.47 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32321,7 +31708,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 303.53 229.87 0)
+			(at 204.47 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33185,6 +32572,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 76.2 234.95 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "862e963f-acb7-4fce-9cb9-a8ea8e1b19f2")
+		(property "Reference" "TP14"
+			(at 78.232 233.172 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+9V"
+			(at 78.232 236.728 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 76.2 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 76.2 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c71c9b6-9943-4236-96c2-a37fce04c76e")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Top_Bottom")
 		(at 537.21 175.26 0)
 		(unit 1)
@@ -33756,7 +33209,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 316.23 229.87 0)
+		(at 209.55 254 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33764,7 +33217,7 @@
 		(dnp no)
 		(uuid "925356bc-6ae2-4fd6-aca1-ba8a809ff83c")
 		(property "Reference" "#PWR054"
-			(at 316.23 236.22 0)
+			(at 209.55 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33773,7 +33226,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 316.23 234.188 0)
+			(at 209.55 258.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33781,7 +33234,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 316.23 229.87 0)
+			(at 209.55 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33790,7 +33243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 316.23 229.87 0)
+			(at 209.55 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33799,7 +33252,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 316.23 229.87 0)
+			(at 209.55 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34662,71 +34115,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCOM")
-		(at 335.28 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9ef1e57e-c486-45d4-813b-eb38a9887ace")
-		(property "Reference" "#PWR015"
-			(at 335.28 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 335.28 229.616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 335.28 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 335.28 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Input power rail via Battery Charger"
-			(at 335.28 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ffa54345-54f6-4e98-b032-ce1af5a5bf3c")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "LED_Small_1")
 		(lib_id "Device:LED_Small")
 		(at 264.16 212.09 90)
@@ -34818,6 +34206,72 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 162.56 237.49 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9fa258da-45e9-473c-9744-4ce3f9927906")
+		(property "Reference" "TP3"
+			(at 164.592 235.712 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 164.084 239.268 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 162.56 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 162.56 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5472bac-60df-4bd9-8cf5-9a98ab443218")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -35899,16 +35353,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 344.17 213.36 0)
+		(at 193.04 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ace1e587-82bf-42fa-a58a-ec2d141ed859")
 		(property "Reference" "FID1"
-			(at 346.71 212.0899 0)
+			(at 191.008 231.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35916,8 +35369,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 346.71 214.6299 0)
+		(property "Value" "TL"
+			(at 192.024 237.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35926,7 +35379,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
-			(at 344.17 213.36 0)
+			(at 193.04 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35935,7 +35388,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 344.17 213.36 0)
+			(at 193.04 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35944,7 +35397,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 344.17 213.36 0)
+			(at 193.04 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36330,72 +35783,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 340.36 195.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "b30e7ba3-1ea2-4a41-bb1f-5b2497e45dfc")
-		(property "Reference" "TP1"
-			(at 338.582 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 336.296 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
-			(at 345.44 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 345.44 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 340.36 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7a2497a-ea3e-4bee-bb25-b538ffd012fd")
-		)
-		(instances
-			(project ""
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 86.36 156.21 0)
 		(unit 1)
@@ -36581,72 +35968,6 @@
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 386.08 195.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "b55aa9d7-4f3b-43bd-9e18-9644b5dde38c")
-		(property "Reference" "TP9"
-			(at 384.302 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 382.016 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
-			(at 391.16 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 391.16 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 386.08 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f0fab2d6-8b83-49d4-b51e-705a37f897d4")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -37168,7 +36489,7 @@
 	(symbol
 		(lib_name "MountingHole_Pad_5")
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 316.23 199.39 0)
+		(at 198.12 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -37176,7 +36497,7 @@
 		(dnp no)
 		(uuid "c21eb189-6360-42f9-9c7e-02087fc701d7")
 		(property "Reference" "MH3"
-			(at 317.5 204.724 90)
+			(at 195.834 247.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37185,7 +36506,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 318.77 199.3899 0)
+			(at 200.66 251.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37195,7 +36516,7 @@
 			)
 		)
 		(property "Footprint" "pslab-mini:MountingHole_2.75mm_Pad"
-			(at 316.23 199.39 0)
+			(at 198.12 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37204,7 +36525,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 316.23 199.39 0)
+			(at 198.12 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37213,7 +36534,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 316.23 199.39 0)
+			(at 198.12 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37228,6 +36549,72 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "MH3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 87.63 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6d1b98b-1959-4c29-beb2-c4daf0521318")
+		(property "Reference" "TP4"
+			(at 85.344 97.028 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V"
+			(at 85.09 93.472 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 87.63 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 87.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d89cfd7a-3e9d-4fae-b3b0-75a3d308913b")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -37848,73 +37235,6 @@
 		)
 	)
 	(symbol
-		(lib_name "+9V_1")
-		(lib_id "power:+9V")
-		(at 374.65 195.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce844b59-afe9-4867-91a0-c82465ced6aa")
-		(property "Reference" "#PWR065"
-			(at 374.65 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+9V"
-			(at 374.65 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 374.65 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 374.65 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
-			(at 374.65 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18923f57-4d6f-4193-8176-52a8785309c5")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "+6V_1")
 		(lib_id "power:+6V")
 		(at 119.38 231.14 0)
@@ -38286,16 +37606,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 378.46 213.36 0)
+		(at 208.28 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d0617a4c-8525-4f1c-af54-9bbb8a5d4600")
 		(property "Reference" "FID3"
-			(at 381 212.0899 0)
+			(at 206.248 231.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38303,8 +37622,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 381 214.6299 0)
+		(property "Value" "BL"
+			(at 207.264 237.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38313,7 +37632,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
-			(at 378.46 213.36 0)
+			(at 208.28 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38322,7 +37641,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 378.46 213.36 0)
+			(at 208.28 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38331,7 +37650,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 378.46 213.36 0)
+			(at 208.28 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38437,6 +37756,72 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 63.5 44.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d170c6d8-e396-40fa-b7ff-83c49a66128f")
+		(property "Reference" "TP8"
+			(at 65.786 41.656 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "USBD-"
+			(at 65.278 42.926 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 63.5 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8728358d-df87-451b-98d3-d7a002e98d77")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -39614,72 +38999,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 358.14 237.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "e3a032b1-281b-45ae-aa5d-cd3d5e1a5a4c")
-		(property "Reference" "TP2"
-			(at 356.362 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D+"
-			(at 356.87 231.394 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 363.22 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 363.22 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 358.14 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "af32f3b2-54e5-42b0-9eaa-aa5a7a309e6c")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pslab-mini:IP5189T")
 		(at 78.74 118.11 0)
 		(unit 1)
@@ -40083,33 +39402,33 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 351.79 195.58 0)
+		(at 119.38 231.14 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "e6b5f258-d7a3-4c2f-967d-263200cb5a4d")
-		(property "Reference" "TP3"
-			(at 350.012 186.69 0)
+		(uuid "e6e508ab-4e60-4cf8-bc0f-a5a837549dec")
+		(property "Reference" "TP13"
+			(at 121.412 229.362 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 347.726 189.23 0)
+		(property "Value" "+6V"
+			(at 121.412 232.918 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
-			(at 356.87 195.58 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 119.38 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40118,7 +39437,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 356.87 195.58 0)
+			(at 119.38 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40127,7 +39446,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 351.79 195.58 0)
+			(at 119.38 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40136,12 +39455,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7ba107e-98f7-4016-8ae5-992f86066b7a")
+			(uuid "169ebc2f-1833-4ece-af5a-1b64a1c0e567")
 		)
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP3")
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -40361,138 +39680,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 335.28 237.49 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "ed5d18d5-8d6e-4698-b027-a1d824dcfb19")
-		(property "Reference" "TP10"
-			(at 337.312 245.872 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+5V"
-			(at 337.312 243.332 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
-			(at 330.2 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 330.2 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 335.28 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf7828bd-261e-448f-a03c-b8397fc45d76")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 363.22 195.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "eece2afa-d045-48c1-9289-5a3bf71306bf")
-		(property "Reference" "TP5"
-			(at 361.442 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 359.156 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
-			(at 368.3 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 368.3 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 363.22 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4d34299-872c-4419-bd6d-887fcfd85397")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -40977,6 +40164,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 120.65 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f430ef53-8c4b-44ec-9a87-42c3d0c21daa")
+		(property "Reference" "TP2"
+			(at 122.936 32.512 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VIN"
+			(at 123.19 36.068 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 120.65 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 120.65 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0227348-e23d-4fee-80f1-0a7f11716375")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 276.86 196.85 180)
 		(unit 1)
@@ -41286,6 +40539,72 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.38 208.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f61dd140-2781-415b-87d5-be3891e64d86")
+		(property "Reference" "TP10"
+			(at 121.412 206.502 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "-6V"
+			(at 121.412 210.058 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 119.38 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d485fda-b3db-452d-ae7a-3a2278c501b3")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -41827,72 +41146,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 342.9 237.49 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "fc216edb-757d-4c35-94f5-07f7ff6c7a28")
-		(property "Reference" "TP11"
-			(at 344.932 245.872 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VIN"
-			(at 344.932 243.332 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
-			(at 337.82 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 337.82 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 342.9 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6b749bfd-2546-4f68-bd68-7a1c3f21f2ba")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "TP11")
 					(unit 1)
 				)
 			)
