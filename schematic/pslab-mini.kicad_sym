@@ -1503,7 +1503,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 0 0)
+			(at -8.128 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1511,7 +1511,7 @@
 			)
 		)
 		(property "Value" "MT2496"
-			(at 0 0 0)
+			(at 5.334 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,7 +1527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C384594.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1536,7 +1536,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Buck Adjustable 3A 4V~18V SOT-23-6 DC-DC Converters ROHS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MT2496"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC#" "C384594"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1547,8 +1565,8 @@
 		)
 		(symbol "MT2496_1_1"
 			(rectangle
-				(start -6.35 -1.27)
-				(end 6.35 -11.43)
+				(start -8.89 6.35)
+				(end 8.89 -6.35)
 				(stroke
 					(width 0)
 					(type solid)
@@ -1557,26 +1575,8 @@
 					(type background)
 				)
 			)
-			(pin power_in line
-				(at -8.89 -5.08 0)
-				(length 2.54)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -8.89 -7.62 0)
+				(at -11.43 0 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -1594,7 +1594,25 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -13.97 90)
+				(at -5.08 8.89 270)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -8.89 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1612,25 +1630,7 @@
 				)
 			)
 			(pin output line
-				(at 8.89 -3.81 180)
-				(length 2.54)
-				(name "BST"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 8.89 -6.35 180)
+				(at 5.08 8.89 270)
 				(length 2.54)
 				(name "SW"
 					(effects
@@ -1648,7 +1648,25 @@
 				)
 			)
 			(pin output line
-				(at 8.89 -8.89 180)
+				(at 11.43 0 180)
+				(length 2.54)
+				(name "BS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 11.43 -3.81 180)
 				(length 2.54)
 				(name "FB"
 					(effects
