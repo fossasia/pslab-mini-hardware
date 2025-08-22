@@ -18199,7 +18199,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2006102223_Samsung-Electro-Mechanics-CL21A226MAYNNNE_C602037.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18211,7 +18211,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -34956,6 +34956,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c5cada6f-de7a-4542-b7b6-8a2e10f6b1b4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "MPN" "AMS1117-3.3"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46725757-8004-423a-9e4f-dc7b1b1ddab4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "LCSC#" "C6186"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbc20c01-70f0-4169-969f-e9c0d38de451")
 			(effects
 				(font
 					(size 0.5 0.5)

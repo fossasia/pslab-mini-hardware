@@ -603,6 +603,14 @@
       {
         "netclass": "Power",
         "pattern": "-6V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDDA"
       }
     ]
   },
