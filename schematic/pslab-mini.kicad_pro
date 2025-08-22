@@ -265,6 +265,10 @@
   "erc": {
     "erc_exclusions": [
       [
+        "multiple_net_names|863600|1397000|00b1284d-84bd-4360-8482-9ea3f5c62bfc|4c379c04-226d-4790-b5bb-dcc23fa85d5e|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "BMIC is solely used for power management. Therefore we tie PGND with normal GND."
+      ],
+      [
         "multiple_net_names|863600|1397000|a895e22a-eaed-47f6-96ed-7889a347109c|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         "We do not do much input sensing in the BMIC, therefore the grounds are tied together."
       ]
@@ -583,6 +587,14 @@
       {
         "netclass": "Ground",
         "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+9V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+6V"
       }
     ]
   },
