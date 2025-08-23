@@ -265,15 +265,11 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|863600|1397000|00b1284d-84bd-4360-8482-9ea3f5c62bfc|4c379c04-226d-4790-b5bb-dcc23fa85d5e|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
-        "BMIC is solely used for power management. Therefore we tie PGND with normal GND."
+        "multiple_net_names|4457700|393700|ceeb2c13-0eee-4ba1-9814-14af286df50d|a775844a-5488-4860-a727-0cd3dbb2683c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        ""
       ],
       [
-        "multiple_net_names|863600|1397000|a895e22a-eaed-47f6-96ed-7889a347109c|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
-        "We do not do much input sensing in the BMIC, therefore the grounds are tied together."
-      ],
-      [
-        "multiple_net_names|863600|1397000|ca7a9af1-d796-44f4-bb67-65163ec04217|4c379c04-226d-4790-b5bb-dcc23fa85d5e|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|863600|1397000|f9ed3f2e-b815-4424-82f1-8379f4d6bd5e|4c379c04-226d-4790-b5bb-dcc23fa85d5e|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ]
     ],
@@ -524,21 +520,33 @@
         "wire_width": 6
       },
       {
-        "name": "Ground",
+        "name": "ESP_SPI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(0, 132, 132)"
+      },
+      {
+        "name": "ESP_UART",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
+        "schematic_color": "rgb(0, 132, 132)"
+      },
+      {
+        "name": "Ground",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
         "schematic_color": "rgb(0, 0, 0)"
       },
       {
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 3,
         "schematic_color": "rgb(194, 0, 0)"
       },
       {
         "name": "USB_Data",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 4,
         "schematic_color": "rgb(132, 0, 132)"
       }
     ],
@@ -559,6 +567,36 @@
       "/D-": [
         "USB_Data"
       ],
+      "/ESP_FLASH_CS": [
+        "ESP_SPI"
+      ],
+      "/ESP_FLASH_RST": [
+        "ESP_SPI"
+      ],
+      "/ESP_FLASH_WP": [
+        "ESP_SPI"
+      ],
+      "/ESP_SPI_CLK": [
+        "ESP_SPI"
+      ],
+      "/ESP_SPI_DI": [
+        "ESP_SPI"
+      ],
+      "/ESP_SPI_DQ": [
+        "ESP_SPI"
+      ],
+      "/ESP_SPI_MISO": [
+        "ESP_SPI"
+      ],
+      "/ESP_SPI_MOSI": [
+        "ESP_SPI"
+      ],
+      "/ESP_UART_RX": [
+        "ESP_UART"
+      ],
+      "/ESP_UART_TX": [
+        "ESP_UART"
+      ],
       "/LX": [
         "Power"
       ],
@@ -567,6 +605,15 @@
       ],
       "GND": [
         "Ground"
+      ],
+      "Net-(U11-SPICLK)": [
+        "ESP_SPI"
+      ],
+      "Net-(U11-SPID)": [
+        "ESP_SPI"
+      ],
+      "Net-(U11-SPIQ)": [
+        "ESP_SPI"
       ],
       "VBUS": [
         "Power"
@@ -615,6 +662,26 @@
       {
         "netclass": "Power",
         "pattern": "VDDA"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/ESP_AVDD"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDD_SPI"
+      },
+      {
+        "netclass": "ESP_SPI",
+        "pattern": "ESP_SPI"
+      },
+      {
+        "netclass": "ESP_SPI",
+        "pattern": "/ESP_SPI_DQ"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "EAVDD"
       }
     ]
   },
