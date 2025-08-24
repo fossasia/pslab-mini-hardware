@@ -265,15 +265,11 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|4457700|393700|ceeb2c13-0eee-4ba1-9814-14af286df50d|a775844a-5488-4860-a727-0cd3dbb2683c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|4572000|393700|fc25976f-32eb-448b-beaf-27ee8b8b110f|a775844a-5488-4860-a727-0cd3dbb2683c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ],
       [
-        "multiple_net_names|4572000|393700|ceeb2c13-0eee-4ba1-9814-14af286df50d|a775844a-5488-4860-a727-0cd3dbb2683c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
-        ""
-      ],
-      [
-        "multiple_net_names|863600|1397000|f9ed3f2e-b815-4424-82f1-8379f4d6bd5e|4c379c04-226d-4790-b5bb-dcc23fa85d5e|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|863600|1397000|0dc20b5c-8917-4cfc-bed3-dd25aa103cab|4c379c04-226d-4790-b5bb-dcc23fa85d5e|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ]
     ],
@@ -700,6 +696,10 @@
       {
         "netclass": "50_IMP",
         "pattern": "/ESP_ANT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+HV"
       }
     ]
   },
