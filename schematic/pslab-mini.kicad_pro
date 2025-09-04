@@ -270,11 +270,11 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|4572000|393700|dd78c255-cca9-4765-a944-e9392d10246b|a775844a-5488-4860-a727-0cd3dbb2683c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|4572000|393700|4c4dea2f-08e6-485d-98e7-7adc7024bbb7|155b6dbc-67eb-4450-8da6-e70c55a94478|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ],
       [
-        "multiple_net_names|863600|1397000|a895e22a-eaed-47f6-96ed-7889a347109c|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|863600|1397000|ca7a9af1-d796-44f4-bb67-65163ec04217|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ]
     ],
@@ -527,31 +527,37 @@
       {
         "name": "50_IMP",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(0, 0, 194)"
       },
       {
         "name": "ESP_SPI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
+        "schematic_color": "rgb(0, 132, 132)"
+      },
+      {
+        "name": "ESP_SPI2",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgb(0, 132, 132)"
       },
       {
         "name": "ESP_UART",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(0, 132, 132)"
       },
       {
         "name": "Ground",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(0, 0, 0)"
       },
       {
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgb(194, 0, 0)"
       },
       {
@@ -559,7 +565,7 @@
         "diff_pair_width": 0.18,
         "name": "USB_Data",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgb(132, 0, 132)"
       }
     ],
@@ -588,6 +594,15 @@
       ],
       "/ESP_FLASH_WP": [
         "ESP_SPI"
+      ],
+      "/ESP_SPI2_CLK": [
+        "ESP_SPI2"
+      ],
+      "/ESP_SPI2_MISO": [
+        "ESP_SPI2"
+      ],
+      "/ESP_SPI2_MOSI": [
+        "ESP_SPI2"
       ],
       "/ESP_SPI_CLK": [
         "ESP_SPI"

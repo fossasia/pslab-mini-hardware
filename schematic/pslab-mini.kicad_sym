@@ -808,24 +808,6 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 17.78 0)
-				(length 2.54)
-				(name "GPIO3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
 				(at -22.86 15.24 0)
 				(length 2.54)
 				(name "GPIO8"
@@ -1262,7 +1244,25 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 10.16 180)
+				(at 22.86 6.35 180)
+				(length 2.54)
+				(name "GPIO3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 22.86 3.81 180)
 				(length 2.54)
 				(name "MTMS"
 					(effects
@@ -1280,7 +1280,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 7.62 180)
+				(at 22.86 1.27 180)
 				(length 2.54)
 				(name "MTDI"
 					(effects
@@ -1298,7 +1298,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 5.08 180)
+				(at 22.86 -1.27 180)
 				(length 2.54)
 				(name "MTCK"
 					(effects
@@ -1316,7 +1316,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 22.86 -3.81 180)
 				(length 2.54)
 				(name "MTDO"
 					(effects
@@ -1334,7 +1334,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -2.54 180)
+				(at 22.86 -7.62 180)
 				(length 2.54)
 				(name "SPIHD"
 					(effects
@@ -1352,7 +1352,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -5.08 180)
+				(at 22.86 -10.16 180)
 				(length 2.54)
 				(name "SPIWP"
 					(effects
@@ -1370,7 +1370,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -7.62 180)
+				(at 22.86 -12.7 180)
 				(length 2.54)
 				(name "SPICS0"
 					(effects
