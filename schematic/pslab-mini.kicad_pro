@@ -643,6 +643,15 @@
       "Net-(U11-SPIQ)": [
         "ESP_SPI"
       ],
+      "Net-(U8-SPICLK)": [
+        "ESP_SPI"
+      ],
+      "Net-(U8-SPID)": [
+        "ESP_SPI"
+      ],
+      "Net-(U8-SPIQ)": [
+        "ESP_SPI"
+      ],
       "VBUS": [
         "Power"
       ],
@@ -784,7 +793,7 @@
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
