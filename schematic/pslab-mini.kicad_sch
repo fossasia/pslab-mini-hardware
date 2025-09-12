@@ -3240,6 +3240,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Trim"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 1.524 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C_Trim"
+				(at 3.048 -3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Trimmable capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "trimmer variable capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Trim_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.381 3.048)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 2.159 2.032)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.048)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.048)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Crystal"
 			(pin_numbers
 				(hide yes)
@@ -10379,148 +10544,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "pslab-mini:STC3MA06-T1"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 8.89 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "STC3MA06-T1"
-				(at 8.89 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "pslab-mini:STC3MA06-T1"
-				(at 8.89 -96.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C22468120.pdf"
-				(at 8.89 -196.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "500@1MHz 2pF~6pF 0%~+50% 100V SMD,4.5x3.2mm Trimmers, Variable Capacitors"
-				(at 0.762 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "STC3MA06-T1_1_1"
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 5.588 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 2.54) (xy 5.588 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.112 2.54) (xy 7.112 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.112 0) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "HOT-END_TERMINAL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 0 180)
-					(length 5.08)
-					(name "COLD(ROTOR)_TERMINAL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "pslab-mini:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
@@ -13126,16 +13149,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 187.96) (xy 144.78 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2247bd85-12b3-40f1-991a-d8137c606c58")
-	)
-	(wire
-		(pts
 			(xy 419.1 212.09) (xy 419.1 214.63)
 		)
 		(stroke
@@ -13463,6 +13476,16 @@
 			(type default)
 		)
 		(uuid "2b87c7ee-4b99-45c6-9937-87a1eb901b37")
+	)
+	(wire
+		(pts
+			(xy 144.78 187.96) (xy 144.78 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bb3c098-fd70-4ec9-9aa0-67e201b4c00a")
 	)
 	(wire
 		(pts
@@ -14586,6 +14609,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 321.31) (xy 128.27 309.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b98ebe9-7eaa-4f74-92d3-ef59dadad4c5")
+	)
+	(wire
+		(pts
 			(xy 29.21 289.56) (xy 29.21 292.1)
 		)
 		(stroke
@@ -15126,7 +15159,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 285.75) (xy 128.27 298.45)
+			(xy 128.27 285.75) (xy 128.27 299.72)
 		)
 		(stroke
 			(width 0)
@@ -15493,6 +15526,16 @@
 			(type default)
 		)
 		(uuid "852941aa-545a-4baf-bf9a-dd690d7decdb")
+	)
+	(wire
+		(pts
+			(xy 140.97 298.45) (xy 140.97 300.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853c0d99-a05a-4497-92d3-f7454a2f4b32")
 	)
 	(polyline
 		(pts
@@ -16816,7 +16859,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 285.75) (xy 140.97 288.29)
+			(xy 140.97 285.75) (xy 140.97 290.83)
 		)
 		(stroke
 			(width 0)
@@ -16866,7 +16909,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 203.2) (xy 144.78 201.93)
+			(xy 144.78 203.2) (xy 144.78 199.39)
 		)
 		(stroke
 			(width 0)
@@ -17933,16 +17976,6 @@
 			(type default)
 		)
 		(uuid "ea364838-7738-4b08-a640-41d1dbb15857")
-	)
-	(wire
-		(pts
-			(xy 128.27 321.31) (xy 128.27 308.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eab6427f-b8a4-4d00-892a-1909945982ba")
 	)
 	(wire
 		(pts
@@ -21181,7 +21214,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000628326f2")
-		(property "Reference" "R41"
+		(property "Reference" "R42"
 			(at 353.568 217.678 90)
 			(effects
 				(font
@@ -21262,7 +21295,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R41")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -21277,7 +21310,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006283c7b9")
-		(property "Reference" "R42"
+		(property "Reference" "R43"
 			(at 351.79 225.044 90)
 			(effects
 				(font
@@ -21356,7 +21389,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R42")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -21459,7 +21492,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000629b792b")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR089"
 			(at 373.38 233.68 0)
 			(effects
 				(font
@@ -21508,7 +21541,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR091")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -21849,7 +21882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01e21ef0-a91e-47b1-bc57-1e8f1c8c9b8a")
-		(property "Reference" "R43"
+		(property "Reference" "R44"
 			(at 401.828 209.804 90)
 			(effects
 				(font
@@ -21921,7 +21954,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R43")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -21936,7 +21969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0209aeb4-c2a1-43e3-b77f-f66090a2057a")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR045"
 			(at 158.75 228.6 0)
 			(effects
 				(font
@@ -21985,7 +22018,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR044")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -22153,7 +22186,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03b5e9e4-8753-4cf9-8973-87880cb3e69e")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR068"
 			(at 246.38 194.31 0)
 			(effects
 				(font
@@ -22203,7 +22236,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR069")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -22218,7 +22251,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06c63f48-3b62-4dab-b736-f9b26bc91079")
-		(property "Reference" "C23"
+		(property "Reference" "C22"
 			(at 153.67 84.074 0)
 			(effects
 				(font
@@ -22290,7 +22323,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C23")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -22647,7 +22680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08943869-6cbe-4610-b859-e6a6659a3b95")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR087"
 			(at 358.14 134.62 0)
 			(effects
 				(font
@@ -22697,7 +22730,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR089")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -22713,7 +22746,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09cd59c9-af01-4e87-a7f6-e59c0bdcd3c8")
-		(property "Reference" "R34"
+		(property "Reference" "R35"
 			(at 302.26 35.56 90)
 			(effects
 				(font
@@ -22792,7 +22825,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R34")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -22959,7 +22992,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d506cfd-98d1-4153-b06c-fb4f243151c6")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR063"
 			(at 232.41 237.49 0)
 			(effects
 				(font
@@ -23008,7 +23041,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR064")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -23248,7 +23281,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0fb5ff51-c688-4225-9322-0ca61909a6f0")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 152.4 157.988 0)
 			(effects
 				(font
@@ -23320,96 +23353,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "pslab-mini:STC3MA06-T1")
-		(at 144.78 201.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ff59cb0-65da-48fd-8178-8c36d7392f2a")
-		(property "Reference" "C35"
-			(at 138.684 197.612 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STC3MA06-T1"
-			(at 140.97 203.962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:STC3MA06-T1"
-			(at 240.97 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C22468120.pdf"
-			(at 340.97 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "500@1MHz 2pF~6pF 0%~+50% 100V SMD,4.5x3.2mm Trimmers, Variable Capacitors"
-			(at 137.16 201.168 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr Number" "STC3MA06-T1"
-			(at 144.78 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number (LCSC)" "C22468120"
-			(at 144.78 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6bce06e5-457c-4c58-82ff-2db7e9c74b20")
-		)
-		(pin "1"
-			(uuid "96902982-0fbc-4785-9341-0ff7fab3f3a9")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C35")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -23518,7 +23462,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11becfb9-290c-4643-9276-902cd652fd93")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR062"
 			(at 231.14 38.1 0)
 			(effects
 				(font
@@ -23568,7 +23512,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR063")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -23801,15 +23745,15 @@
 	)
 	(symbol
 		(lib_id "Device:GDT_2Pin")
-		(at 128.27 303.53 0)
+		(at 128.27 304.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "15c443bd-97e7-43d3-8c1e-4057cf9d22ab")
-		(property "Reference" "GD2"
-			(at 121.412 306.07 90)
+		(property "Reference" "GD1"
+			(at 123.19 306.578 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23818,16 +23762,17 @@
 			)
 		)
 		(property "Value" "SMD3216-090N"
-			(at 123.444 310.642 90)
+			(at 123.444 311.912 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "pslab-mini:SMD3216-090N"
-			(at 128.27 303.53 90)
+			(at 128.27 304.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23836,7 +23781,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C22439020.pdf"
-			(at 128.27 303.53 90)
+			(at 128.27 304.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23845,7 +23790,7 @@
 			)
 		)
 		(property "Description" "Gas Discharge Tube with 2 Pins"
-			(at 128.27 303.53 0)
+			(at 128.27 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23854,7 +23799,7 @@
 			)
 		)
 		(property "Mfr Number" "SMD3216-090N"
-			(at 128.27 303.53 90)
+			(at 128.27 304.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23863,7 +23808,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C22439020"
-			(at 128.27 303.53 90)
+			(at 128.27 304.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23880,7 +23825,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "GD2")
+					(reference "GD1")
 					(unit 1)
 				)
 			)
@@ -23895,7 +23840,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15d2c57f-e469-489c-8d75-3207a322bc5e")
-		(property "Reference" "R39"
+		(property "Reference" "R40"
 			(at 328.93 84.074 90)
 			(effects
 				(font
@@ -23974,7 +23919,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R39")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -23991,7 +23936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "162e58aa-27c2-49a3-b342-ce58b2dc5f33")
-		(property "Reference" "C28"
+		(property "Reference" "C30"
 			(at 173.99 124.4599 0)
 			(effects
 				(font
@@ -24063,7 +24008,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C28")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -24360,7 +24305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e50e888-b7ff-4d54-bf3f-826343a7d9fc")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR051"
 			(at 185.42 140.97 0)
 			(effects
 				(font
@@ -24410,7 +24355,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR055")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -24426,7 +24371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2049e2c6-e360-4466-94d8-7ccf834375f6")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR044"
 			(at 156.21 171.45 0)
 			(effects
 				(font
@@ -24476,7 +24421,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR045")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -24664,7 +24609,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25f4a6ae-278a-4301-9bac-8c32242f7ab4")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR046"
 			(at 163.83 139.7 0)
 			(effects
 				(font
@@ -24714,7 +24659,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR048")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -25063,7 +25008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c43048e-2aa9-46df-8ac2-656a66be2848")
-		(property "Reference" "R26"
+		(property "Reference" "R27"
 			(at 247.015 315.849 90)
 			(effects
 				(font
@@ -25144,7 +25089,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R26")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -25439,7 +25384,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f3ef064-8a3a-48bf-a6cc-f81006472840")
-		(property "Reference" "C33"
+		(property "Reference" "C35"
 			(at 197.612 157.734 0)
 			(effects
 				(font
@@ -25511,7 +25456,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C33")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -25526,7 +25471,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "325ee1e1-ac2f-46e4-9ab2-595d4cc2ab2b")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0101"
 			(at 415.29 173.99 0)
 			(effects
 				(font
@@ -25576,7 +25521,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR0103")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -25591,7 +25536,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "328810ec-3cd4-409b-9bf0-6ee806d42a3b")
-		(property "Reference" "R44"
+		(property "Reference" "R45"
 			(at 403.86 33.02 90)
 			(effects
 				(font
@@ -25670,7 +25615,94 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R44")
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Trim")
+		(at 144.78 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33229b1f-a24e-4fe5-aaaa-de7732897091")
+		(property "Reference" "C18"
+			(at 138.43 198.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2pF~6pF"
+			(at 140.716 200.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pslab-mini:STC3MA06-T1"
+			(at 144.78 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C22468120.pdf"
+			(at 144.78 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trimmable capacitor"
+			(at 144.78 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "STC3MA06-T1"
+			(at 144.78 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C22468120"
+			(at 144.78 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "98663bcf-8dee-4875-be96-51d02c2af1d9")
+		)
+		(pin "1"
+			(uuid "9fd4a76f-89be-4be8-9d38-8c4bcb7b367e")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -25750,7 +25782,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "365e9265-ad51-45f1-a45e-bcf44fc47f00")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR098"
 			(at 407.67 118.11 0)
 			(effects
 				(font
@@ -25800,7 +25832,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR0100")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -25881,7 +25913,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37ea1133-73d4-4898-b4f5-51025297c62f")
-		(property "Reference" "R11"
+		(property "Reference" "R9"
 			(at 160.02 293.878 0)
 			(effects
 				(font
@@ -25962,7 +25994,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R11")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -26225,7 +26257,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b27b1e8-a5d6-4e8f-956f-e12f21d61ec6")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 135.636 185.42 90)
 			(effects
 				(font
@@ -26306,7 +26338,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -26321,7 +26353,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c502b0d-69d7-4ad9-88f8-a87412a03d62")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 165.1 194.818 0)
 			(effects
 				(font
@@ -26402,7 +26434,72 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R9")
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCOM")
+		(at 171.45 234.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d65ab25-ff7d-45f2-aea0-ccda9515549a")
+		(property "Reference" "#PWR047"
+			(at 171.45 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDDA"
+			(at 171.45 230.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filtered Regulated +3.3 V level"
+			(at 171.45 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca2c48ac-d280-42a5-a3e4-c57c1776d999")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -26482,7 +26579,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ff06614-a736-4262-95ce-5b515280e230")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR091"
 			(at 379.73 162.56 0)
 			(effects
 				(font
@@ -26532,7 +26629,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR093")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -26612,7 +26709,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41281ca6-65d4-438f-a7ee-ada8ae5a2489")
-		(property "Reference" "C29"
+		(property "Reference" "C31"
 			(at 179.07 157.988 0)
 			(effects
 				(font
@@ -26684,7 +26781,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C29")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -26699,7 +26796,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "416d2849-46f3-4b51-a03f-e2bf9e944345")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR069"
 			(at 246.38 212.09 0)
 			(effects
 				(font
@@ -26748,7 +26845,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR070")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -26860,7 +26957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43b726da-c029-4be5-b47d-933dda0fe76d")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR077"
 			(at 308.61 224.79 0)
 			(effects
 				(font
@@ -26910,7 +27007,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR079")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -27086,7 +27183,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a981d87-2290-4d32-9de7-851332613f46")
-		(property "Reference" "C34"
+		(property "Reference" "C36"
 			(at 207.01 157.988 0)
 			(effects
 				(font
@@ -27158,7 +27255,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C34")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -27238,7 +27335,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f062b81-54a0-409c-b536-93a69f686089")
-		(property "Reference" "R45"
+		(property "Reference" "R23"
 			(at 221.488 242.57 90)
 			(effects
 				(font
@@ -27319,7 +27416,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R45")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -27400,7 +27497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5177fba8-5b83-473e-9d58-18ec2477e6c0")
-		(property "Reference" "R35"
+		(property "Reference" "R36"
 			(at 307.34 35.56 90)
 			(effects
 				(font
@@ -27479,7 +27576,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R35")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -27494,7 +27591,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "519c8379-6960-4ec4-8c30-edd8a2715160")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR086"
 			(at 358.14 119.38 0)
 			(effects
 				(font
@@ -27544,7 +27641,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR088")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -27559,7 +27656,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "539fc1ae-90ec-4770-8523-d4f0bf953a15")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 160.02 308.864 0)
 			(effects
 				(font
@@ -27640,7 +27737,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -27854,7 +27951,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "59199587-0c2b-4b0d-b8ae-7ed0864eccc8")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at 226.06 226.314 0)
 			(effects
 				(font
@@ -27935,7 +28032,73 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R23")
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 247.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "59a8f1dd-9634-4795-b301-8b15ef7f7e49")
+		(property "Reference" "TP8"
+			(at 248.666 245.872 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Vref"
+			(at 248.92 249.428 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 246.38 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 246.38 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea33103c-fccd-4141-ad8f-cc4da711a541")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -27950,7 +28113,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a3dee37-c841-42df-8979-2d0fbd6a2984")
-		(property "Reference" "C37"
+		(property "Reference" "C38"
 			(at 244.348 213.106 90)
 			(effects
 				(font
@@ -28022,7 +28185,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C37")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -28123,7 +28286,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b718452-7110-4a38-9b08-8e012a766e5f")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR080"
 			(at 325.12 190.5 0)
 			(effects
 				(font
@@ -28174,7 +28337,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR082")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -28365,7 +28528,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5fd5d01c-637b-44e5-a78d-f4c1cf02996f")
-		(property "Reference" "C19"
+		(property "Reference" "C24"
 			(at 148.336 211.328 0)
 			(effects
 				(font
@@ -28437,7 +28600,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C19")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -28452,7 +28615,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "601118fd-2b8a-4b27-a844-a6794bf0910c")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR039"
 			(at 128.27 327.66 0)
 			(effects
 				(font
@@ -28501,7 +28664,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR040")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -28603,7 +28766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "64bfc5a0-03f7-4e7e-bab4-86b2d80241ed")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at 171.45 198.374 90)
 			(effects
 				(font
@@ -28684,7 +28847,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R15")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -28699,7 +28862,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66db19dc-16c1-474f-9bd0-bc0d65e7f852")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR056"
 			(at 195.58 242.57 0)
 			(effects
 				(font
@@ -28749,7 +28912,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR053")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -28860,7 +29023,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69f0cdc8-61b9-4964-9194-6e65a5feacc4")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR067"
 			(at 245.11 303.53 0)
 			(effects
 				(font
@@ -28909,7 +29072,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR068")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -28924,7 +29087,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b2b5dca-fb12-4a6e-a7e5-aa758237e64a")
-		(property "Reference" "R40"
+		(property "Reference" "R41"
 			(at 353.568 209.804 90)
 			(effects
 				(font
@@ -28996,7 +29159,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R40")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -29252,7 +29415,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c8c2189-d997-45f3-b500-c829efa9b983")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR066"
 			(at 245.11 287.02 0)
 			(effects
 				(font
@@ -29302,7 +29465,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR067")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -29449,7 +29612,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f6ec1dc-b761-49e2-aa53-25ddb5e99cae")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR0102"
 			(at 426.72 64.77 0)
 			(effects
 				(font
@@ -29499,7 +29662,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR0104")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -29514,7 +29677,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fb01102-13e5-4e44-bb08-4878d41aef97")
-		(property "Reference" "R13"
+		(property "Reference" "R14"
 			(at 173.99 237.998 0)
 			(effects
 				(font
@@ -29523,7 +29686,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "21.5k"
+		(property "Value" "10k"
 			(at 173.99 240.538 0)
 			(effects
 				(font
@@ -29541,7 +29704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C705747.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C95204.pdf"
 			(at 171.45 238.76 0)
 			(effects
 				(font
@@ -29568,7 +29731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "RT0603BRD0721K5L"
+		(property "Mfr Number" "RT0603BRD0710KL"
 			(at 171.45 238.76 0)
 			(effects
 				(font
@@ -29577,7 +29740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C705747"
+		(property "Part Number (LCSC)" "C95204"
 			(at 171.45 238.76 0)
 			(effects
 				(font
@@ -29595,7 +29758,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R13")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -29610,7 +29773,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fdb18a9-cb69-469e-a673-dd0e9b4f6e4a")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR055"
 			(at 189.23 209.55 0)
 			(effects
 				(font
@@ -29660,7 +29823,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR052")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -29675,7 +29838,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70c06f12-0db5-4a39-ad17-0816ca060d21")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR093"
 			(at 379.73 180.34 0)
 			(effects
 				(font
@@ -29725,7 +29888,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR095")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -29741,7 +29904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71fe874a-fa75-4295-bf0d-e9f9739ebadd")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR076"
 			(at 308.61 134.62 0)
 			(effects
 				(font
@@ -29791,7 +29954,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR078")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -29869,7 +30032,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74af24f2-703c-4150-a90c-6fa36658ed77")
-		(property "Reference" "U5"
+		(property "Reference" "U7"
 			(at 205.232 239.268 0)
 			(effects
 				(font
@@ -29948,7 +30111,7 @@
 		(instances
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "U5")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -30028,7 +30191,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78c5f1ae-b747-40bb-be71-96ba2cf99986")
-		(property "Reference" "C18"
+		(property "Reference" "C23"
 			(at 159.004 195.326 0)
 			(effects
 				(font
@@ -30100,7 +30263,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C18")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -30115,7 +30278,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79e78711-2f13-4954-b2dc-3b1a6ca7dc85")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR078"
 			(at 309.88 30.48 0)
 			(effects
 				(font
@@ -30165,7 +30328,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR080")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -30267,7 +30430,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a0f6aaa-5fa7-478a-9256-9e0bac7118ef")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR073"
 			(at 299.72 30.48 0)
 			(effects
 				(font
@@ -30317,7 +30480,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR075")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -30397,7 +30560,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7b0c0877-1faa-456a-8ff7-7deb2e6508db")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR075"
 			(at 308.61 119.38 0)
 			(effects
 				(font
@@ -30447,7 +30610,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR077")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -30763,7 +30926,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d8cfec4-4a7c-4371-9303-59285a2cfe45")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR092"
 			(at 369.57 165.1 0)
 			(effects
 				(font
@@ -30814,7 +30977,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR094")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -30880,95 +31043,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "pslab-mini:STC3MA06-T1")
-		(at 140.97 300.99 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7f469f5b-6592-440d-82f2-5ab32e48bd53")
-		(property "Reference" "C39"
-			(at 134.874 296.672 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STC3MA06-T1"
-			(at 137.16 303.022 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "pslab-mini:STC3MA06-T1"
-			(at 237.16 292.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C22468120.pdf"
-			(at 337.16 292.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "500@1MHz 2pF~6pF 0%~+50% 100V SMD,4.5x3.2mm Trimmers, Variable Capacitors"
-			(at 133.35 300.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr Number" "STC3MA06-T1"
-			(at 140.97 300.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number (LCSC)" "C22468120"
-			(at 140.97 300.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d7f55d10-9159-4c5f-845d-64b6bd270803")
-		)
-		(pin "1"
-			(uuid "0fa5844a-7416-4093-97b1-dec3c3b6c842")
-		)
-		(instances
-			(project ""
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -31070,7 +31144,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82167bf6-1ced-4425-80e2-22d925e19f50")
-		(property "Reference" "U7"
+		(property "Reference" "U5"
 			(at 182.372 297.688 0)
 			(effects
 				(font
@@ -31152,7 +31226,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "U7")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -31168,7 +31242,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82623787-8ffc-4406-8ecf-2e3f687d75c8")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR090"
 			(at 369.57 152.4 0)
 			(effects
 				(font
@@ -31219,7 +31293,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR092")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -31321,7 +31395,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8285a317-ab2c-4e34-8661-41808456c7e9")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR040"
 			(at 130.81 228.6 0)
 			(effects
 				(font
@@ -31370,7 +31444,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR039")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -31474,7 +31548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83f80df8-b458-43d8-ad43-70a499ed7857")
-		(property "Reference" "R29"
+		(property "Reference" "R30"
 			(at 268.478 67.056 90)
 			(effects
 				(font
@@ -31553,7 +31627,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R29")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -31568,7 +31642,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84390d70-537e-4f1b-bac1-97c13cfd0fd1")
-		(property "Reference" "R32"
+		(property "Reference" "R33"
 			(at 282.194 101.6 90)
 			(effects
 				(font
@@ -31638,7 +31712,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R32")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -31740,7 +31814,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84e8f3cc-c918-474b-8f49-6011c8eb44c2")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR070"
 			(at 273.05 236.22 0)
 			(effects
 				(font
@@ -31789,7 +31863,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR072")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -32068,7 +32142,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8810e6c1-d003-4116-bcd2-68753d4d5a5d")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR053"
 			(at 186.69 307.34 0)
 			(effects
 				(font
@@ -32118,7 +32192,7 @@
 		(instances
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR057")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -32133,7 +32207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b2b890b-9d15-4773-8697-84073d246515")
-		(property "Reference" "C38"
+		(property "Reference" "C39"
 			(at 247.396 304.8 90)
 			(effects
 				(font
@@ -32205,7 +32279,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C38")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -32220,7 +32294,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b87c18c-45a8-48e1-a4ba-71dde539a5d3")
-		(property "Reference" "C17"
+		(property "Reference" "C19"
 			(at 142.24 157.988 0)
 			(effects
 				(font
@@ -32292,7 +32366,7 @@
 		(instances
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C17")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -32308,7 +32382,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d4681d8-ed85-4cf9-a3bd-366d76feb91e")
-		(property "Reference" "R37"
+		(property "Reference" "R38"
 			(at 328.93 73.406 90)
 			(effects
 				(font
@@ -32387,7 +32461,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R37")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -32453,6 +32527,93 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Trim")
+		(at 140.97 294.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "929710b9-ea09-480a-8c7e-49db2a1d9dea")
+		(property "Reference" "C17"
+			(at 134.62 296.926 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2pF~6pF"
+			(at 136.906 298.704 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pslab-mini:STC3MA06-T1"
+			(at 140.97 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C22468120.pdf"
+			(at 140.97 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trimmable capacitor"
+			(at 140.97 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "STC3MA06-T1"
+			(at 140.97 294.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C22468120"
+			(at 140.97 294.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf139c21-d659-44d6-a31b-5704e00c8b89")
+		)
+		(pin "1"
+			(uuid "68aaf76c-2667-43b7-a4d4-dcbdcd5663ad")
+		)
+		(instances
+			(project ""
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -32670,7 +32831,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93c167a1-1859-491d-add3-e33d50a79448")
-		(property "Reference" "R28"
+		(property "Reference" "R29"
 			(at 267.462 288.544 90)
 			(effects
 				(font
@@ -32751,7 +32912,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R28")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -32897,7 +33058,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "963db56f-434c-41d5-9d9a-9512918d1ec9")
-		(property "Reference" "C22"
+		(property "Reference" "C26"
 			(at 155.956 250.698 0)
 			(effects
 				(font
@@ -32969,7 +33130,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C22")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -32985,7 +33146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "975b3b4d-975f-45cf-b6c9-3aea7a590abc")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR085"
 			(at 358.14 107.95 0)
 			(effects
 				(font
@@ -33035,7 +33196,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR087")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -33050,7 +33211,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "97ce45eb-de31-4623-8554-05dbfd85881f")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR088"
 			(at 365.76 30.48 0)
 			(effects
 				(font
@@ -33100,7 +33261,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR090")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -33210,7 +33371,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9936841f-a9b7-4608-bb0a-943a95f6daef")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR0100"
 			(at 425.45 171.45 0)
 			(effects
 				(font
@@ -33260,7 +33421,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR0102")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -33378,7 +33539,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c499d4b-c09a-46cd-9b23-d37e785558c0")
-		(property "Reference" "R10"
+		(property "Reference" "R12"
 			(at 165.1 211.074 0)
 			(effects
 				(font
@@ -33459,7 +33620,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R10")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -33633,7 +33794,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e1718d6-d2de-4c32-8dc6-91c59995a5f7")
-		(property "Reference" "R27"
+		(property "Reference" "R28"
 			(at 264.922 195.58 90)
 			(effects
 				(font
@@ -33714,7 +33875,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R27")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -34108,7 +34269,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a11fd7bb-e229-4337-aea7-1813c680bfe9")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR084"
 			(at 358.14 30.48 0)
 			(effects
 				(font
@@ -34158,7 +34319,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR086")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -34173,7 +34334,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a38d68ce-4380-4749-945d-a147eb15bde4")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR054"
 			(at 189.23 201.93 0)
 			(effects
 				(font
@@ -34223,7 +34384,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR051")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -34325,7 +34486,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a476620c-9368-430c-b439-b3f85dc03820")
-		(property "Reference" "C26"
+		(property "Reference" "C28"
 			(at 161.29 157.988 0)
 			(effects
 				(font
@@ -34397,7 +34558,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C26")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -34412,7 +34573,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4ce4ad9-5a4d-48f8-b2f7-8a8ddad1881f")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR096"
 			(at 406.4 64.77 0)
 			(effects
 				(font
@@ -34462,7 +34623,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR098")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -34477,7 +34638,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a56178ac-b386-4aea-8981-65bf27c01cb6")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR083"
 			(at 347.98 30.48 0)
 			(effects
 				(font
@@ -34527,7 +34688,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR085")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -34695,7 +34856,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8a7464f-a2c6-4a09-ad0c-6dd293aa702f")
-		(property "Reference" "R36"
+		(property "Reference" "R37"
 			(at 312.42 35.56 90)
 			(effects
 				(font
@@ -34774,7 +34935,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R36")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -34983,7 +35144,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae67eae2-6c28-4701-8e03-4bc5fe726b2b")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR079"
 			(at 316.23 199.39 0)
 			(effects
 				(font
@@ -35033,7 +35194,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR081")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -35048,7 +35209,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aec406a7-c9da-48e7-a61e-83780924e2dd")
-		(property "Reference" "C27"
+		(property "Reference" "C29"
 			(at 170.18 157.988 0)
 			(effects
 				(font
@@ -35120,7 +35281,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C27")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -35724,7 +35885,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5a10222-4eee-4bfb-9570-87192a126db6")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR048"
 			(at 171.45 267.97 0)
 			(effects
 				(font
@@ -35773,7 +35934,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR047")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -35853,7 +36014,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8e8385d-da77-4f77-8cfa-2bf1759095bf")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR057"
 			(at 195.58 261.62 0)
 			(effects
 				(font
@@ -35902,7 +36063,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR054")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -35982,7 +36143,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd03e480-e6e9-4880-ac25-8694f9946349")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR081"
 			(at 331.47 229.87 0)
 			(effects
 				(font
@@ -36031,7 +36192,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR083")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -36047,7 +36208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf9c4d9e-f968-4e53-83f2-f1f80bc792a3")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR094"
 			(at 369.57 182.88 0)
 			(effects
 				(font
@@ -36098,7 +36259,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR096")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -36439,8 +36600,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c33adf84-493b-4fb5-a79d-9db5a26a8768")
-		(property "Reference" "GD1"
-			(at 134.112 214.63 90)
+		(property "Reference" "GD2"
+			(at 125.73 207.772 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36455,6 +36616,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "pslab-mini:SMD3216-090N"
@@ -36511,7 +36673,7 @@
 		(instances
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "GD1")
+					(reference "GD2")
 					(unit 1)
 				)
 			)
@@ -36735,71 +36897,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCOM")
-		(at 171.45 234.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c7c6df4c-7ba1-4103-b09a-2454d65ce7ad")
-		(property "Reference" "#PWR046"
-			(at 171.45 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 171.45 230.886 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Regulated +3.3 V level"
-			(at 171.45 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "10e9dfa0-7d43-4698-a3b3-f99761c16710")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pslab-mini:AMS1117-3.3")
 		(at 41.91 279.4 0)
 		(unit 1)
@@ -37004,7 +37101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbf51c9a-3079-412c-a8a3-d1aab85b7928")
-		(property "Reference" "C25"
+		(property "Reference" "C27"
 			(at 160.02 124.4599 0)
 			(effects
 				(font
@@ -37076,7 +37173,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C25")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -37091,7 +37188,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd60cac3-8bf7-42a3-86ef-b6752c4b5465")
-		(property "Reference" "R25"
+		(property "Reference" "R26"
 			(at 244.475 224.409 90)
 			(effects
 				(font
@@ -37172,7 +37269,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R25")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -37471,7 +37568,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfd8c192-9e60-4ef1-a0d8-c2385320373d")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR097"
 			(at 407.67 93.98 0)
 			(effects
 				(font
@@ -37521,7 +37618,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR099")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -37536,7 +37633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfe2df65-afc0-4452-9ce7-e3fb1a91bca4")
-		(property "Reference" "C36"
+		(property "Reference" "C37"
 			(at 232.156 254.254 0)
 			(effects
 				(font
@@ -37608,7 +37705,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C36")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -37817,7 +37914,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d094cfc6-149f-45a8-a686-637b8faf4d11")
-		(property "Reference" "R38"
+		(property "Reference" "R39"
 			(at 328.93 78.486 90)
 			(effects
 				(font
@@ -37896,7 +37993,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R38")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -38215,7 +38312,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8b00d32-816b-4878-9886-70620bb66e5b")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR064"
 			(at 234.95 267.97 0)
 			(effects
 				(font
@@ -38264,7 +38361,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR066")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -38343,7 +38440,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "db7691f6-eb51-4de9-98a6-434d5100f5bf")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR072"
 			(at 287.02 93.98 0)
 			(effects
 				(font
@@ -38393,7 +38490,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR074")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -38828,7 +38925,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2f542ea-ad75-4d14-8d50-d05e951439c0")
-		(property "Reference" "R16"
+		(property "Reference" "R13"
 			(at 168.275 295.529 90)
 			(effects
 				(font
@@ -38909,7 +39006,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R16")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -39163,7 +39260,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e527e34a-4a0e-4e61-9894-857723d17e90")
-		(property "Reference" "R31"
+		(property "Reference" "R32"
 			(at 269.748 98.044 90)
 			(effects
 				(font
@@ -39242,7 +39339,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R31")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -39257,7 +39354,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6770be8-387a-4c60-96b4-2f9f43068567")
-		(property "Reference" "R8"
+		(property "Reference" "R7"
 			(at 133.096 283.21 90)
 			(effects
 				(font
@@ -39338,7 +39435,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R8")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -39353,7 +39450,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e683315b-8f77-4b6e-953d-b421dad78763")
-		(property "Reference" "C30"
+		(property "Reference" "C32"
 			(at 181.102 127.254 0)
 			(effects
 				(font
@@ -39425,7 +39522,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C30")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -39440,7 +39537,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6f27a3c-0e48-4205-b962-8c9b610256f6")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR052"
 			(at 186.69 299.72 0)
 			(effects
 				(font
@@ -39490,7 +39587,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR056")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -39505,7 +39602,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e74b5eb6-6412-424a-8466-007c7f179451")
-		(property "Reference" "R24"
+		(property "Reference" "R25"
 			(at 228.6 316.484 0)
 			(effects
 				(font
@@ -39586,7 +39683,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R24")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -39601,7 +39698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e873ccb1-5032-4d43-8848-558feeecf1f9")
-		(property "Reference" "C31"
+		(property "Reference" "C33"
 			(at 187.96 157.988 0)
 			(effects
 				(font
@@ -39673,7 +39770,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C31")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -39935,7 +40032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efb0ae75-a16e-48b5-aa35-2214db2b09fd")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR082"
 			(at 341.63 115.57 0)
 			(effects
 				(font
@@ -39985,7 +40082,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR084")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -40065,7 +40162,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1115e8d-9bab-41f4-9e38-6ad0efd33a5e")
-		(property "Reference" "R30"
+		(property "Reference" "R31"
 			(at 269.494 95.504 90)
 			(effects
 				(font
@@ -40144,7 +40241,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R30")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -40355,7 +40452,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2ba07c9-e3a3-4f82-8974-2043a0642b6f")
-		(property "Reference" "R14"
+		(property "Reference" "R15"
 			(at 173.99 250.444 0)
 			(effects
 				(font
@@ -40364,7 +40461,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "21.5k"
+		(property "Value" "10k"
 			(at 173.99 252.984 0)
 			(effects
 				(font
@@ -40382,7 +40479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C705747.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C95204.pdf"
 			(at 171.45 251.46 0)
 			(effects
 				(font
@@ -40409,7 +40506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "RT0603BRD0721K5L"
+		(property "Mfr Number" "RT0603BRD0710KL"
 			(at 171.45 251.46 0)
 			(effects
 				(font
@@ -40418,7 +40515,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C705747"
+		(property "Part Number (LCSC)" "C95204"
 			(at 171.45 251.46 0)
 			(effects
 				(font
@@ -40436,7 +40533,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R14")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -40872,7 +40969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f571c82c-50b8-40dc-a082-4eab3a34a1dc")
-		(property "Reference" "C32"
+		(property "Reference" "C34"
 			(at 194.818 127.508 0)
 			(effects
 				(font
@@ -40944,7 +41041,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "C32")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -41025,7 +41122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6826f3a-f18f-442e-9fc0-b3752d04133b")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR074"
 			(at 304.8 30.48 0)
 			(effects
 				(font
@@ -41075,7 +41172,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR076")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -41090,7 +41187,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f682901a-f99e-4705-a4ce-c7dffa96ac0d")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR099"
 			(at 416.56 64.77 0)
 			(effects
 				(font
@@ -41140,7 +41237,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR0101")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -41392,7 +41489,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f912847c-6742-40ca-b1c2-ef8988515d69")
-		(property "Reference" "R33"
+		(property "Reference" "R34"
 			(at 289.56 101.6 90)
 			(effects
 				(font
@@ -41462,7 +41559,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R33")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -41542,7 +41639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa3304ff-bd69-47a7-9b9d-5e9876fac92f")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR071"
 			(at 275.59 327.66 0)
 			(effects
 				(font
@@ -41591,7 +41688,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR073")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -41855,7 +41952,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe9b6a8a-52c4-41bb-bd29-99669f78c055")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR095"
 			(at 406.4 30.48 0)
 			(effects
 				(font
@@ -41905,7 +42002,7 @@
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "#PWR097")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
