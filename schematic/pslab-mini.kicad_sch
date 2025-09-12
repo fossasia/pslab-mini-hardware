@@ -10033,7 +10033,7 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 0 0 0)
+				(at 0.254 20.828 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -10042,7 +10042,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.lcsc.com/datasheet/C384594.pdf"
-				(at 0 0 0)
+				(at 0.254 19.812 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -10051,7 +10051,7 @@
 				)
 			)
 			(property "Description" "Buck Adjustable 3A 4V~18V SOT-23-6 DC-DC Converters ROHS"
-				(at 0 0 0)
+				(at 0 17.272 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -10060,7 +10060,7 @@
 				)
 			)
 			(property "MPN" "MT2496"
-				(at 0 0 0)
+				(at 0 17.272 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -10069,7 +10069,7 @@
 				)
 			)
 			(property "LCSC#" "C384594"
-				(at 0 0 0)
+				(at -1.016 19.304 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -10099,7 +10099,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10117,7 +10117,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10135,7 +10135,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10153,7 +10153,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10171,7 +10171,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10189,7 +10189,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -27959,7 +27959,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2pF"
+		(property "Value" "1.1pF"
 			(at 244.094 215.9 90)
 			(effects
 				(font
@@ -27977,7 +27977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C513620.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3863168.pdf"
 			(at 246.38 214.63 0)
 			(effects
 				(font
@@ -27995,7 +27995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603BRNPO9BN2R0"
+		(property "Mfr Number" "GQM1875C2E1R1BB12D"
 			(at 246.38 214.63 90)
 			(effects
 				(font
@@ -28004,7 +28004,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C513620"
+		(property "Part Number (LCSC)" "C3863168"
 			(at 246.38 214.63 90)
 			(effects
 				(font
@@ -32142,7 +32142,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2pF"
+		(property "Value" "1.1pF"
 			(at 247.142 307.594 90)
 			(effects
 				(font
@@ -32160,7 +32160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C513620.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3863168.pdf"
 			(at 248.92 306.07 0)
 			(effects
 				(font
@@ -32178,7 +32178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603BRNPO9BN2R0"
+		(property "Mfr Number" "GQM1875C2E1R1BB12D"
 			(at 248.92 306.07 90)
 			(effects
 				(font
@@ -32187,7 +32187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C513620"
+		(property "Part Number (LCSC)" "C3863168"
 			(at 248.92 306.07 90)
 			(effects
 				(font
