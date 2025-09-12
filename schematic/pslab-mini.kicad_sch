@@ -21657,7 +21657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1653.pdf"
 			(at 275.59 304.8 0)
 			(effects
 				(font
@@ -21675,7 +21675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603KRX7R9BB104"
+		(property "Mfr Number" "CL10C220JB8NNNC"
 			(at 275.59 304.8 90)
 			(effects
 				(font
@@ -21684,7 +21684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C14663"
+		(property "Part Number (LCSC)" "C1653"
 			(at 275.59 304.8 90)
 			(effects
 				(font
@@ -26568,7 +26568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C77108.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C167472.pdf"
 			(at 346.71 93.98 0)
 			(effects
 				(font
@@ -26595,7 +26595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C77108"
+		(property "Part Number (LCSC)" "C167472"
 			(at 346.71 93.98 90)
 			(effects
 				(font
@@ -26604,7 +26604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "LQG15HS2N7S02D"
+		(property "Mfr Number" "LQW15AN24NG00D"
 			(at 346.71 93.98 90)
 			(effects
 				(font
@@ -27756,7 +27756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C513620.pdf"
 			(at 246.38 214.63 0)
 			(effects
 				(font
@@ -27774,7 +27774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603KRX7R9BB104"
+		(property "Mfr Number" "CC0603BRNPO9BN2R0"
 			(at 246.38 214.63 90)
 			(effects
 				(font
@@ -27783,7 +27783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C14663"
+		(property "Part Number (LCSC)" "C513620"
 			(at 246.38 214.63 90)
 			(effects
 				(font
@@ -28171,7 +28171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C501849.pdf"
 			(at 147.32 212.09 0)
 			(effects
 				(font
@@ -28189,7 +28189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603KRX7R9BB104"
+		(property "Mfr Number" "0603CG900J500NT"
 			(at 147.32 212.09 90)
 			(effects
 				(font
@@ -28198,7 +28198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C14663"
+		(property "Part Number (LCSC)" "C501849"
 			(at 147.32 212.09 90)
 			(effects
 				(font
@@ -29968,7 +29968,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 344.932 124.46 0)
 			(effects
 				(font
@@ -31352,7 +31352,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 337.566 124.46 0)
 			(effects
 				(font
@@ -31850,7 +31850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C513620.pdf"
 			(at 248.92 306.07 0)
 			(effects
 				(font
@@ -31868,7 +31868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603KRX7R9BB104"
+		(property "Mfr Number" "CC0603BRNPO9BN2R0"
 			(at 248.92 306.07 90)
 			(effects
 				(font
@@ -31877,7 +31877,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C14663"
+		(property "Part Number (LCSC)" "C513620"
 			(at 248.92 306.07 90)
 			(effects
 				(font
@@ -32605,7 +32605,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 160.9852 255.27 0)
 			(effects
 				(font
@@ -32614,7 +32614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KOQNNNE_C1713.pdf"
 			(at 160.02 251.46 0)
 			(effects
 				(font
@@ -32632,7 +32632,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603KRX7R9BB104"
+		(property "Mfr Number" "CL21A106KOQNNNE"
 			(at 160.02 251.46 90)
 			(effects
 				(font
@@ -32641,7 +32641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C14663"
+		(property "Part Number (LCSC)" "C1713"
 			(at 160.02 251.46 90)
 			(effects
 				(font
@@ -37694,7 +37694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1653.pdf"
 			(at 273.05 213.36 0)
 			(effects
 				(font
@@ -37712,7 +37712,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603KRX7R9BB104"
+		(property "Mfr Number" "CL10C220JB8NNNC"
 			(at 273.05 213.36 90)
 			(effects
 				(font
@@ -37721,7 +37721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C14663"
+		(property "Part Number (LCSC)" "C1653"
 			(at 273.05 213.36 90)
 			(effects
 				(font
@@ -40255,7 +40255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C501849.pdf"
 			(at 147.32 309.88 0)
 			(effects
 				(font
@@ -40273,7 +40273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "CC0603KRX7R9BB104"
+		(property "Mfr Number" "0603CG900J500NT"
 			(at 147.32 309.88 90)
 			(effects
 				(font
@@ -40282,7 +40282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C14663"
+		(property "Part Number (LCSC)" "C501849"
 			(at 147.32 309.88 90)
 			(effects
 				(font
