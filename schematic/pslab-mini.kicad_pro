@@ -270,11 +270,11 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|4572000|393700|4c4dea2f-08e6-485d-98e7-7adc7024bbb7|155b6dbc-67eb-4450-8da6-e70c55a94478|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|3479800|393700|dd78c255-cca9-4765-a944-e9392d10246b|a775844a-5488-4860-a727-0cd3dbb2683c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ],
       [
-        "multiple_net_names|863600|1397000|ca7a9af1-d796-44f4-bb67-65163ec04217|af31ba7e-a404-4fb9-bfd5-5cd73e04e2f3|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
+        "multiple_net_names|863600|1397000|49713ede-a889-4944-beb2-f69608ebcfe9|4c379c04-226d-4790-b5bb-dcc23fa85d5e|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c|/93806d35-978a-41c3-895f-33e46b0d2e7c",
         ""
       ]
     ],
@@ -491,6 +491,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -643,6 +644,15 @@
       "Net-(U11-SPIQ)": [
         "ESP_SPI"
       ],
+      "Net-(U8-SPICLK)": [
+        "ESP_SPI"
+      ],
+      "Net-(U8-SPID)": [
+        "ESP_SPI"
+      ],
+      "Net-(U8-SPIQ)": [
+        "ESP_SPI"
+      ],
       "VBUS": [
         "Power"
       ],
@@ -784,7 +794,7 @@
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
