@@ -12429,6 +12429,12 @@
 		(uuid "94025f88-6b12-43b7-938b-fc696d2ab162")
 	)
 	(junction
+		(at 35.56 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "942f8a04-9c86-43b3-94a7-8e43404f170a")
+	)
+	(junction
 		(at 308.61 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13085,6 +13091,16 @@
 			(type default)
 		)
 		(uuid "0dc5c2b8-0f8b-4e55-bf91-f86e1e6a5767")
+	)
+	(wire
+		(pts
+			(xy 35.56 68.58) (xy 35.56 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dfc33b9-76a1-4c06-8543-0ab28545e15a")
 	)
 	(polyline
 		(pts
@@ -15625,6 +15641,16 @@
 			(type default)
 		)
 		(uuid "733b3695-5579-4321-b067-e7a379d1133a")
+	)
+	(wire
+		(pts
+			(xy 27.94 68.58) (xy 27.94 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73438048-ac15-4011-ba1d-4b3d925880b9")
 	)
 	(wire
 		(pts
@@ -28389,7 +28415,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 27.94 67.31 0)
+		(at 27.94 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28397,7 +28423,7 @@
 		(dnp no)
 		(uuid "5037b22a-f311-4756-b1b3-9e1991f38234")
 		(property "Reference" "#PWR02"
-			(at 27.94 73.66 0)
+			(at 27.94 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28406,7 +28432,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 27.94 71.628 0)
+			(at 27.94 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28414,7 +28440,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 67.31 0)
+			(at 27.94 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28423,7 +28449,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 67.31 0)
+			(at 27.94 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28432,7 +28458,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 67.31 0)
+			(at 27.94 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29075,7 +29101,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 246.38 252.73 0)
 			(effects
 				(font
@@ -35513,7 +35539,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 67.31 0)
+		(at 35.56 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35521,7 +35547,7 @@
 		(dnp no)
 		(uuid "9cb1bb9d-f987-41a7-b301-695e5f74405a")
 		(property "Reference" "#PWR08"
-			(at 35.56 73.66 0)
+			(at 35.56 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35530,7 +35556,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 71.628 0)
+			(at 35.56 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35538,7 +35564,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 67.31 0)
+			(at 35.56 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35547,7 +35573,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 67.31 0)
+			(at 35.56 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35556,7 +35582,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 67.31 0)
+			(at 35.56 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36141,7 +36167,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 52.07 241.3 0)
 			(effects
 				(font
@@ -38601,7 +38627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 87.63 90.17 0)
 			(effects
 				(font
@@ -42851,7 +42877,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 120.65 39.37 0)
 			(effects
 				(font
@@ -43317,7 +43343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 95.25 212.09 0)
 			(effects
 				(font
@@ -44271,6 +44297,81 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 35.56 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff50ddc5-166d-481a-ae99-e4416711a9e0")
+		(property "Reference" "TP9"
+			(at 37.846 65.532 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 37.338 69.088 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 35.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 35.56 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 35.56 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bb1b3b4-4074-4b04-a926-8e74f72dca5f")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
