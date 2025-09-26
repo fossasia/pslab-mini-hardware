@@ -50755,14 +50755,6 @@
 		(uuid "1b40afcf-0954-46a2-830e-e2cf803ccd76")
 	)
 	(segment
-		(start 144.239346 77.6)
-		(end 144.25 77.6)
-		(width 0.4)
-		(layer "In2.Cu")
-		(net 25)
-		(uuid "1d6ff4f9-ca96-4277-8c26-346720f34bda")
-	)
-	(segment
 		(start 144.25 73.2)
 		(end 144 72.95)
 		(width 0.4)
