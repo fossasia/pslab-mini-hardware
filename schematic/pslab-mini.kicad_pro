@@ -65,19 +65,19 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|157660000|101540000|37f8f368-8de3-4e07-a2fb-41baa5082551|8b1b8b5d-b5de-413a-b519-6cdac9d49a5e",
+          "hole_clearance|157695000|101550000|274aed97-7821-45f2-9860-351331663fca|0cf49f5b-fd1c-4f25-bda8-576f28d3674d",
           ""
         ],
         [
-          "hole_clearance|157660000|101540000|37f8f368-8de3-4e07-a2fb-41baa5082551|e68f2d3d-eb01-4c12-86f0-b3412dd99be8",
+          "hole_clearance|157695000|101550000|274aed97-7821-45f2-9860-351331663fca|d98909a1-1cf3-4844-96b1-a71879a16b7e",
           ""
         ],
         [
-          "hole_clearance|157660000|95740000|8f436e84-0bea-4cdf-9286-93ee54d95712|909fa9d9-4f58-47b0-b1cd-9dbe355a5ee1",
+          "hole_clearance|157695000|95750000|9b348400-da51-49a3-9803-b432a113ec02|2bda9f82-8468-447b-a6da-1158342d7c27",
           ""
         ],
         [
-          "hole_clearance|157660000|95740000|8f436e84-0bea-4cdf-9286-93ee54d95712|a83e554e-192e-44ba-8f0a-27ca259e361e",
+          "hole_clearance|157695000|95750000|9b348400-da51-49a3-9803-b432a113ec02|f2b5b52b-2070-48b3-8daf-7f393e666f4d",
           ""
         ]
       ],
@@ -157,10 +157,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.5,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1,
-        "min_via_annular_width": 0.13,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -211,6 +211,7 @@
       "track_widths": [
         0.0,
         0.2,
+        0.35,
         0.4,
         0.8
       ],
@@ -246,8 +247,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.6,
-          "drill": 0.3
+          "diameter": 0.5,
+          "drill": 0.2
         }
       ],
       "zones_allow_external_fillets": false
@@ -873,6 +874,42 @@
           "label": "LCSC#",
           "name": "LCSC#",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -880,7 +917,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {

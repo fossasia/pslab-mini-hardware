@@ -2569,221 +2569,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Antenna_Chip"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "AE"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Antenna_Chip"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at -2.54 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at -2.54 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Ceramic chip antenna with pin for PCB trace"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "antenna"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Antenna_Chip_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.54 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 1.27) (xy 0.635 1.27) (xy 0.635 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 6.985) (xy 2.54 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -0.635) (xy 2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 6.985) (xy 2.54 1.905) (xy 1.27 6.985)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Antenna_Chip_1_1"
-				(pin input line
-					(at -2.54 -2.54 90)
-					(length 2.54)
-					(name "FEED"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 90)
-					(length 2.54)
-					(name "PCB_Trace"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Battery_Cell"
 			(pin_numbers
 				(hide yes)
@@ -3834,264 +3619,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:GDT_2Pin"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "GD1"
-				(at -5.08 -1.778 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SMD3216-090N"
-				(at -4.826 -7.112 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "pslab-mini:SMD3216-090N"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C22439020.pdf"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Gas Discharge Tube with 2 Pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mfr Number" "SMD3216-090N"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part Number (LCSC)" "C22439020"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" ""
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "gdt"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GDT_2Pin_0_1"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 3.5814)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.905 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.905 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.905 0)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GDT_2Pin_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -4700,264 +4227,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "GDT_2Pin_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "GD2"
-				(at -5.08 -2.032 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SMD3216-090N"
-				(at 5.588 -13.716 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "pslab-mini:SMD3216-090N"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C22439020.pdf"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Gas Discharge Tube with 2 Pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mfr Number" "SMD3216-090N"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part Number (LCSC)" "C22439020"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" ""
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "gdt"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GDT_2Pin_1_0_1"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 3.5814)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.905 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.905 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.905 0)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GDT_2Pin_1_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8811,6 +8080,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "pslab-mini:2450AT18D0100001E"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ANT"
+				(at 31.75 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "2450AT18D0100001E"
+				(at 31.75 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "2450AT18D0100001E"
+				(at 31.75 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.digikey.ph/en/products/detail/johanson-technology-inc/2450AT18D0100001E/4770685?msockid=39f1ec84d77b6f4428b7f904d6676eed"
+				(at 31.75 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "2.4GHz Chip RF Antenna 2.4GHz ~ 2.5GHz 1.5dBi Solder Surface Mount"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.3"
+				(at 31.75 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "609-2450AT18D0100001"
+				(at 31.75 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Johanson-Technology/2450AT18D0100001E?qs=jRuttqqUwMRyzkW5QhJruA%3D%3D"
+				(at 31.75 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "JOHANSON TECHNOLOGY"
+				(at 31.75 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "2450AT18D0100001E"
+				(at 31.75 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "2450AT18D0100001E_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 30.48 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "GND/FEED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "FEED/GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 35.56 0 180)
+					(length 5.08)
+					(name "GND_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 35.56 -2.54 180)
+					(length 5.08)
+					(name "GND_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "pslab-mini:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -10118,6 +9575,234 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "pslab-mini:GDT_2Pin"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "GD"
+				(at 5.08 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GDT_2Pin"
+				(at 7.62 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Gas Discharge Tube with 2 Pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "gdt"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GDT_2Pin_0_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 3.5814)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.905 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.905 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.905 0)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GDT_2Pin_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -11838,7 +11523,7 @@
 	)
 	(text "Analog"
 		(exclude_from_sim no)
-		(at 350.52 167.64 0)
+		(at 350.52 164.592 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11892,6 +11577,16 @@
 			)
 		)
 		(uuid "a499dbef-69d8-431f-bcdc-af6c18e64f72")
+	)
+	(text "Decoupling capacitors"
+		(exclude_from_sim no)
+		(at 308.102 314.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a685ca53-c7a2-4251-8405-f70031385e30")
 	)
 	(text "USB Protection"
 		(exclude_from_sim no)
@@ -11949,6 +11644,16 @@
 		)
 		(uuid "d9368100-14ce-40b4-8d0f-e2833a3f3504")
 	)
+	(text "Decoupling capacitor\n"
+		(exclude_from_sim no)
+		(at 272.796 265.684 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d9b3760e-2d82-4651-843c-12c3c86abe5e")
+	)
 	(text "Mounting Options"
 		(exclude_from_sim no)
 		(at 91.44 223.52 0)
@@ -11975,7 +11680,7 @@
 	)
 	(text "Digital"
 		(exclude_from_sim no)
-		(at 350.52 154.94 0)
+		(at 350.52 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11995,6 +11700,16 @@
 		)
 		(uuid "f8279138-115e-4842-9c0a-272b4203e281")
 	)
+	(text "Decoupling capacitors"
+		(exclude_from_sim no)
+		(at 138.176 265.938 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f9720121-8294-4bfc-bebd-a84a4318058e")
+	)
 	(text "Oscilloscope Channel 02"
 		(exclude_from_sim no)
 		(at 120.142 278.892 0)
@@ -12013,12 +11728,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "00d21bb5-a9e2-49e6-b167-858a751cfdf1")
-	)
-	(junction
-		(at 199.39 303.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "041a1f52-67d1-47a7-8059-7498cc14e09e")
 	)
 	(junction
 		(at 218.44 34.29)
@@ -12051,7 +11760,7 @@
 		(uuid "0ff4c71a-0c86-465c-a487-de3ec36951de")
 	)
 	(junction
-		(at 171.45 245.11)
+		(at 173.99 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15443a8f-dffb-4aac-8e86-618b1c387b2a")
@@ -12189,7 +11898,7 @@
 		(uuid "3fbdfd96-06e2-48e5-bec0-e9f6a2b12c10")
 	)
 	(junction
-		(at 209.55 247.65)
+		(at 212.09 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4348940e-c94a-4ad8-8c67-c237813e4eed")
@@ -12249,6 +11958,12 @@
 		(uuid "58f8cca5-f80a-4e08-81ba-0c66c55d4bc2")
 	)
 	(junction
+		(at 299.72 307.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59f024a5-85d9-486f-8707-57ca3ec73f82")
+	)
+	(junction
 		(at 120.65 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12267,7 +11982,7 @@
 		(uuid "5e353c53-174d-4a27-a5bb-ac9e92e7bd39")
 	)
 	(junction
-		(at 171.45 259.08)
+		(at 173.99 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5fa5c7f2-074d-4fdf-9291-735f6c6f4c86")
@@ -12339,6 +12054,12 @@
 		(uuid "76f17cb9-2f84-4cbd-8f3c-78f518a54f2f")
 	)
 	(junction
+		(at 299.72 299.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b2b31e5-9c66-4614-8101-e000512d29dd")
+	)
+	(junction
 		(at 146.05 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12349,6 +12070,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "829913fa-250b-41ca-a8cc-de96b51c8dbd")
+	)
+	(junction
+		(at 459.74 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "841c4bfb-7f21-422b-8d6b-ff2b02b24201")
 	)
 	(junction
 		(at 227.33 288.29)
@@ -12429,10 +12156,22 @@
 		(uuid "94025f88-6b12-43b7-938b-fc696d2ab162")
 	)
 	(junction
+		(at 35.56 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "942f8a04-9c86-43b3-94a7-8e43404f170a")
+	)
+	(junction
 		(at 308.61 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95f00db4-a954-4155-ac5f-0483aca8c278")
+	)
+	(junction
+		(at 129.54 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96e84a92-8d74-48c7-b472-eb10ebe22f18")
 	)
 	(junction
 		(at 234.95 312.42)
@@ -12447,7 +12186,7 @@
 		(uuid "9aac5c4b-c7d6-4845-81b2-e6c20c1bf8ea")
 	)
 	(junction
-		(at 234.95 247.65)
+		(at 237.49 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b53f2c4-054f-4da2-ae90-ccbfcb45c883")
@@ -12493,6 +12232,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b5096574-fd7a-4916-9103-b642606cdbf7")
+	)
+	(junction
+		(at 199.39 303.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b652d116-ddfd-4d8c-9261-6314572ce67e")
 	)
 	(junction
 		(at 100.33 34.29)
@@ -12559,6 +12304,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c78d5720-70e6-41ac-86a6-206f035d48d7")
+	)
+	(junction
+		(at 129.54 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c93ddb30-af8f-4ac3-9763-5ba875d813c8")
 	)
 	(junction
 		(at 316.23 165.1)
@@ -12717,16 +12468,16 @@
 		(uuid "feb33205-f42d-4909-bb60-a5a38cf8243f")
 	)
 	(no_connect
-		(at 429.26 34.29)
-		(uuid "14a87c4d-8790-4d5b-a7c7-239e83634fe8")
-	)
-	(no_connect
 		(at 386.08 160.02)
 		(uuid "1fa63b3a-22ea-4217-a325-3a8e48226230")
 	)
 	(no_connect
 		(at 381 68.58)
 		(uuid "55e7e099-afea-4e2b-9b57-334628b75876")
+	)
+	(no_connect
+		(at 248.92 96.52)
+		(uuid "660998f3-8bed-4cc7-a791-df924c4d6cb3")
 	)
 	(no_connect
 		(at 386.08 177.8)
@@ -12769,10 +12520,6 @@
 		(uuid "bddc9f0b-8465-4f40-8084-0344af8c8dc6")
 	)
 	(no_connect
-		(at 248.92 119.38)
-		(uuid "da5c408f-84b2-4631-834e-4e083895b355")
-	)
-	(no_connect
 		(at 50.8 59.69)
 		(uuid "dba2f0a9-f63c-476a-9b48-7d32afdc11be")
 	)
@@ -12781,20 +12528,20 @@
 		(uuid "e5a7c661-7750-4c80-8a38-173720194f9c")
 	)
 	(no_connect
-		(at 248.92 58.42)
-		(uuid "edb162f6-e4ba-4848-b18a-e86605f74d2e")
-	)
-	(no_connect
 		(at 74.93 139.7)
 		(uuid "f0879e36-527b-4962-8294-b6c6cefeca54")
 	)
 	(no_connect
-		(at 248.92 55.88)
-		(uuid "f35860e3-dab7-465c-833d-b2a4e699bde8")
-	)
-	(no_connect
 		(at 72.39 139.7)
 		(uuid "f4a6eadf-5c0f-4fb4-9199-a3307e1e674e")
+	)
+	(no_connect
+		(at 248.92 99.06)
+		(uuid "f8cec76b-8f76-4250-b79e-762dc674ea2d")
+	)
+	(no_connect
+		(at 248.92 116.84)
+		(uuid "f8e0a7c3-fe6a-404d-a2d1-0991b7e4d40e")
 	)
 	(wire
 		(pts
@@ -12878,7 +12625,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 247.65) (xy 209.55 247.65)
+			(xy 222.25 248.92) (xy 212.09 248.92)
 		)
 		(stroke
 			(width 0)
@@ -13086,6 +12833,16 @@
 		)
 		(uuid "0dc5c2b8-0f8b-4e55-bf91-f86e1e6a5767")
 	)
+	(wire
+		(pts
+			(xy 35.56 68.58) (xy 35.56 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dfc33b9-76a1-4c06-8543-0ab28545e15a")
+	)
 	(polyline
 		(pts
 			(xy 118.11 273.05) (xy 292.1 273.05)
@@ -13135,6 +12892,36 @@
 			(type default)
 		)
 		(uuid "0fa68448-2118-467f-b305-7a7ce32cecda")
+	)
+	(wire
+		(pts
+			(xy 199.39 303.53) (xy 209.55 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fba9d3d-1a04-4c4a-864d-59b3424e1dea")
+	)
+	(wire
+		(pts
+			(xy 299.72 307.34) (xy 307.34 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "108da4a5-37d6-497f-8670-693b5c64d558")
+	)
+	(wire
+		(pts
+			(xy 271.78 259.08) (xy 271.78 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f6b239-90c0-4ea9-9262-c4802c01a511")
 	)
 	(wire
 		(pts
@@ -13238,7 +13025,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 250.19) (xy 185.42 250.19)
+			(xy 193.04 251.46) (xy 187.96 251.46)
 		)
 		(stroke
 			(width 0)
@@ -13308,16 +13095,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 99.06) (xy 248.92 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "185af14c-033b-44f4-b53f-5a26d1eaf39d")
-	)
-	(wire
-		(pts
 			(xy 358.14 26.67) (xy 358.14 31.75)
 		)
 		(stroke
@@ -13355,6 +13132,16 @@
 			(type default)
 		)
 		(uuid "19be5cee-170f-4234-81c3-8df27591e83c")
+	)
+	(wire
+		(pts
+			(xy 248.92 60.96) (xy 269.24 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a96c61c-412a-4d68-826e-712a8f36ee28")
 	)
 	(polyline
 		(pts
@@ -13488,6 +13275,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 55.88) (xy 278.13 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dea6b8c-4fd8-435e-983c-26ad60a93445")
+	)
+	(wire
+		(pts
 			(xy 78.74 29.21) (xy 78.74 26.67)
 		)
 		(stroke
@@ -13528,7 +13325,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 255.27) (xy 171.45 259.08)
+			(xy 173.99 256.54) (xy 173.99 260.35)
 		)
 		(stroke
 			(width 0)
@@ -13565,6 +13362,16 @@
 			(type default)
 		)
 		(uuid "1f65ec78-c650-43fc-a742-37cc4227c804")
+	)
+	(wire
+		(pts
+			(xy 129.54 247.65) (xy 129.54 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fc0220a-84d5-4d5f-ae1d-1b9165c0358e")
 	)
 	(wire
 		(pts
@@ -13638,7 +13445,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 245.11) (xy 190.5 245.11)
+			(xy 173.99 246.38) (xy 193.04 246.38)
 		)
 		(stroke
 			(width 0)
@@ -13668,7 +13475,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 262.89) (xy 209.55 262.89)
+			(xy 187.96 264.16) (xy 212.09 264.16)
 		)
 		(stroke
 			(width 0)
@@ -13948,7 +13755,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 262.89) (xy 209.55 247.65)
+			(xy 212.09 264.16) (xy 212.09 248.92)
 		)
 		(stroke
 			(width 0)
@@ -13958,7 +13765,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 68.58) (xy 248.92 68.58)
+			(xy 281.94 68.58) (xy 248.92 68.58)
 		)
 		(stroke
 			(width 0)
@@ -14178,7 +13985,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 95.25) (xy 182.88 95.25)
+			(xy 162.56 93.98) (xy 198.12 93.98)
 		)
 		(stroke
 			(width 0)
@@ -14248,6 +14055,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 63.5) (xy 281.94 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39a5ecba-4ba3-4e71-814b-b7499ebca30e")
+	)
+	(wire
+		(pts
 			(xy 64.77 250.19) (xy 64.77 252.73)
 		)
 		(stroke
@@ -14258,7 +14075,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 255.27) (xy 160.02 259.08)
+			(xy 162.56 256.54) (xy 162.56 260.35)
 		)
 		(stroke
 			(width 0)
@@ -14328,7 +14145,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 251.46) (xy 234.95 247.65)
+			(xy 237.49 252.73) (xy 237.49 248.92)
 		)
 		(stroke
 			(width 0)
@@ -14478,6 +14295,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 257.81) (xy 129.54 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41724110-cbd2-4520-a34f-48d0b6fa507b")
+	)
+	(wire
+		(pts
 			(xy 168.91 71.12) (xy 168.91 63.5)
 		)
 		(stroke
@@ -14558,7 +14385,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 247.65) (xy 205.74 247.65)
+			(xy 212.09 248.92) (xy 208.28 248.92)
 		)
 		(stroke
 			(width 0)
@@ -14575,6 +14402,16 @@
 			(type default)
 		)
 		(uuid "47a06a5e-b026-48b8-b3b5-f7f62ddf4cd7")
+	)
+	(wire
+		(pts
+			(xy 270.51 55.88) (xy 248.92 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a3ade5-8df3-4572-a16f-799940e0304f")
 	)
 	(wire
 		(pts
@@ -14848,6 +14685,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 58.42) (xy 248.92 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f05cb0-4e63-4f00-b28d-6e48a4db614b")
+	)
+	(wire
+		(pts
 			(xy 381 58.42) (xy 400.05 58.42)
 		)
 		(stroke
@@ -14868,7 +14715,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 245.11) (xy 160.02 247.65)
+			(xy 162.56 246.38) (xy 162.56 248.92)
 		)
 		(stroke
 			(width 0)
@@ -14885,16 +14732,6 @@
 			(type default)
 		)
 		(uuid "53cc511d-8694-497d-889e-1b3b99b6c7bc")
-	)
-	(wire
-		(pts
-			(xy 198.12 96.52) (xy 182.88 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "549c0886-9837-4c55-9050-548088a895af")
 	)
 	(wire
 		(pts
@@ -15028,7 +14865,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 250.19) (xy 185.42 262.89)
+			(xy 187.96 251.46) (xy 187.96 264.16)
 		)
 		(stroke
 			(width 0)
@@ -15228,7 +15065,7 @@
 	)
 	(polyline
 		(pts
-			(xy 294.64 15.24) (xy 434.34 15.24)
+			(xy 294.64 15.24) (xy 462.28 15.24)
 		)
 		(stroke
 			(width 0)
@@ -15315,6 +15152,16 @@
 			(type default)
 		)
 		(uuid "6516f027-61fd-4356-8a4b-7d7b084e4994")
+	)
+	(wire
+		(pts
+			(xy 281.94 60.96) (xy 276.86 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65abc9bc-45f1-42c8-9945-c23c159abe19")
 	)
 	(wire
 		(pts
@@ -15418,7 +15265,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 247.65) (xy 246.38 247.65)
+			(xy 237.49 248.92) (xy 248.92 248.92)
 		)
 		(stroke
 			(width 0)
@@ -15428,13 +15275,23 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 93.98) (xy 273.05 93.98)
+			(xy 248.92 93.98) (xy 269.24 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6c59a6f8-5ca3-492b-aa38-3ac55fd8fd55")
+	)
+	(wire
+		(pts
+			(xy 269.24 88.9) (xy 248.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c8316e5-92ab-48ae-92a0-5d975f758b95")
 	)
 	(wire
 		(pts
@@ -15548,16 +15405,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 60.96) (xy 281.94 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7197f916-877c-4eec-ac3d-66d7b18265d5")
-	)
-	(wire
-		(pts
 			(xy 179.07 219.71) (xy 201.93 219.71)
 		)
 		(stroke
@@ -15628,7 +15475,17 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 261.62) (xy 234.95 259.08)
+			(xy 27.94 68.58) (xy 27.94 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73438048-ac15-4011-ba1d-4b3d925880b9")
+	)
+	(wire
+		(pts
+			(xy 237.49 262.89) (xy 237.49 260.35)
 		)
 		(stroke
 			(width 0)
@@ -15768,16 +15625,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 63.5) (xy 276.86 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78058631-e04e-4e23-8577-a4388a6ab7e5")
-	)
-	(wire
-		(pts
 			(xy 312.42 73.66) (xy 325.12 73.66)
 		)
 		(stroke
@@ -15845,16 +15692,6 @@
 			(type default)
 		)
 		(uuid "7cb6fa08-c859-4ee1-b542-3ac87c0d6bfd")
-	)
-	(wire
-		(pts
-			(xy 199.39 303.53) (xy 213.36 303.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d7599f1-85e0-4219-83f0-648661fd7c41")
 	)
 	(polyline
 		(pts
@@ -15988,7 +15825,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 247.65) (xy 234.95 247.65)
+			(xy 229.87 248.92) (xy 237.49 248.92)
 		)
 		(stroke
 			(width 0)
@@ -16025,16 +15862,6 @@
 			(type default)
 		)
 		(uuid "85466683-9c8f-480a-8544-0250ed89b6aa")
-	)
-	(wire
-		(pts
-			(xy 281.94 88.9) (xy 248.92 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85729435-55e2-4bfb-83f9-ca9e0ff92a33")
 	)
 	(wire
 		(pts
@@ -16155,16 +15982,6 @@
 			(type default)
 		)
 		(uuid "8863fb60-e074-4b34-a741-36f52caae043")
-	)
-	(wire
-		(pts
-			(xy 182.88 96.52) (xy 182.88 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8881089f-0069-40dd-ad52-54b1816733f0")
 	)
 	(wire
 		(pts
@@ -16358,17 +16175,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 93.98) (xy 182.88 93.98)
+			(xy 137.16 257.81) (xy 137.16 256.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f7cd576-706b-4f3c-bffc-4307220afc92")
+		(uuid "8f79b5f0-8f16-404a-858d-d130f42e9cd7")
 	)
 	(wire
 		(pts
-			(xy 195.58 238.76) (xy 195.58 240.03)
+			(xy 198.12 240.03) (xy 198.12 241.3)
 		)
 		(stroke
 			(width 0)
@@ -16378,7 +16195,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 245.11) (xy 160.02 245.11)
+			(xy 173.99 246.38) (xy 162.56 246.38)
 		)
 		(stroke
 			(width 0)
@@ -16458,6 +16275,16 @@
 	)
 	(wire
 		(pts
+			(xy 419.1 31.75) (xy 424.18 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "920c521c-73e7-4c13-ae0a-0af513b12ebb")
+	)
+	(wire
+		(pts
 			(xy 325.12 73.66) (xy 325.12 71.12)
 		)
 		(stroke
@@ -16498,16 +16325,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 63.5) (xy 269.24 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94154cca-227a-4ec6-9fc9-10dae012ccba")
-	)
-	(wire
-		(pts
 			(xy 146.05 88.9) (xy 146.05 93.98)
 		)
 		(stroke
@@ -16535,6 +16352,16 @@
 			(type default)
 		)
 		(uuid "95393341-6658-45b6-b9ef-618768d42704")
+	)
+	(wire
+		(pts
+			(xy 459.74 31.75) (xy 459.74 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9540c2df-6595-49a7-bdc0-c648465cc30d")
 	)
 	(wire
 		(pts
@@ -16588,16 +16415,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 95.25) (xy 182.88 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "987101b3-1814-4c74-a61f-7ce057a8e724")
-	)
-	(wire
-		(pts
 			(xy 175.26 86.36) (xy 198.12 86.36)
 		)
 		(stroke
@@ -16615,16 +16432,6 @@
 			(type default)
 		)
 		(uuid "993bdf01-7932-4b87-9d93-c452a10d42b3")
-	)
-	(wire
-		(pts
-			(xy 270.51 96.52) (xy 248.92 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99577548-e914-4ac7-951f-626aa29341cb")
 	)
 	(wire
 		(pts
@@ -16708,7 +16515,7 @@
 	)
 	(polyline
 		(pts
-			(xy 342.9 151.13) (xy 342.9 161.29)
+			(xy 342.9 151.13) (xy 342.9 156.21)
 		)
 		(stroke
 			(width 0)
@@ -16828,6 +16635,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 247.65) (xy 137.16 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ff6ddd8-78a9-4966-be92-ab4dbe55129b")
+	)
+	(wire
+		(pts
 			(xy 130.81 187.96) (xy 133.35 187.96)
 		)
 		(stroke
@@ -16848,7 +16665,7 @@
 	)
 	(polyline
 		(pts
-			(xy 294.64 137.16) (xy 434.34 137.16)
+			(xy 294.64 137.16) (xy 462.28 137.16)
 		)
 		(stroke
 			(width 0)
@@ -16885,16 +16702,6 @@
 			(type default)
 		)
 		(uuid "a2af3ce0-85ea-484f-adbc-0db9a28c8001")
-	)
-	(wire
-		(pts
-			(xy 220.98 303.53) (xy 227.33 303.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a36e2f4b-7bed-4f9d-9f1b-c22043f6be2d")
 	)
 	(wire
 		(pts
@@ -16978,6 +16785,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 257.81) (xy 137.16 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a784b5d1-4a34-46cb-9c07-af2ab0a0a298")
+	)
+	(wire
+		(pts
 			(xy 234.95 312.42) (xy 245.11 312.42)
 		)
 		(stroke
@@ -17038,6 +16855,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 106.68) (xy 269.24 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abc27c48-02c2-4559-8b39-395e5aa66130")
+	)
+	(wire
+		(pts
 			(xy 177.8 111.76) (xy 177.8 119.38)
 		)
 		(stroke
@@ -17068,7 +16895,7 @@
 	)
 	(polyline
 		(pts
-			(xy 342.9 163.576) (xy 342.9 171.196)
+			(xy 342.9 158.75) (xy 342.9 171.196)
 		)
 		(stroke
 			(width 0)
@@ -17228,16 +17055,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 116.84) (xy 288.29 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b24bb793-621e-46dd-abe5-c3cc1eaf9580")
-	)
-	(wire
-		(pts
 			(xy 252.73 306.07) (xy 262.89 306.07)
 		)
 		(stroke
@@ -17265,16 +17082,6 @@
 			(type default)
 		)
 		(uuid "b2dbe8a9-482c-40b4-b976-442a91775f3d")
-	)
-	(wire
-		(pts
-			(xy 220.98 205.74) (xy 226.06 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b33b581c-17e8-4956-b9c1-29ac1f8f95b6")
 	)
 	(wire
 		(pts
@@ -17358,7 +17165,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 259.08) (xy 171.45 259.08)
+			(xy 162.56 260.35) (xy 173.99 260.35)
 		)
 		(stroke
 			(width 0)
@@ -17458,7 +17265,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 242.57) (xy 171.45 245.11)
+			(xy 173.99 243.84) (xy 173.99 246.38)
 		)
 		(stroke
 			(width 0)
@@ -17568,7 +17375,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 245.11) (xy 171.45 247.65)
+			(xy 173.99 246.38) (xy 173.99 248.92)
 		)
 		(stroke
 			(width 0)
@@ -17595,6 +17402,16 @@
 			(type default)
 		)
 		(uuid "c19c6385-15fc-4d85-8a78-ead84c0b67d6")
+	)
+	(wire
+		(pts
+			(xy 269.24 119.38) (xy 248.92 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a134f4-af9d-4bd8-bc8b-2da47af9f3e4")
 	)
 	(wire
 		(pts
@@ -17628,6 +17445,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 58.42) (xy 278.13 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5909c4d-db20-43fe-aaef-439dc67e40b5")
+	)
+	(wire
+		(pts
 			(xy 336.55 177.8) (xy 328.93 177.8)
 		)
 		(stroke
@@ -17658,13 +17485,13 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 205.74) (xy 213.36 205.74)
+			(xy 146.05 257.81) (xy 146.05 256.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6d2e96e-5184-4761-a489-55ad9b331673")
+		(uuid "c66dc235-f138-430a-a489-36701f6500c1")
 	)
 	(wire
 		(pts
@@ -17728,7 +17555,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 66.04) (xy 248.92 66.04)
+			(xy 281.94 66.04) (xy 248.92 66.04)
 		)
 		(stroke
 			(width 0)
@@ -17785,6 +17612,16 @@
 			(type default)
 		)
 		(uuid "ccdb6ce1-2460-4815-bfb3-9b2a552b0cd6")
+	)
+	(wire
+		(pts
+			(xy 224.79 303.53) (xy 227.33 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1fdf00-6b5e-4020-9d9c-33848cf0ef56")
 	)
 	(wire
 		(pts
@@ -17898,6 +17735,16 @@
 	)
 	(wire
 		(pts
+			(xy 459.74 34.29) (xy 459.74 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1be0511-867e-462f-a164-966f83af7ac5")
+	)
+	(wire
+		(pts
 			(xy 128.27 285.75) (xy 130.81 285.75)
 		)
 		(stroke
@@ -17925,16 +17772,6 @@
 			(type default)
 		)
 		(uuid "d366b5bd-2abf-420d-85f2-7c229cc11057")
-	)
-	(wire
-		(pts
-			(xy 281.94 96.52) (xy 278.13 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3cfc89d-0f3a-4648-a170-9b57cfee61ce")
 	)
 	(wire
 		(pts
@@ -17975,16 +17812,6 @@
 			(type default)
 		)
 		(uuid "d6b418c9-f722-4461-b375-d5d0db283075")
-	)
-	(wire
-		(pts
-			(xy 248.92 106.68) (xy 269.24 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6e67e8d-ecbb-4096-8300-7252bc3e1e47")
 	)
 	(wire
 		(pts
@@ -18388,7 +18215,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 97.79) (xy 182.88 97.79)
+			(xy 162.56 96.52) (xy 198.12 96.52)
 		)
 		(stroke
 			(width 0)
@@ -18405,6 +18232,16 @@
 			(type default)
 		)
 		(uuid "e86f6434-290a-447c-8c05-21ce9d83c90c")
+	)
+	(wire
+		(pts
+			(xy 201.93 205.74) (xy 210.82 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8921331-18b4-4360-977c-a41e361d3987")
 	)
 	(wire
 		(pts
@@ -18466,9 +18303,19 @@
 		)
 		(uuid "ec6202c8-b395-474f-b8c1-8de7c5adf491")
 	)
+	(wire
+		(pts
+			(xy 129.54 247.65) (xy 137.16 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec792cbe-64cc-4ec7-8fee-c7179851dbda")
+	)
 	(polyline
 		(pts
-			(xy 118.11 275.59) (xy 292.1 275.59)
+			(xy 118.11 275.59) (xy 326.39 275.59)
 		)
 		(stroke
 			(width 0)
@@ -18558,7 +18405,7 @@
 	)
 	(polyline
 		(pts
-			(xy 118.11 332.74) (xy 292.1 332.74)
+			(xy 118.11 332.74) (xy 326.39 332.74)
 		)
 		(stroke
 			(width 0)
@@ -18596,19 +18443,9 @@
 		)
 		(uuid "f07808c0-d3fe-43c9-8914-8d82aa52b364")
 	)
-	(wire
-		(pts
-			(xy 281.94 99.06) (xy 278.13 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f07c97b8-5bd5-4ae1-9156-94035f961cdc")
-	)
 	(polyline
 		(pts
-			(xy 341.63 161.29) (xy 342.9 161.29)
+			(xy 341.63 156.21) (xy 342.9 156.21)
 		)
 		(stroke
 			(width 0)
@@ -18658,7 +18495,7 @@
 	)
 	(polyline
 		(pts
-			(xy 292.1 332.74) (xy 292.1 275.59)
+			(xy 326.39 332.74) (xy 326.39 275.59)
 		)
 		(stroke
 			(width 0)
@@ -18706,9 +18543,19 @@
 		)
 		(uuid "f7188cca-2ab3-41ab-a5d7-4e3a67f8534e")
 	)
+	(wire
+		(pts
+			(xy 271.78 248.92) (xy 271.78 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f79e29a0-4358-44db-9bcb-199d26e8f107")
+	)
 	(polyline
 		(pts
-			(xy 341.63 163.576) (xy 342.9 163.576)
+			(xy 341.63 158.75) (xy 342.9 158.75)
 		)
 		(stroke
 			(width 0)
@@ -18748,7 +18595,7 @@
 	)
 	(polyline
 		(pts
-			(xy 434.34 137.16) (xy 434.34 15.24)
+			(xy 462.28 137.16) (xy 462.28 15.24)
 		)
 		(stroke
 			(width 0)
@@ -18788,7 +18635,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 261.62) (xy 171.45 259.08)
+			(xy 173.99 262.89) (xy 173.99 260.35)
 		)
 		(stroke
 			(width 0)
@@ -18828,6 +18675,16 @@
 	)
 	(wire
 		(pts
+			(xy 299.72 299.72) (xy 307.34 299.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdba1600-63eb-4826-8c34-86be8bf5bee1")
+	)
+	(wire
+		(pts
 			(xy 36.83 119.38) (xy 36.83 116.84)
 		)
 		(stroke
@@ -18835,6 +18692,16 @@
 			(type default)
 		)
 		(uuid "fdc7217a-e304-4ef6-b407-d126a2dc6938")
+	)
+	(wire
+		(pts
+			(xy 146.05 247.65) (xy 146.05 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdef85df-2f67-4e4e-8baa-30ebfc0f5c40")
 	)
 	(wire
 		(pts
@@ -19333,6 +19200,26 @@
 			)
 		)
 	)
+	(label "USER_LED"
+		(at 269.24 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "000f4ed8-fbab-4bd0-a662-ec05c78395b4")
+	)
+	(label "GPIO1"
+		(at 281.94 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00406f4b-b2b2-4df6-b829-6bb0697494f1")
+	)
 	(label "LA1"
 		(at 336.55 185.42 180)
 		(effects
@@ -19435,16 +19322,6 @@
 		)
 		(uuid "0940b62c-185c-410a-b416-7873e7e9e6af")
 	)
-	(label "ESP_{BOOT}"
-		(at 262.89 68.58 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right bottom)
-		)
-		(uuid "0c05b9f4-1833-4fbd-8b0f-a563c162fcff")
-	)
 	(label "CH1_IN"
 		(at 285.75 198.12 180)
 		(effects
@@ -19485,6 +19362,16 @@
 		)
 		(uuid "1391abbc-255f-47aa-a76a-0d9fa3123dbb")
 	)
+	(label "FQY"
+		(at 281.94 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1535cc38-6bf0-46b1-b441-d11de1fdbf15")
+	)
 	(label "BC_LED"
 		(at 337.82 212.09 0)
 		(effects
@@ -19494,6 +19381,16 @@
 			(justify left bottom)
 		)
 		(uuid "17d59e0f-08a7-45fe-a6d9-53b09cd58a31")
+	)
+	(label "ESP_{BOOT}"
+		(at 269.24 104.14 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "1916e7be-45d9-4de4-bf03-9edb36c7883d")
 	)
 	(label "SWCLK"
 		(at 447.04 171.45 180)
@@ -19535,16 +19432,6 @@
 		)
 		(uuid "1b612722-d412-4477-8bd5-bfc124645dff")
 	)
-	(label "USER_LED"
-		(at 269.24 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1cbb44a9-7cc1-400e-a1b8-f0b7352b702c")
-	)
 	(label "UART6_TX"
 		(at 162.56 88.9 0)
 		(effects
@@ -19555,8 +19442,18 @@
 		)
 		(uuid "1d439cd0-0aa9-4930-a18b-6d435aacbdbf")
 	)
+	(label "GPIO2"
+		(at 281.94 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21e112f2-cbb5-4b47-bdef-836c76ef1b3b")
+	)
 	(label "GPIO6"
-		(at 162.56 95.25 0)
+		(at 162.56 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19624,6 +19521,26 @@
 			(justify left bottom)
 		)
 		(uuid "2d8d753b-470b-4ef2-acc2-8df0be12970e")
+	)
+	(label "ESP_DATA_READY"
+		(at 269.24 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2e00266b-3674-41e1-8364-ad88e03cbea2")
+	)
+	(label "GPIO5"
+		(at 269.24 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "308dda32-8ec2-42cd-93c7-746a2359fa03")
 	)
 	(label "SPI.CS"
 		(at 269.24 101.6 180)
@@ -19806,14 +19723,24 @@
 		(uuid "56ecc395-6aee-426b-ab0d-217af70ca523")
 	)
 	(label "Vatt_2"
-		(at 205.74 303.53 0)
+		(at 205.74 303.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "579586f4-4150-41e1-bd49-47de4e71c8da")
+	)
+	(label "ESP_EN"
+		(at 269.24 106.68 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "59c7d5b5-e618-4409-84ba-633971144d8f")
 	)
 	(label "ESP_FLASH_WP"
 		(at 400.05 74.93 180)
@@ -19917,15 +19844,15 @@
 		)
 		(uuid "6a034eed-2241-4992-b653-fc47cdb0f6f2")
 	)
-	(label "ESP_DATA_READY"
-		(at 269.24 104.14 180)
+	(label "GPIO3"
+		(at 175.26 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "6a7ed525-416f-4ee3-9a60-9ceb8d8317b8")
+		(uuid "6c80e932-6a17-430e-88e5-e166c48fafed")
 	)
 	(label "ESP_{BOOT}"
 		(at 312.42 52.07 0)
@@ -19986,6 +19913,16 @@
 			(justify left bottom)
 		)
 		(uuid "74e8b9e9-a213-4b48-a3f6-05def90b5644")
+	)
+	(label "LA2"
+		(at 281.94 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7560f680-8de4-4d6e-a654-4c9eeaf7d3c9")
 	)
 	(label "GPIO6"
 		(at 336.55 157.48 180)
@@ -20097,15 +20034,15 @@
 		)
 		(uuid "8728fe9f-746e-4e5f-bde5-3c76b300cee3")
 	)
-	(label "LA2"
-		(at 281.94 96.52 180)
+	(label "GPIO4"
+		(at 175.26 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "8ab7b962-75b0-4f60-b7e2-7e3617b859ab")
+		(uuid "8793b163-e00f-4a9c-8b58-9380a9bc2aba")
 	)
 	(label "LSE_IN"
 		(at 194.31 109.22 180)
@@ -20157,6 +20094,16 @@
 		)
 		(uuid "90eacc36-1d04-4d72-8fd3-4a8b5faaf133")
 	)
+	(label "LA1"
+		(at 281.94 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9138802f-b0b9-4626-93a2-cd559fe7cd45")
+	)
 	(label "ESP_SPI_CLK"
 		(at 312.42 73.66 0)
 		(effects
@@ -20167,7 +20114,7 @@
 		)
 		(uuid "91498f09-9469-4841-b771-96f7ff028a57")
 	)
-	(label "FQY"
+	(label "GPIO0"
 		(at 281.94 63.5 180)
 		(effects
 			(font
@@ -20175,7 +20122,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "978e3c1e-8757-4e83-969f-ff9d729eed85")
+		(uuid "919f0aee-439b-4b5c-99c9-d4e5f5919a4b")
 	)
 	(label "FQY"
 		(at 336.55 175.26 180)
@@ -20227,16 +20174,6 @@
 		)
 		(uuid "a84bf478-bb50-4304-b101-a5041dd7d301")
 	)
-	(label "GPIO0"
-		(at 281.94 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "acaef373-ff2c-46a7-a4a8-dfd133f319cb")
-	)
 	(label "SPI3_SCK"
 		(at 185.42 99.06 0)
 		(effects
@@ -20246,16 +20183,6 @@
 			(justify left bottom)
 		)
 		(uuid "af44076d-4e9e-4157-aa71-f9f699d5c50b")
-	)
-	(label "ESP_EN"
-		(at 262.89 66.04 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right bottom)
-		)
-		(uuid "b65f16e7-4d31-4811-941a-996e55bccb21")
 	)
 	(label "GPIO0"
 		(at 336.55 172.72 180)
@@ -20278,7 +20205,7 @@
 		(uuid "ba466677-2666-4832-9027-4dc890b348c3")
 	)
 	(label "Vref"
-		(at 246.38 247.65 180)
+		(at 248.92 248.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20327,16 +20254,6 @@
 		)
 		(uuid "c71c0a7a-abe2-4232-b731-93b726dd8d45")
 	)
-	(label "GPIO3"
-		(at 175.26 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c9aa8eef-f43e-4eae-bf8e-57ca564f4885")
-	)
 	(label "CH2_IN"
 		(at 285.75 290.83 180)
 		(effects
@@ -20347,18 +20264,8 @@
 		)
 		(uuid "cb47bdbf-645b-45ee-8c21-04bfff2095dc")
 	)
-	(label "GPIO4"
-		(at 281.94 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cc4239e1-ea3d-406e-ac2e-4e056540d2fa")
-	)
 	(label "GPIO7"
-		(at 162.56 97.79 0)
+		(at 162.56 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20479,16 +20386,6 @@
 		)
 		(uuid "dd2b70ef-48b9-428c-b30f-df6271be77bc")
 	)
-	(label "GPIO1"
-		(at 273.05 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "de9025a8-afff-4ee3-a6bf-2c41259c3422")
-	)
 	(label "RGB"
 		(at 314.96 213.36 0)
 		(effects
@@ -20528,26 +20425,6 @@
 			(justify left bottom)
 		)
 		(uuid "e41bda24-f5ad-4710-980d-16e9ad62ce77")
-	)
-	(label "GPIO2"
-		(at 175.26 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e4d6f52d-e13f-4f9c-a04e-7dadff487f59")
-	)
-	(label "LA1"
-		(at 281.94 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e820e3bf-12f5-4d65-9e49-07ba0f6b071c")
 	)
 	(label "ESP_SPI_CLK"
 		(at 384.81 97.79 0)
@@ -20598,16 +20475,6 @@
 			(justify left bottom)
 		)
 		(uuid "f0f66c4a-bb1e-484d-a3db-43071456af9d")
-	)
-	(label "GPIO5"
-		(at 288.29 116.84 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f2740cf9-9ca7-45b8-9e63-e7982e325224")
 	)
 	(label "ESP_EN"
 		(at 396.24 49.53 180)
@@ -22459,6 +22326,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 459.74 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "019f1feb-1420-40c8-a33b-708bcf449bf6")
+		(property "Reference" "#PWR019"
+			(at 459.74 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 459.74 42.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 459.74 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 459.74 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 459.74 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b572a4a1-7483-49ae-8612-cb167e716f17")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 400.05 212.09 90)
 		(unit 1)
@@ -23292,6 +23224,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:-2V5")
+		(at 146.05 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07f170e2-b8c7-4248-8a5f-c9accaa67415")
+		(property "Reference" "#PWR030"
+			(at 146.05 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-2V"
+			(at 145.542 243.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-2V5\""
+			(at 146.05 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c373be69-61bc-42eb-a2e8-fcdfc582aa61")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 358.14 128.27 0)
 		(unit 1)
@@ -23528,7 +23525,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 232.41 231.14 0)
+		(at 232.41 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23536,7 +23533,7 @@
 		(dnp no)
 		(uuid "0d506cfd-98d1-4153-b06c-fb4f243151c6")
 		(property "Reference" "#PWR063"
-			(at 232.41 237.49 0)
+			(at 232.41 245.11 0)
 			(effects
 				(font
 					(size 1 1)
@@ -23545,7 +23542,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 232.537 235.331 0)
+			(at 232.537 242.951 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23553,7 +23550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 232.41 231.14 0)
+			(at 232.41 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23562,7 +23559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 231.14 0)
+			(at 232.41 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23571,7 +23568,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 231.14 0)
+			(at 232.41 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23698,7 +23695,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 234.95 321.31 0)
+		(at 234.95 328.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23706,7 +23703,7 @@
 		(dnp no)
 		(uuid "0f84a4f6-c0cf-4b36-86e3-31a349ccd868")
 		(property "Reference" "#PWR065"
-			(at 234.95 327.66 0)
+			(at 234.95 335.28 0)
 			(effects
 				(font
 					(size 1 1)
@@ -23715,7 +23712,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 235.077 325.501 0)
+			(at 238.76 330.708 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23723,7 +23720,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 321.31 0)
+			(at 234.95 328.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23732,7 +23729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 321.31 0)
+			(at 234.95 328.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23741,7 +23738,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 321.31 0)
+			(at 234.95 328.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23954,6 +23951,102 @@
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 307.34 303.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "116125fa-2378-4ba3-9151-e721a0c52730")
+		(property "Reference" "C57"
+			(at 303.53 301.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 300.99 305.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 308.3052 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 307.34 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 307.34 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "CL05B104KO5NNNC"
+			(at 307.34 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C1525"
+			(at 307.34 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 307.34 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "504d9770-a87f-4615-92f2-d8e12050c91e")
+		)
+		(pin "1"
+			(uuid "abbda195-a3a7-488c-8fbc-b02217d9a948")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -24268,44 +24361,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:GDT_2Pin")
-		(at 128.27 304.8 0)
+		(lib_id "Device:R")
+		(at 222.25 205.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "15c443bd-97e7-43d3-8c1e-4057cf9d22ab")
-		(property "Reference" "GD1"
-			(at 123.19 306.578 90)
+		(uuid "11e1a339-eddb-4328-abac-a03caf151781")
+		(property "Reference" "R49"
+			(at 222.25 208.788 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SMD3216-090N"
-			(at 123.444 311.912 90)
+		(property "Value" "3k"
+			(at 222.25 211.328 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "pslab-mini:SMD3216-090N"
-			(at 128.27 304.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C22439020.pdf"
-			(at 128.27 304.8 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 222.25 207.518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24313,8 +24394,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
-			(at 128.27 304.8 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 222.25 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24322,8 +24403,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "SMD3216-090N"
-			(at 128.27 304.8 90)
+		(property "Description" "Resistor"
+			(at 222.25 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24331,8 +24412,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C22439020"
-			(at 128.27 304.8 90)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 222.25 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24340,25 +24421,90 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 128.27 304.8 90)
+		(property "Part Number (LCSC)" "C281777"
+			(at 222.25 205.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "ae59dd3c-5566-4da7-9def-d2454806de18")
 		)
 		(pin "1"
-			(uuid "a1b731a0-b5e4-4229-9957-3277eec63f92")
+			(uuid "dc139f2c-e462-4622-960e-591978fb84d2")
+		)
+		(pin "2"
+			(uuid "4e599cb3-b94e-44da-a723-462bd62a0707")
+		)
+		(instances
+			(project ""
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCOM")
+		(at 299.72 299.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "126bf82a-05d2-4718-a8a4-9ebbfe914a38")
+		(property "Reference" "#PWR0112"
+			(at 299.72 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 299.72 295.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 299.72 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Regulated +3.3 V level"
+			(at 299.72 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c55b3675-1a76-4241-a0dc-c85fdc7b60c3")
 		)
 		(instances
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "GD1")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -24462,6 +24608,102 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 271.78 254 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15f89c93-6e16-4ac9-b711-7d5e13e3c3a4")
+		(property "Reference" "C59"
+			(at 267.97 251.968 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 265.43 256.286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 272.7452 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 271.78 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 271.78 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "CL05B104KO5NNNC"
+			(at 271.78 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C1525"
+			(at 271.78 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 271.78 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d50659c-47b9-40a1-983d-c8f70abe5d91")
+		)
+		(pin "1"
+			(uuid "23550df0-46d0-48d5-98af-1973218a2e0f")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -24625,6 +24867,102 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 316.23 303.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1bb79917-3105-4ea3-968d-c733923106cb")
+		(property "Reference" "C58"
+			(at 312.42 301.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 309.88 305.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 317.1952 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 316.23 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 316.23 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "CL05B104KO5NNNC"
+			(at 316.23 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C1525"
+			(at 316.23 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 316.23 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f00dce0-631c-4f8c-bd3e-6706f02aa16a")
+		)
+		(pin "1"
+			(uuid "0bb465f2-358c-454a-965e-6d7790f99bed")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C58")
 					(unit 1)
 				)
 			)
@@ -25802,121 +26140,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Antenna_Chip")
-		(at 426.72 31.75 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e6b473c-0e3e-412a-b471-7a3762f28989")
-		(property "Reference" "AE1"
-			(at 426.212 22.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ANT"
-			(at 422.148 33.274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_Antenna:Johanson_2450AT18x100"
-			(at 429.26 27.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C89334.pdf"
-			(at 429.26 27.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Ceramic chip antenna with pin for PCB trace"
-			(at 426.72 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "2450AT18A100E"
-			(at 426.72 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC#" "C89334"
-			(at 426.72 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr Number" "2450AT18A100E"
-			(at 426.72 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number (LCSC)" "C89334"
-			(at 426.72 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 426.72 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "731189ca-edfc-4f48-82d1-ee06524964ec")
-		)
-		(pin "1"
-			(uuid "aa7017f4-68c9-4ce7-a3e3-bb69444f4ace")
-		)
-		(instances
-			(project ""
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "AE1")
 					(unit 1)
 				)
 			)
@@ -27102,7 +27325,7 @@
 	)
 	(symbol
 		(lib_id "power:VCOM")
-		(at 171.45 234.95 0)
+		(at 173.99 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27110,7 +27333,7 @@
 		(dnp no)
 		(uuid "3d65ab25-ff7d-45f2-aea0-ccda9515549a")
 		(property "Reference" "#PWR047"
-			(at 171.45 238.76 0)
+			(at 173.99 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27119,7 +27342,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 171.45 230.886 0)
+			(at 173.99 232.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27127,7 +27350,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 234.95 0)
+			(at 173.99 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27136,7 +27359,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 234.95 0)
+			(at 173.99 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27145,7 +27368,7 @@
 			)
 		)
 		(property "Description" "Filtered Regulated +3.3 V level"
-			(at 171.45 234.95 0)
+			(at 173.99 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28284,7 +28507,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 223.52 247.65 90)
+		(at 226.06 248.92 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28292,7 +28515,7 @@
 		(dnp no)
 		(uuid "4f062b81-54a0-409c-b536-93a69f686089")
 		(property "Reference" "R23"
-			(at 221.488 242.57 90)
+			(at 224.028 243.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28301,7 +28524,7 @@
 			)
 		)
 		(property "Value" "4R7"
-			(at 221.488 245.11 90)
+			(at 224.028 246.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28310,7 +28533,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 223.52 249.428 90)
+			(at 226.06 250.698 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28319,7 +28542,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C326830.pdf"
-			(at 223.52 247.65 0)
+			(at 226.06 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28328,7 +28551,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 223.52 247.65 0)
+			(at 226.06 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28337,7 +28560,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 223.52 247.65 90)
+			(at 226.06 248.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28346,7 +28569,7 @@
 			)
 		)
 		(property "Mfr Number" "SR0603FR-7W4R7L"
-			(at 223.52 247.65 0)
+			(at 226.06 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28355,7 +28578,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C326830"
-			(at 223.52 247.65 0)
+			(at 226.06 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28364,7 +28587,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 223.52 247.65 90)
+			(at 226.06 248.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28389,7 +28612,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 27.94 67.31 0)
+		(at 27.94 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28397,7 +28620,7 @@
 		(dnp no)
 		(uuid "5037b22a-f311-4756-b1b3-9e1991f38234")
 		(property "Reference" "#PWR02"
-			(at 27.94 73.66 0)
+			(at 27.94 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28406,7 +28629,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 27.94 71.628 0)
+			(at 27.94 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28414,7 +28637,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 67.31 0)
+			(at 27.94 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28423,7 +28646,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 67.31 0)
+			(at 27.94 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28432,7 +28655,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 67.31 0)
+			(at 27.94 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28944,113 +29167,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 232.41 227.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "59199587-0c2b-4b0d-b8ae-7ed0864eccc8")
-		(property "Reference" "R24"
-			(at 226.06 226.314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "6k"
-			(at 226.06 228.854 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 230.632 227.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2828725.pdf"
-			(at 232.41 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 232.41 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 232.41 227.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr Number" "ARG05BTC6001N"
-			(at 232.41 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number (LCSC)" "C2828725"
-			(at 232.41 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 232.41 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0882a36d-4603-48e2-8e78-9feffa35a2ec")
-		)
-		(pin "2"
-			(uuid "6e5f12d0-3274-4f57-bbc6-ba28c9a524b4")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 246.38 247.65 270)
+		(at 248.92 248.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -29058,7 +29176,7 @@
 		(dnp no)
 		(uuid "59a8f1dd-9634-4795-b301-8b15ef7f7e49")
 		(property "Reference" "TP8"
-			(at 248.666 245.872 90)
+			(at 251.206 247.142 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -29067,7 +29185,7 @@
 			)
 		)
 		(property "Value" "Vref"
-			(at 248.92 249.428 90)
+			(at 251.46 250.698 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -29075,8 +29193,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 246.38 252.73 0)
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
+			(at 248.92 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29085,7 +29203,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 252.73 0)
+			(at 248.92 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29094,7 +29212,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 246.38 247.65 0)
+			(at 248.92 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29103,7 +29221,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 246.38 247.65 90)
+			(at 248.92 248.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29831,6 +29949,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 129.54 257.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "626fd104-f5a8-42df-9b27-dbdb80e08129")
+		(property "Reference" "#PWR0110"
+			(at 129.54 264.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.667 262.001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91e839c0-f976-4f14-9f5e-07ee23e43fc0")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 346.71 105.41 180)
 		(unit 1)
@@ -29921,6 +30103,70 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 316.23 307.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "638318c4-ed9d-4cff-9e8d-6538148d2eb5")
+		(property "Reference" "#PWR0115"
+			(at 316.23 313.69 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 316.357 311.531 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.23 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85307cf1-668a-4cdd-800b-c6d9ce5d7fdb")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -30033,7 +30279,7 @@
 	)
 	(symbol
 		(lib_id "power:VCOM")
-		(at 195.58 238.76 0)
+		(at 198.12 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30041,7 +30287,7 @@
 		(dnp no)
 		(uuid "66db19dc-16c1-474f-9bd0-bc0d65e7f852")
 		(property "Reference" "#PWR056"
-			(at 195.58 242.57 0)
+			(at 198.12 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30050,7 +30296,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 195.58 234.696 0)
+			(at 198.12 235.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30058,7 +30304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 238.76 0)
+			(at 198.12 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30067,7 +30313,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 238.76 0)
+			(at 198.12 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30076,7 +30322,7 @@
 			)
 		)
 		(property "Description" "Regulated +3.3 V level"
-			(at 195.58 238.76 0)
+			(at 198.12 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30091,111 +30337,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 217.17 205.74 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6999f7cf-0c68-4ce7-90d3-70c7967e8478")
-		(property "Reference" "R20"
-			(at 215.392 208.534 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "6k"
-			(at 216.154 210.566 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 217.17 203.962 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2828725.pdf"
-			(at 217.17 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 217.17 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 217.17 205.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr Number" "ARG05BTC6001N"
-			(at 217.17 205.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number (LCSC)" "C2828725"
-			(at 217.17 205.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 217.17 205.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0fd9ff0f-c82f-43ad-af08-bef3b975adfd")
-		)
-		(pin "2"
-			(uuid "5f36289e-7ba0-4720-b0c5-75e56d0d4ba0")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -30547,6 +30688,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 213.36 303.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c267323-2fbf-45dd-bcc8-b57b806a09f9")
+		(property "Reference" "R22"
+			(at 213.36 306.578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k"
+			(at 213.36 309.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 213.36 305.308 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 213.36 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 213.36 303.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C281777"
+			(at 213.36 303.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb2682b9-d2cb-4cf4-91c2-6373271e0700")
+		)
+		(pin "2"
+			(uuid "a43996e8-c6f6-4436-a69d-853e6d2f007d")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 52.07 252.73 0)
 		(mirror y)
@@ -30754,6 +30980,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 137.16 252.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6de2c8c7-cc94-4f62-9dc2-9a94f0d6ea7d")
+		(property "Reference" "C13"
+			(at 133.35 250.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 130.81 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 138.1252 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 137.16 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 137.16 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "CL05B104KO5NNNC"
+			(at 137.16 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C1525"
+			(at 137.16 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 137.16 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "024f82d2-e981-46f3-96cc-990dda0c44ad")
+		)
+		(pin "1"
+			(uuid "909aa7c3-02f5-4264-a3e4-449b44153010")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 424.18 58.42 0)
 		(unit 1)
@@ -30820,7 +31142,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 171.45 238.76 180)
+		(at 173.99 240.03 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30828,7 +31150,7 @@
 		(dnp no)
 		(uuid "6fb01102-13e5-4e44-bb08-4878d41aef97")
 		(property "Reference" "R14"
-			(at 173.99 237.998 0)
+			(at 176.53 239.268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30837,7 +31159,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 173.99 240.538 0)
+			(at 176.53 241.808 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30846,7 +31168,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 173.228 238.76 90)
+			(at 175.768 240.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30855,7 +31177,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C95204.pdf"
-			(at 171.45 238.76 0)
+			(at 173.99 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30864,7 +31186,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 171.45 238.76 0)
+			(at 173.99 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30873,7 +31195,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 171.45 238.76 90)
+			(at 173.99 240.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30882,7 +31204,7 @@
 			)
 		)
 		(property "Mfr Number" "RT0603BRD0710KL"
-			(at 171.45 238.76 0)
+			(at 173.99 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30891,7 +31213,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C95204"
-			(at 171.45 238.76 0)
+			(at 173.99 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30900,7 +31222,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 171.45 238.76 0)
+			(at 173.99 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31257,7 +31579,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV9001IDCK")
-		(at 195.58 247.65 0)
+		(at 198.12 248.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -31265,7 +31587,7 @@
 		(dnp no)
 		(uuid "74af24f2-703c-4150-a90c-6fa36658ed77")
 		(property "Reference" "U7"
-			(at 205.232 239.268 0)
+			(at 207.772 240.538 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31273,7 +31595,7 @@
 			)
 		)
 		(property "Value" "TLV9001IDCK"
-			(at 205.232 241.808 0)
+			(at 207.772 243.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31281,7 +31603,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
-			(at 200.66 247.65 0)
+			(at 203.2 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31290,7 +31612,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9001.pdf"
-			(at 195.58 247.65 0)
+			(at 198.12 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31299,7 +31621,7 @@
 			)
 		)
 		(property "Description" "Low-power, Rail-to-Rail, 1MHz Operational Amplifier, SOT-353"
-			(at 195.58 247.65 0)
+			(at 198.12 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31308,7 +31630,7 @@
 			)
 		)
 		(property "Mfr Number" "TLV9001IDCKR"
-			(at 195.58 247.65 0)
+			(at 198.12 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31317,7 +31639,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C398362"
-			(at 195.58 247.65 0)
+			(at 198.12 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31326,7 +31648,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 195.58 247.65 0)
+			(at 198.12 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31353,6 +31675,94 @@
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pslab-mini:GDT_2Pin")
+		(at 130.81 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75802eb5-cfc4-469a-b248-6821b4f2a64f")
+		(property "Reference" "GD1"
+			(at 135.382 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMD3216-090N"
+			(at 135.89 207.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "pslab-mini:SMD3216-090N"
+			(at 130.81 205.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C22439020.pdf"
+			(at 130.81 205.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Gas Discharge Tube with 2 Pins"
+			(at 130.81 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "SMD3216-090N"
+			(at 130.81 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C22439020"
+			(at 130.81 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d35e1b2f-50f7-4dec-b7eb-d1d2a93f3a47")
+		)
+		(pin "1"
+			(uuid "4f530b7d-9f81-4054-981a-3faf39b0a613")
+		)
+		(instances
+			(project ""
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "GD1")
 					(unit 1)
 				)
 			)
@@ -32258,6 +32668,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 232.41 234.95 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d7a9bcc-84a7-4b78-8581-e41a13715e3b")
+		(property "Reference" "R24"
+			(at 235.458 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k"
+			(at 237.998 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 234.188 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 232.41 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 232.41 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 232.41 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C281777"
+			(at 232.41 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "175b5ca1-1e15-4faf-880a-4760e5c0e2d5")
+		)
+		(pin "2"
+			(uuid "dcfe834a-3161-4d0d-9364-5de146477f79")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 375.92 165.1 270)
 		(unit 1)
@@ -32916,7 +33411,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 273.05 63.5 270)
+		(at 273.05 60.96 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32925,7 +33420,7 @@
 		(dnp no)
 		(uuid "83f80df8-b458-43d8-ad43-70a499ed7857")
 		(property "Reference" "R30"
-			(at 268.478 64.516 90)
+			(at 268.478 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32933,7 +33428,7 @@
 			)
 		)
 		(property "Value" "200"
-			(at 273.304 63.5 90)
+			(at 273.304 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32941,7 +33436,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 273.05 65.278 90)
+			(at 273.05 62.738 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -32950,7 +33445,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200RL_C114664.pdf"
-			(at 273.05 63.5 0)
+			(at 273.05 60.96 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -32959,7 +33454,7 @@
 			)
 		)
 		(property "Description" "1/16W 5%"
-			(at 273.05 63.5 0)
+			(at 273.05 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32968,7 +33463,7 @@
 			)
 		)
 		(property "Price" "0.1"
-			(at 273.05 63.5 0)
+			(at 273.05 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32977,7 +33472,7 @@
 			)
 		)
 		(property "Mfr Number" "RC0603FR-07200RL"
-			(at 273.05 63.5 90)
+			(at 273.05 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32986,7 +33481,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C114664"
-			(at 273.05 63.5 90)
+			(at 273.05 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32995,7 +33490,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 273.05 63.5 90)
+			(at 273.05 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33894,6 +34389,91 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 214.63 205.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8dae70a8-b7e2-4798-baeb-489ad3c696ec")
+		(property "Reference" "R20"
+			(at 214.63 208.788 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k"
+			(at 214.63 211.328 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 207.518 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 214.63 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 214.63 205.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C281777"
+			(at 214.63 205.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "275d5d0b-181e-4a1c-af81-3c30cffd8388")
+		)
+		(pin "2"
+			(uuid "559f51c4-d5a9-4e0a-a6d4-39c6f63fd2c3")
+		)
+		(instances
+			(project ""
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 41.91 284.48 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -34540,6 +35120,102 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 146.05 252.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9516bc61-4468-45e7-ae77-318a185ca1d2")
+		(property "Reference" "C10"
+			(at 142.24 250.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 139.7 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 147.0152 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 146.05 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 146.05 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "CL05B104KO5NNNC"
+			(at 146.05 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C1525"
+			(at 146.05 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 146.05 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "516e5ced-1960-4852-a6c4-00795392e2cf")
+		)
+		(pin "1"
+			(uuid "33db2eeb-459a-47df-80d7-0160f57c2f00")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 72.39 308.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -34701,7 +35377,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 160.02 251.46 0)
+		(at 162.56 252.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34709,7 +35385,7 @@
 		(dnp no)
 		(uuid "963db56f-434c-41d5-9d9a-9512918d1ec9")
 		(property "Reference" "C26"
-			(at 155.956 250.698 0)
+			(at 158.496 251.968 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34718,7 +35394,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 156.21 253.492 0)
+			(at 158.75 254.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34727,7 +35403,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 160.9852 255.27 0)
+			(at 163.5252 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34736,7 +35412,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KOQNNNE_C1713.pdf"
-			(at 160.02 251.46 0)
+			(at 162.56 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34745,7 +35421,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 160.02 251.46 0)
+			(at 162.56 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34754,7 +35430,7 @@
 			)
 		)
 		(property "Mfr Number" "CL21A106KOQNNNE"
-			(at 160.02 251.46 90)
+			(at 162.56 252.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34763,7 +35439,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C1713"
-			(at 160.02 251.46 90)
+			(at 162.56 252.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34772,7 +35448,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 160.02 251.46 0)
+			(at 162.56 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35513,7 +36189,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 67.31 0)
+		(at 35.56 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35521,7 +36197,7 @@
 		(dnp no)
 		(uuid "9cb1bb9d-f987-41a7-b301-695e5f74405a")
 		(property "Reference" "#PWR08"
-			(at 35.56 73.66 0)
+			(at 35.56 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35530,7 +36206,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 71.628 0)
+			(at 35.56 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35538,7 +36214,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 67.31 0)
+			(at 35.56 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35547,7 +36223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 67.31 0)
+			(at 35.56 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35556,7 +36232,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 67.31 0)
+			(at 35.56 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36141,7 +36817,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 52.07 241.3 0)
 			(effects
 				(font
@@ -37362,6 +38038,70 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 299.72 307.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3f7485a-036c-41ee-8aa7-e8ee7ddd3b32")
+		(property "Reference" "#PWR0113"
+			(at 299.72 313.69 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 299.847 311.531 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 299.72 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 299.72 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "26c05829-22c2-4ed1-9594-c08d873de61f")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 86.36 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37736,7 +38476,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 261.62 0)
+		(at 173.99 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -37744,7 +38484,7 @@
 		(dnp no)
 		(uuid "b5a10222-4eee-4bfb-9570-87192a126db6")
 		(property "Reference" "#PWR048"
-			(at 171.45 267.97 0)
+			(at 173.99 269.24 0)
 			(effects
 				(font
 					(size 1 1)
@@ -37753,7 +38493,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.577 265.811 0)
+			(at 174.117 267.081 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37761,7 +38501,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 261.62 0)
+			(at 173.99 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37770,7 +38510,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 261.62 0)
+			(at 173.99 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37779,7 +38519,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 261.62 0)
+			(at 173.99 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37793,6 +38533,71 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCOM")
+		(at 129.54 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b68bf028-7778-4fc4-a031-0c6df90b89f7")
+		(property "Reference" "#PWR096"
+			(at 129.54 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 129.54 243.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Regulated +3.3 V level"
+			(at 129.54 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "072cc6cf-b161-40b3-acb3-08044b8cbe9e")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -37865,7 +38670,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 195.58 255.27 0)
+		(at 198.12 256.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -37873,7 +38678,7 @@
 		(dnp no)
 		(uuid "b8e8385d-da77-4f77-8cfa-2bf1759095bf")
 		(property "Reference" "#PWR057"
-			(at 195.58 261.62 0)
+			(at 198.12 262.89 0)
 			(effects
 				(font
 					(size 1 1)
@@ -37882,7 +38687,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.707 259.461 0)
+			(at 198.247 260.731 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37890,7 +38695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 255.27 0)
+			(at 198.12 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37899,7 +38704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 255.27 0)
+			(at 198.12 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37908,7 +38713,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 255.27 0)
+			(at 198.12 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37987,6 +38792,132 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pslab-mini:2450AT18D0100001E")
+		(at 424.18 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc2b7091-8bc5-4518-a4c2-c57ccf27363f")
+		(property "Reference" "ANT1"
+			(at 441.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2450AT18D0100001E"
+			(at 441.96 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pslab-mini:2450AT18D0100001E"
+			(at 455.93 126.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ph/en/products/detail/johanson-technology-inc/2450AT18D0100001E/4770685?msockid=39f1ec84d77b6f4428b7f904d6676eed"
+			(at 455.93 226.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.4GHz Chip RF Antenna 2.4GHz ~ 2.5GHz 1.5dBi Solder Surface Mount"
+			(at 424.18 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.3"
+			(at 455.93 426.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "609-2450AT18D0100001"
+			(at 455.93 526.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Johanson-Technology/2450AT18D0100001E?qs=jRuttqqUwMRyzkW5QhJruA%3D%3D"
+			(at 455.93 626.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "JOHANSON TECHNOLOGY"
+			(at 455.93 726.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2450AT18D0100001E"
+			(at 455.93 826.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5da30edd-856d-4c5e-bb33-68fe33db448d")
+		)
+		(pin "1"
+			(uuid "a5b6aadc-afa3-4cb0-a181-63fea7c048a9")
+		)
+		(pin "2"
+			(uuid "cdc43a51-5f38-482e-aff2-1119ab97996f")
+		)
+		(pin "3"
+			(uuid "82871576-b67f-4225-88bf-3c0e3387d57f")
+		)
+		(instances
+			(project ""
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "ANT1")
 					(unit 1)
 				)
 			)
@@ -38189,111 +39120,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 217.17 303.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c04b570b-062a-4c20-a0e3-cbe22acc6cc2")
-		(property "Reference" "R22"
-			(at 215.265 298.069 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "6k"
-			(at 215.265 300.609 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 217.17 301.752 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2828725.pdf"
-			(at 217.17 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 217.17 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 217.17 303.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr Number" "ARG05BTC6001N"
-			(at 217.17 303.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number (LCSC)" "C2828725"
-			(at 217.17 303.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 217.17 303.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8119aeca-f3f0-4a70-8b5d-b44cee935943")
-		)
-		(pin "2"
-			(uuid "5a4b5409-67bc-4b58-8bee-964f2599b573")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "pslab-mini:OPA356AIDBVR")
 		(at 247.65 290.83 0)
 		(unit 1)
@@ -38477,45 +39303,32 @@
 		)
 	)
 	(symbol
-		(lib_name "GDT_2Pin_1")
-		(lib_id "Device:GDT_2Pin")
-		(at 130.81 205.74 0)
+		(lib_id "Device:R")
+		(at 232.41 227.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c33adf84-493b-4fb5-a79d-9db5a26a8768")
-		(property "Reference" "GD2"
-			(at 125.73 207.772 90)
+		(uuid "c59d7932-cb87-408c-bbb1-5158b90002df")
+		(property "Reference" "R50"
+			(at 235.458 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SMD3216-090N"
-			(at 136.398 219.456 90)
+		(property "Value" "3k"
+			(at 237.998 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "pslab-mini:SMD3216-090N"
-			(at 130.81 205.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C22439020.pdf"
-			(at 130.81 205.74 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 234.188 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38523,8 +39336,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gas Discharge Tube with 2 Pins"
-			(at 130.81 205.74 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 232.41 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38532,8 +39345,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr Number" "SMD3216-090N"
-			(at 130.81 205.74 90)
+		(property "Description" "Resistor"
+			(at 232.41 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38541,8 +39354,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number (LCSC)" "C22439020"
-			(at 130.81 205.74 90)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 232.41 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38550,25 +39363,25 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 130.81 205.74 90)
+		(property "Part Number (LCSC)" "C281777"
+			(at 232.41 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "57d2b456-7f67-4179-8281-60623662cc24")
 		)
 		(pin "1"
-			(uuid "d718fe5b-4990-4c43-93cc-c96412289ff9")
+			(uuid "7d0dd593-883a-49d6-a0ae-65f550aee5c1")
+		)
+		(pin "2"
+			(uuid "cd0ec8da-7ad7-4ca1-b8f0-e1e016b299d7")
 		)
 		(instances
-			(project ""
+			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "GD2")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -38601,7 +39414,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 87.63 90.17 0)
 			(effects
 				(font
@@ -38804,6 +39617,71 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCOM")
+		(at 271.78 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c8d6a8dc-afb7-4b2d-b935-3dd6666cc231")
+		(property "Reference" "#PWR0116"
+			(at 271.78 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 271.78 244.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Regulated +3.3 V level"
+			(at 271.78 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad80f3b7-8c91-4e29-ac0d-cc2e4bd56d54")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -39114,6 +39992,91 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 234.95 317.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbf81008-6964-476e-912c-bd8eaad40d6f")
+		(property "Reference" "R52"
+			(at 237.998 317.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k"
+			(at 240.538 317.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 236.728 317.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 234.95 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 234.95 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 234.95 317.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C281777"
+			(at 234.95 317.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01358a00-d0ef-4ea2-b4bc-a566021723ac")
+		)
+		(pin "2"
+			(uuid "9a473bc2-769a-4fb2-82d8-fa74b7cec18b")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -39593,7 +40556,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 234.95 255.27 0)
+		(at 237.49 256.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -39601,7 +40564,7 @@
 		(dnp no)
 		(uuid "cfe2df65-afc0-4452-9ce7-e3fb1a91bca4")
 		(property "Reference" "C37"
-			(at 232.156 254.254 0)
+			(at 234.696 255.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39610,7 +40573,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 232.41 257.048 0)
+			(at 234.95 258.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39619,7 +40582,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 235.9152 259.08 0)
+			(at 238.4552 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39628,7 +40591,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506131735_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
-			(at 234.95 255.27 0)
+			(at 237.49 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39637,7 +40600,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 234.95 255.27 0)
+			(at 237.49 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39646,7 +40609,7 @@
 			)
 		)
 		(property "Mfr Number" "CC0603KRX7R9BB104"
-			(at 234.95 255.27 90)
+			(at 237.49 256.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39655,7 +40618,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C14663"
-			(at 234.95 255.27 90)
+			(at 237.49 256.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39664,7 +40627,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 234.95 255.27 0)
+			(at 237.49 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40230,25 +41193,25 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 234.95 261.62 0)
+		(lib_id "power:-2V5")
+		(at 316.23 299.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d8b00d32-816b-4878-9886-70620bb66e5b")
-		(property "Reference" "#PWR064"
-			(at 234.95 267.97 0)
+		(uuid "d8ae5931-cf7d-415d-8726-3c38f54a558a")
+		(property "Reference" "#PWR0114"
+			(at 316.23 303.53 0)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 235.077 265.811 0)
+		(property "Value" "-2V"
+			(at 315.722 295.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40256,7 +41219,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 261.62 0)
+			(at 316.23 299.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40265,7 +41228,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 261.62 0)
+			(at 316.23 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-2V5\""
+			(at 316.23 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43aacbe8-2955-4f8d-a1c0-4fafdee666d6")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 237.49 262.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8b00d32-816b-4878-9886-70620bb66e5b")
+		(property "Reference" "#PWR064"
+			(at 237.49 269.24 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 237.617 267.081 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40274,7 +41302,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 261.62 0)
+			(at 237.49 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40352,6 +41380,71 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 419.1 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da49fac1-982a-4d42-b99d-8cefdeffeedc")
+		(property "Reference" "#PWR011"
+			(at 419.1 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 419.1 35.814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 419.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 419.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 419.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80b9d240-583c-4683-af96-3cdad4edbbf7")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -40520,6 +41613,70 @@
 			(project ""
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 271.78 259.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ded23400-4fb3-49b8-89d3-c98ed6d251f7")
+		(property "Reference" "#PWR0117"
+			(at 271.78 265.43 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 271.907 263.271 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1dccb477-b816-4250-9280-4b78a8add5e3")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -41297,7 +42454,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 274.32 99.06 270)
+		(at 274.32 58.42 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -41305,7 +42462,7 @@
 		(dnp no)
 		(uuid "e527e34a-4a0e-4e61-9894-857723d17e90")
 		(property "Reference" "R32"
-			(at 269.748 98.044 90)
+			(at 269.748 57.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41313,7 +42470,7 @@
 			)
 		)
 		(property "Value" "200"
-			(at 274.574 99.06 90)
+			(at 274.574 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41321,7 +42478,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 274.32 97.282 90)
+			(at 274.32 56.642 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -41330,7 +42487,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200RL_C114664.pdf"
-			(at 274.32 99.06 0)
+			(at 274.32 58.42 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -41339,7 +42496,7 @@
 			)
 		)
 		(property "Description" "1/16W 5%"
-			(at 274.32 99.06 0)
+			(at 274.32 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41348,7 +42505,7 @@
 			)
 		)
 		(property "Price" "0.1"
-			(at 274.32 99.06 0)
+			(at 274.32 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41357,7 +42514,7 @@
 			)
 		)
 		(property "Mfr Number" "RC0603FR-07200RL"
-			(at 274.32 99.06 90)
+			(at 274.32 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41366,7 +42523,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C114664"
-			(at 274.32 99.06 90)
+			(at 274.32 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41375,7 +42532,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 274.32 99.06 90)
+			(at 274.32 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41659,111 +42816,6 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 234.95 317.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e74b5eb6-6412-424a-8466-007c7f179451")
-		(property "Reference" "R25"
-			(at 228.6 316.484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "6k"
-			(at 228.6 319.024 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 233.172 317.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2828725.pdf"
-			(at 234.95 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 234.95 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 234.95 317.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr Number" "ARG05BTC6001N"
-			(at 234.95 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number (LCSC)" "C2828725"
-			(at 234.95 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 234.95 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d05605cd-fb69-4fba-8781-b64635bf50ff")
-		)
-		(pin "2"
-			(uuid "7e004a85-9cb4-4502-8260-4823a6bfae4d")
-		)
-		(instances
-			(project "pslab-mini"
-				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
-					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -42100,6 +43152,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 220.98 303.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eca9aa17-b9d8-4e8a-88b9-ed9aa64c2a04")
+		(property "Reference" "R51"
+			(at 220.98 306.578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k"
+			(at 220.98 309.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 220.98 305.308 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 220.98 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 220.98 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 220.98 303.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C281777"
+			(at 220.98 303.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99e8639c-5f16-4afc-9233-e94209af9350")
+		)
+		(pin "2"
+			(uuid "db6fe3ae-af8f-4ffa-bc9c-fd34882b8b8a")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 68.58 184.15 90)
 		(unit 1)
@@ -42188,6 +43325,94 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pslab-mini:GDT_2Pin")
+		(at 128.27 304.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef28a3e7-4237-4b3e-9290-a2e708f2b941")
+		(property "Reference" "GD2"
+			(at 132.334 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMD3216-090N"
+			(at 133.35 306.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "pslab-mini:SMD3216-090N"
+			(at 128.27 304.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C22439020.pdf"
+			(at 128.27 304.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Gas Discharge Tube with 2 Pins"
+			(at 128.27 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "SMD3216-090N"
+			(at 128.27 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C22439020"
+			(at 128.27 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6c99d04a-4532-4e28-96c2-2702c4cc5813")
+		)
+		(pin "1"
+			(uuid "6bd676d6-9be2-4a49-bbef-3f28b6fd674f")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "GD2")
 					(unit 1)
 				)
 			)
@@ -42326,7 +43551,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 274.32 96.52 270)
+		(at 274.32 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -42334,7 +43559,7 @@
 		(dnp no)
 		(uuid "f1115e8d-9bab-41f4-9e38-6ad0efd33a5e")
 		(property "Reference" "R31"
-			(at 269.494 95.504 90)
+			(at 269.494 54.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42342,7 +43567,7 @@
 			)
 		)
 		(property "Value" "200"
-			(at 274.574 96.52 90)
+			(at 274.574 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42350,7 +43575,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 274.32 94.742 90)
+			(at 274.32 54.102 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -42359,7 +43584,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2506161100_YAGEO-RC0603FR-07200RL_C114664.pdf"
-			(at 274.32 96.52 0)
+			(at 274.32 55.88 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -42368,7 +43593,7 @@
 			)
 		)
 		(property "Description" "1/16W 5%"
-			(at 274.32 96.52 0)
+			(at 274.32 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42377,7 +43602,7 @@
 			)
 		)
 		(property "Price" "0.1"
-			(at 274.32 96.52 0)
+			(at 274.32 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42386,7 +43611,7 @@
 			)
 		)
 		(property "Mfr Number" "RC0603FR-07200RL"
-			(at 274.32 96.52 90)
+			(at 274.32 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42395,7 +43620,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C114664"
-			(at 274.32 96.52 90)
+			(at 274.32 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42404,7 +43629,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 274.32 96.52 90)
+			(at 274.32 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42625,7 +43850,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 171.45 251.46 180)
+		(at 173.99 252.73 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -42633,7 +43858,7 @@
 		(dnp no)
 		(uuid "f2ba07c9-e3a3-4f82-8974-2043a0642b6f")
 		(property "Reference" "R15"
-			(at 173.99 250.444 0)
+			(at 176.53 251.714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42642,7 +43867,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 173.99 252.984 0)
+			(at 176.53 254.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42651,7 +43876,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 173.228 251.46 90)
+			(at 175.768 252.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42660,7 +43885,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C95204.pdf"
-			(at 171.45 251.46 0)
+			(at 173.99 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42669,7 +43894,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 171.45 251.46 0)
+			(at 173.99 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42678,7 +43903,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 171.45 251.46 90)
+			(at 173.99 252.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42687,7 +43912,7 @@
 			)
 		)
 		(property "Mfr Number" "RT0603BRD0710KL"
-			(at 171.45 251.46 0)
+			(at 173.99 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42696,7 +43921,7 @@
 			)
 		)
 		(property "Part Number (LCSC)" "C95204"
-			(at 171.45 251.46 0)
+			(at 173.99 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42705,7 +43930,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 171.45 251.46 0)
+			(at 173.99 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42851,7 +44076,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 120.65 39.37 0)
 			(effects
 				(font
@@ -43317,7 +44542,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+		(property "Footprint" "pslab-mini:Test_Point_0.8mm"
 			(at 95.25 212.09 0)
 			(effects
 				(font
@@ -43976,6 +45201,187 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 234.95 325.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa41873a-82cf-4eb2-8036-f18efffeedf0")
+		(property "Reference" "R25"
+			(at 237.998 325.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k"
+			(at 240.538 325.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 236.728 325.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C281777.pdf"
+			(at 234.95 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 234.95 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "RT0402BRD073KL"
+			(at 234.95 325.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C281777"
+			(at 234.95 325.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ec7cfb6-9944-40c9-bd65-10baa105eb09")
+		)
+		(pin "2"
+			(uuid "1b112a0e-ca88-4fc2-98f5-290c257b3854")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 299.72 303.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fbc8e57b-cdf7-4474-8ff2-ef548186d827")
+		(property "Reference" "C51"
+			(at 295.91 301.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 293.37 305.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 300.6852 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 299.72 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 299.72 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "CL05B104KO5NNNC"
+			(at 299.72 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C1525"
+			(at 299.72 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 299.72 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "62001ebf-4f39-4cfe-b819-5f5acdf029da")
+		)
+		(pin "1"
+			(uuid "3478233b-a2da-4984-98b5-9ad18f520f0a")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCOM")
 		(at 25.4 275.59 0)
 		(unit 1)
@@ -44271,6 +45677,241 @@
 			(project "pslab-mini"
 				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
 					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 257.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "febc4928-d56c-451a-bd1d-659df449fba6")
+		(property "Reference" "#PWR0107"
+			(at 146.05 264.16 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.177 262.001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.05 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f4e717d-ac62-4961-b71e-f0fa52fa367a")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 35.56 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff50ddc5-166d-481a-ae99-e4416711a9e0")
+		(property "Reference" "TP9"
+			(at 37.846 65.532 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 37.338 69.088 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 35.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 35.56 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 35.56 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bb1b3b4-4074-4b04-a926-8e74f72dca5f")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 129.54 252.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffb9cd91-5d15-4461-aab0-882890f1b3f5")
+		(property "Reference" "C5"
+			(at 125.73 250.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 123.19 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 130.5052 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 129.54 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 129.54 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr Number" "CL05B104KO5NNNC"
+			(at 129.54 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number (LCSC)" "C1525"
+			(at 129.54 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 129.54 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f55eda40-0c65-4edb-913c-ac2f8505413d")
+		)
+		(pin "1"
+			(uuid "b9433db2-4e8f-486f-a66e-79cd6c7180af")
+		)
+		(instances
+			(project "pslab-mini"
+				(path "/93806d35-978a-41c3-895f-33e46b0d2e7c"
+					(reference "C5")
 					(unit 1)
 				)
 			)

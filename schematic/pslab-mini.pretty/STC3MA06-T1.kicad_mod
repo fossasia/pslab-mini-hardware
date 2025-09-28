@@ -54,8 +54,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -3.1 0)
-		(end -3.1 0)
+		(start -2.625 -0.125)
+		(end -2.625 -0.125)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -64,8 +64,8 @@
 		(uuid "9f9f6341-7216-4a1f-b43d-598b4ca83f83")
 	)
 	(fp_line
-		(start -3.1 0.1)
-		(end -3.1 0.1)
+		(start -2.625 -0.025)
+		(end -2.625 -0.025)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -74,8 +74,8 @@
 		(uuid "06aaa075-e910-4b0c-abb6-9e5b1fce68f0")
 	)
 	(fp_line
-		(start -3.1 0.1)
-		(end -3.1 0.1)
+		(start -2.625 -0.025)
+		(end -2.625 -0.025)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -144,9 +144,9 @@
 		(uuid "c696dbc6-2411-45a7-af6d-709bc2a23f61")
 	)
 	(fp_arc
-		(start -3.1 0)
-		(mid -3.05 0.05)
-		(end -3.1 0.1)
+		(start -2.625 -0.125)
+		(mid -2.575 -0.075)
+		(end -2.625 -0.025)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -155,9 +155,9 @@
 		(uuid "03b4ce16-3e51-4318-bb70-c66fd6de723f")
 	)
 	(fp_arc
-		(start -3.1 0)
-		(mid -3.05 0.05)
-		(end -3.1 0.1)
+		(start -2.625 -0.125)
+		(mid -2.575 -0.075)
+		(end -2.625 -0.025)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -166,9 +166,9 @@
 		(uuid "0f2f9ab1-18c3-464e-9e75-438fcc7a6f4e")
 	)
 	(fp_arc
-		(start -3.1 0.1)
-		(mid -3.15 0.05)
-		(end -3.1 0)
+		(start -2.625 -0.025)
+		(mid -2.675 -0.075)
+		(end -2.625 -0.125)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -177,8 +177,8 @@
 		(uuid "72ce4f06-ea04-4104-a535-0ce65fc938e3")
 	)
 	(fp_line
-		(start -3.4 -2.6)
-		(end 3.4 -2.6)
+		(start -2.875 -1.8)
+		(end 2.5 -1.8)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -187,8 +187,8 @@
 		(uuid "190e69f2-12b2-4cb3-8615-0578c3b1e866")
 	)
 	(fp_line
-		(start -3.4 2.6)
-		(end -3.4 -2.6)
+		(start -2.875 1.8)
+		(end -2.875 -1.8)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -197,8 +197,8 @@
 		(uuid "9a2409cd-e58d-421c-acff-f47330637eac")
 	)
 	(fp_line
-		(start 3.4 -2.6)
-		(end 3.4 2.6)
+		(start 2.5 -1.8)
+		(end 2.5 1.8)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -207,8 +207,8 @@
 		(uuid "628f30f5-6227-4f5a-9527-909baa143931")
 	)
 	(fp_line
-		(start 3.4 2.6)
-		(end -3.4 2.6)
+		(start 2.5 1.8)
+		(end -2.875 1.8)
 		(stroke
 			(width 0.1)
 			(type solid)
