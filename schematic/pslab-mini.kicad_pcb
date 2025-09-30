@@ -49632,6 +49632,26 @@
 		(uuid "384b1a79-d084-4228-8165-52dec1f03376")
 	)
 	(gr_line
+		(start 123.7 64.9)
+		(end 126.3 64.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "3b65febb-cdb1-4da1-ba01-51853513466d")
+	)
+	(gr_line
+		(start 126.3 64.9)
+		(end 126.5 64.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "3b869010-47fe-42c2-a5c0-6305055f611e")
+	)
+	(gr_line
 		(start 152.499431 93.213173)
 		(end 146.526291 93.213173)
 		(stroke
@@ -49662,8 +49682,8 @@
 		(uuid "4142aa9d-acf1-48a9-899e-3d0599df7b72")
 	)
 	(gr_line
-		(start 126.4 65)
-		(end 126.4 63.6)
+		(start 121.4 65)
+		(end 121.4 63.6)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -49683,7 +49703,7 @@
 	)
 	(gr_line
 		(start 113.7 65)
-		(end 126.4 65)
+		(end 121.4 65)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -49711,6 +49731,16 @@
 		)
 		(layer "B.SilkS")
 		(uuid "60ab0d5e-a8fa-424d-969d-a73c27c3b1c4")
+	)
+	(gr_line
+		(start 126.5 64.9)
+		(end 126.5 63.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "63edae40-5b7f-488a-8dbb-e36c3d517cc1")
 	)
 	(gr_line
 		(start 111.1 64.5)
@@ -49883,6 +49913,16 @@
 		)
 		(layer "B.SilkS")
 		(uuid "d953eba4-168a-46ce-9629-f519d6186978")
+	)
+	(gr_line
+		(start 123.7 63.5)
+		(end 123.7 64.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "dfd74b90-81c1-40af-9a47-ac68cf368d12")
 	)
 	(gr_rect
 		(start 95.5 100.2)
@@ -50092,7 +50132,7 @@
 		)
 	)
 	(gr_text "Multimeter"
-		(at 123.7 66.7 0)
+		(at 121.6 66.8 0)
 		(layer "B.SilkS")
 		(uuid "07d4eef5-67ac-4245-b9f3-4ba539ebd20f")
 		(effects
@@ -50104,8 +50144,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "VDD(+3.3V)"
-		(at 116.3 105.1 270)
+	(gr_text "+3.3V"
+		(at 116.3 105.3 270)
 		(layer "B.SilkS")
 		(uuid "0ae66217-2fb7-4511-9dce-7946575cbe78")
 		(effects
@@ -50273,8 +50313,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "VCC(+5V)\n"
-		(at 128.3 67.2 270)
+	(gr_text "+5V"
+		(at 128.2 63.2 270)
 		(layer "B.SilkS")
 		(uuid "366a6c65-a25e-4919-8c23-19296a2295d4")
 		(effects
@@ -50355,6 +50395,19 @@
 		(at 95.8 66.6 0)
 		(layer "B.SilkS")
 		(uuid "58f43fc7-ed14-4a9b-8d5e-0df5c52ccae4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Logic"
+		(at 127.1 66.7 0)
+		(layer "B.SilkS")
+		(uuid "59b6eb46-6396-46ec-9a8a-b5ffdc056bba")
 		(effects
 			(font
 				(size 1 1)
@@ -50558,6 +50611,19 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "Analyser"
+		(at 128.3 68.5 0)
+		(layer "B.SilkS")
+		(uuid "a5dd9299-dc19-4791-90a0-2edebb1e7eaf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "NRST\n"
 		(at 87.2 62.3 270)
 		(layer "B.SilkS")
@@ -50662,8 +50728,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "VDD(+3.3V)"
-		(at 98.4 105.1 270)
+	(gr_text "+3.3V"
+		(at 98.4 105.4 270)
 		(layer "B.SilkS")
 		(uuid "d6394665-4c79-4a8b-92f1-f3dd8689ea49")
 		(effects
