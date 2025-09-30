@@ -8382,7 +8382,7 @@
 		(path "/6e69416d-5fc9-4a86-8f98-caceceee191c")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 1.325508 -1.227908) (xy 1.451603 -1.227266) (xy 1.570991 -1.226442) (xy 1.681762 -1.225464)
@@ -21590,7 +21590,7 @@
 		(path "/de5b0904-6208-4d0c-86e5-27a4e7a4b589")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr exclude_from_pos_files allow_missing_courtyard)
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_poly
 			(pts
 				(xy 1.987528 0.234619) (xy 1.998908 0.253693) (xy 2.024488 0.297421) (xy 2.063002 0.363619) (xy 2.113186 0.450102)
@@ -22233,7 +22233,7 @@
 		(path "/fd58375e-2bfd-4e85-975e-9c1264561ef6")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 3.029821 0.189364) (xy 3.029821 0.694334) (xy 2.890954 0.694334) (xy 2.752087 0.694334) (xy 2.752087 0.189364)
@@ -36990,7 +36990,7 @@
 		(path "/c440fa05-ad1f-4d11-939e-3da98a6282ae")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 1.645344 1.123828) (xy 1.645344 1.843666) (xy 1.428658 1.843666) (xy 1.211972 1.843666) (xy 1.211972 1.123828)
@@ -45532,7 +45532,7 @@
 		(path "/f92f3e4b-a288-4771-8bde-f29ff4904443")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 1.325508 1.227908) (xy 1.451603 1.227266) (xy 1.570991 1.226442) (xy 1.681762 1.225464) (xy 1.782008 1.224358)
@@ -45957,7 +45957,7 @@
 		(path "/394d778f-cdca-47e2-9949-70e72088b80e")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 1.645344 -1.123828) (xy 1.645344 -1.843666) (xy 1.428658 -1.843666) (xy 1.211972 -1.843666)
@@ -46380,7 +46380,7 @@
 		(path "/875fd0f0-4ccf-47f4-b4c9-56b4317b8c5c")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 3.029821 -0.189364) (xy 3.029821 -0.694334) (xy 2.890954 -0.694334) (xy 2.752087 -0.694334)
@@ -46596,7 +46596,7 @@
 		(path "/7e87c305-6eda-4d3f-8055-be972cb9abc7")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 3.817471 -1.464235) (xy 3.234765 -1.464235) (xy 3.234765 -0.881529) (xy 3.817471 -0.881529)
@@ -46930,7 +46930,7 @@
 		(path "/049aa638-0081-4523-9231-35936368f3c4")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy -14.895689 -2.331155) (xy -15.121466 -2.331155) (xy -15.121466 2.833511) (xy -14.895689 2.833511)
@@ -47910,7 +47910,7 @@
 		(path "/78ff59b5-a69d-4ac7-9d25-a200666784e2")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 0.216837 0.924169) (xy 0.229891 0.902523) (xy 0.230898 0.882225) (xy 0.219828 0.862252) (xy 0.214791 0.85681)
@@ -48429,7 +48429,7 @@
 		(path "/76f2b5ee-c870-47c0-9d75-7f7b7a88daa7")
 		(sheetname "/")
 		(sheetfile "pslab-mini.kicad_sch")
-		(attr board_only exclude_from_pos_files)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 1.427353 -2.095459) (xy 1.45925 -2.105286) (xy 1.489273 -2.121121) (xy 1.491656 -2.122712) (xy 1.504615 -2.131518)
@@ -50078,8 +50078,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "+3V3\n"
-		(at 84.7 62.2 270)
+	(gr_text "+3.3"
+		(at 84.7 62.3 270)
 		(layer "B.SilkS")
 		(uuid "0696b44b-6737-4fa5-a763-4b74c4ef5fe8")
 		(effects
@@ -50104,7 +50104,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "VDD(+3V3)"
+	(gr_text "VDD(+3.3V)"
 		(at 116.3 105.1 270)
 		(layer "B.SilkS")
 		(uuid "0ae66217-2fb7-4511-9dce-7946575cbe78")
@@ -50131,7 +50131,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 82.1 62.1 270)
+		(at 82 62.3 270)
 		(layer "B.SilkS")
 		(uuid "0e59b029-0d58-40ec-91ce-7d0876bb72e2")
 		(effects
@@ -50313,7 +50313,7 @@
 		)
 	)
 	(gr_text "SWCLK"
-		(at 84.6 75.9 270)
+		(at 84.6 75.6 270)
 		(layer "B.SilkS")
 		(uuid "41fb3e3f-814f-47cb-8ba6-a8b5ac881114")
 		(effects
@@ -50365,7 +50365,7 @@
 		)
 	)
 	(gr_text "SWDIO"
-		(at 87.3 75.6 270)
+		(at 87.2 75.3 270)
 		(layer "B.SilkS")
 		(uuid "5ccefdfa-1d38-4cb2-bc1f-1d03b1af4e54")
 		(effects
@@ -50559,7 +50559,7 @@
 		)
 	)
 	(gr_text "NRST\n"
-		(at 87.4 62 270)
+		(at 87.2 62.3 270)
 		(layer "B.SilkS")
 		(uuid "a7f1d9f6-0213-4af9-95cb-3a3d7138a27e")
 		(effects
@@ -50662,7 +50662,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "VDD(+3V3)"
+	(gr_text "VDD(+3.3V)"
 		(at 98.4 105.1 270)
 		(layer "B.SilkS")
 		(uuid "d6394665-4c79-4a8b-92f1-f3dd8689ea49")
@@ -50764,45 +50764,6 @@
 				(bold yes)
 			)
 			(justify left bottom mirror)
-		)
-	)
-	(dimension
-		(type orthogonal)
-		(layer "B.SilkS")
-		(uuid "67e13690-07a3-4548-adf9-f75a556511a4")
-		(pts
-			(xy 82.65 109.25) (xy 82.65 53.25)
-		)
-		(height -5.05)
-		(orientation 1)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 0)
-			(precision 4)
-			(suppress_zeroes yes)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(arrow_direction outward)
-			(extension_height 0.58642)
-			(extension_offset 0.5)
-			(keep_text_aligned yes)
-		)
-		(gr_text "56"
-			(at 77 81.25 90)
-			(layer "B.SilkS")
-			(uuid "67e13690-07a3-4548-adf9-f75a556511a4")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-				(justify mirror)
-			)
 		)
 	)
 	(segment
