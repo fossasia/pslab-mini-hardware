@@ -4,6 +4,11 @@ This repository contains the PSLab-Mini hardware design files. PSLab Mini is a s
 
 * Firmware: https://github.com/fossasia/pslab-mini-firmware
 
+## PCB Layout
+Front Side                             | Back Side
+ ------------------------------------- | ----------------------------------
+![](docs/images/PSLab_mini_V1_top.png) | ![](docs/images/PSLab_mini_V1_bottom.png)
+
 ## Communication
 
 * Our chat channel is on Gitter here at [PSLab channel](https://gitter.im/fossasia/pslab)
