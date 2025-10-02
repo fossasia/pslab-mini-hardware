@@ -28617,7 +28617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "pslab-mini:SOT-416"
 			(at 64.77 309.245 0)
 			(effects
 				(font
@@ -36951,7 +36951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "pslab-mini:SOT-416"
 			(at 64.77 286.385 0)
 			(effects
 				(font
