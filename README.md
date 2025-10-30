@@ -2,7 +2,7 @@
 
 This repository contains the PSLab-Mini hardware design files. PSLab Mini is a scaled-down version of the PSLab board, aiming to provide instruments for doing signal measurements. It consists of an Oscilloscope, a Logic analyzer, and a Multimeter. 
 
-It also integrates an ESP chip in conjuction with the main MCU(STM32), for enabling internet connectivity via the board.
+It also integrates an ESP chip in conjunction with the main MCU(STM32), for enabling internet connectivity via the board.
 
 * Firmware: https://github.com/fossasia/pslab-mini-firmware
 
@@ -27,7 +27,7 @@ Front Side                             | Back Side
 * Secondary Microcontroller Platform : [ESP32C3](https://www.espressif.com/en/products/socs/esp32-c3)
 * Compiler: [gcc-arm-none-eabi](https://developer.arm.com/downloads/-/gnu-rm)
 * Programming Tool:
-  * For uploading the boatloader onto the board: [STLink](https://www.st.com/en/development-tools/st-link-v2.html)/Any other ARM programmer
+  * For uploading the bootloader onto the board: [STLink](https://www.st.com/en/development-tools/st-link-v2.html)/Any other ARM programmer
   * For uploading the firmware onto the board: Directly using USB ([OpenBLT](https://github.com/feaser/openblt) Boatloader is already present on the board)
 
 ## Parts list
@@ -39,7 +39,7 @@ Front Side                             | Back Side
 * [TLV9001IDCK](https://www.ti.com/lit/ds/symlink/tlv9001.pdf) - 1 channel Low-Speed CMOS Op-Amp
 * [IP5189T](https://www.lcsc.com/datasheet/C181698.pdf) - Battery management chip
 * [AMS1117-3.3](https://lcsc.com/datasheet/lcsc_datasheet_2410121508_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf) - 5v to 3.3v buck converter
-* [MT2496](https://www.lcsc.com/datasheet/C384594.pdf) - 5v to -2v, invertering buck converter
+* [MT2496](https://www.lcsc.com/datasheet/C384594.pdf) - 5v to -2v, inverting buck converter
 * [SP0503BAHT]() - ESD Protector
 * Assorted resistors & capacitors
 
