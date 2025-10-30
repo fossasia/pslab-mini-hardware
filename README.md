@@ -14,7 +14,7 @@ Front Side                             | Back Side
 ## Prototype Pictures
 | | |
 | :---: | :---: |
-| ![](docs/images/PSLab_mini_V1_1.jpeg) | ![](docs/images/PSLab_mini_V1_2.jpeg) |
+| ![](docs/images/PSLab_Mini_V1_1.jpeg) | ![](docs/images/PSLab_Mini_V1_2.jpeg) |
 
 ## Communication
 
