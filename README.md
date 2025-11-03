@@ -16,6 +16,17 @@ Front Side                             | Back Side
 | :---: | :---: |
 | ![](docs/images/PSLab_Mini_V1_1.jpeg) | ![](docs/images/PSLab_Mini_V1_2.jpeg) |
 
+## Prototype Case 
+
+The PSLab Mini is designed to use Raspberry Pi 3/4 Cases, which are already widely available, without any modification.
+
+All the ports remain accessible in the casing (USB, BNC Connectors, and battery connector).
+
+| | |
+| :---: | :---: |
+| ![](docs/images/PSLab_Mini_V1_case_1.jpeg) | ![](docs/images/PSLab_Mini_V1_case_2.jpeg) |
+
+
 ## Communication
 
 * Our chat channel is on Gitter here at [PSLab channel](https://gitter.im/fossasia/pslab)
