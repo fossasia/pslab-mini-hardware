@@ -89,15 +89,31 @@ All the ports remain accessible in the casing (USB, BNC Connectors, and battery 
 #### GPIO
 | Pin Name | Pin (on Microcontroller) | Type
 |:---:|:---:|:---:|
-| GPIO 0 | PA5 | Analog |
-| GPIO 1 | PA6 | Analog |
-| GPIO 2 | PA7 | Analog |
-| GPIO 3 | PC4 | Analog |
-| GPIO 4 | PC5 | Analog |
-| GPIO 5 | PB0 | Analog |
-| GPIO 6 | PC8 | Digital |
-| GPIO 7 | PC9 | Digital |
-| GPIO 8 | PA8 | Digital |
+| GPIO 0 | PA5 | Analog Pin|
+| GPIO 1 | PA6 | Analog Pin|
+| GPIO 2 | PA7 | Analog Pin|
+| GPIO 3 | PC4 | Analog Pin|
+| GPIO 4 | PC5 | Analog Pin|
+| GPIO 5 | PB0 | Analog Pin|
+| GPIO 6 | PC8 | Digital Pin|
+| GPIO 7 | PC9 | Digital Pin|
+| GPIO 8 | PA8 | Digital Pin|
+
+#### Instruments
+| Pin Name | Pin (on Microcontroller) | Type
+|:---:|:---:|:---:|
+|LA1|PA3|Logic Analyser Channel-1|
+|LA2|PA2|Logic Analyser Channel-2|
+|FQY|PA4|Frequency Measurement|
+|VOL|PC0|Voltage Measurement|
+|RES|PC1|Resistance Measurement|
+|CAP|PC3|Capacitance Measurement|
+
+#### BNC Connectors
+| Connector Number | Pin (on Microcontroller) | Type
+|:---:|:---:|:---:|
+|CH1|PA0|Oscilloscope Channel-1|
+|CH2|PA1|Oscilloscope Channel-2|
 
 #### Buses
 
@@ -119,10 +135,22 @@ All the ports remain accessible in the casing (USB, BNC Connectors, and battery 
 | UART_1 | Connected to STM32 |
 | SPI_2 | Connected to STM32 |
 
+## Reset functionality of the board
+
+The reset button on the board controls the reset for both, STM32 as well as ESP32.
+
+When pressed it resets both of them, at the same time.
+
+Also, the STM32 also controls the reset for the ESP32 via an output pin.
+- PB5(STM32) -> CHIP_EN PIN(ESP32)
+
 ## Documentation related to the microcontroller 
 
+### STM32
 * [Datasheet](https://www.st.com/resource/en/datasheet/stm32h562ag.pdf) 
 * [Referece manual](https://www.st.com/resource/en/reference_manual/rm0481-stm32h52333xx-stm32h56263xx-and-stm32h573xx-armbased-32bit-mcus-stmicroelectronics.pdf)
 * [HAL and LL documentation](https://www.st.com/resource/en/user_manual/um3132-description-of-stm32h5-hal-and-lowlayer-drivers-stmicroelectronics.pdf)
 
-
+### ESP
+* [Datasheet](https://documentation.espressif.com/esp32-c3_datasheet_en.pdf)
+* [Reference manual](https://documentation.espressif.com/esp32-c3_technical_reference_manual_en.pdf)
