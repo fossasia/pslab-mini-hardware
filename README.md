@@ -2,7 +2,7 @@
 
 This repository contains the PSLab-Mini hardware design files. PSLab Mini is a scaled-down version of the PSLab board, aiming to provide instruments for doing signal measurements. It consists of an Oscilloscope, a Logic analyzer, and a Multimeter. 
 
-It also integrates an ESP chip in conjunction with the main MCU(STM32), for enabling internet connectivity via the board.
+It also integrates an ESP chip in conjunction with the main MCU(STM32), for enabling wireless connectivity via the board.
 
 * Firmware: https://github.com/fossasia/pslab-mini-firmware
 
@@ -12,9 +12,13 @@ Front Side                             | Back Side
 ![](docs/images/PSLab_mini_V1_top.png) | ![](docs/images/PSLab_mini_V1_bottom.png)
 
 ## Prototype Pictures
-| | |
-| :---: | :---: |
-| ![](docs/images/PSLab_Mini_V1_1.jpeg) | ![](docs/images/PSLab_Mini_V1_2.jpeg) |
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/PSLab_Mini_V1_1.jpeg" alt="PSLab Mini V1"></td>
+    <td align="center"><img src="docs/images/PSLab_Mini_V1_2.jpeg" alt="PSLab Mini V1"></td>
+  </tr>
+</table>
 
 ## Prototype Case 
 
@@ -22,9 +26,12 @@ The PSLab Mini is designed to use Raspberry Pi 3/4 Cases, which are already wide
 
 All the ports remain accessible in the casing (USB, BNC Connectors, and battery connector).
 
-| | |
-| :---: | :---: |
-| ![](docs/images/PSLab_Mini_V1_case_1.jpeg) | ![](docs/images/PSLab_Mini_V1_case_2.jpeg) |
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/PSLab_Mini_V1_case_1.jpeg" alt="PSLab Mini V1 Case 1"></td>
+    <td align="center"><img src="docs/images/PSLab_Mini_V1_case_2.jpeg" alt="PSLab Mini V1 Case 2"></td>
+  </tr>
+</table>
 
 
 ## Communication
@@ -34,12 +41,12 @@ All the ports remain accessible in the casing (USB, BNC Connectors, and battery 
 
 ## Platform
 
-* Main Microcontroller Platform : [STM32H563RIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h563ri.html)
-* Secondary Microcontroller Platform : [ESP32C3](https://www.espressif.com/en/products/socs/esp32-c3)
+* Main Microcontroller : [STM32H563RIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h563ri.html)
+* Secondary Microcontroller : [ESP32C3](https://www.espressif.com/en/products/socs/esp32-c3)
 * Compiler: [gcc-arm-none-eabi](https://developer.arm.com/downloads/-/gnu-rm)
 * Programming Tool:
   * For uploading the bootloader onto the board: [STLink](https://www.st.com/en/development-tools/st-link-v2.html)/Any other ARM programmer
-  * For uploading the firmware onto the board: Directly using USB ([OpenBLT](https://github.com/feaser/openblt) Boatloader is already present on the board)
+  * For uploading the firmware onto the board: Directly using USB ([OpenBLT](https://github.com/feaser/openblt) bootloader is already present on the board)
 
 ## Parts list
 
@@ -49,9 +56,9 @@ All the ports remain accessible in the casing (USB, BNC Connectors, and battery 
 * [OPA356AIDBVR](https://www.lcsc.com/datasheet/C183100.pdf) - 1 channel High-Speed CMOS Op-Amp
 * [TLV9001IDCK](https://www.ti.com/lit/ds/symlink/tlv9001.pdf) - 1 channel Low-Speed CMOS Op-Amp
 * [IP5189T](https://www.lcsc.com/datasheet/C181698.pdf) - Battery management chip
-* [AMS1117-3.3](https://lcsc.com/datasheet/lcsc_datasheet_2410121508_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf) - 5v to 3.3v buck converter
+* [AMS1117-3.3](https://lcsc.com/datasheet/lcsc_datasheet_2410121508_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf) - 5 V to 3.3 V buck converter
 * [MT2496](https://www.lcsc.com/datasheet/C384594.pdf) - 5v to -2v, inverting buck converter
-* [SP0503BAHT]() - ESD Protector
+* [SP0503BAHT](https://www.lcsc.com/datasheet/C7074.pdf) - ESD Protector
 * Assorted resistors & capacitors
 
 ## Details of the project 
@@ -147,8 +154,8 @@ Also, the STM32 also controls the reset for the ESP32 via an output pin.
 ## Documentation related to the microcontroller 
 
 ### STM32
-* [Datasheet](https://www.st.com/resource/en/datasheet/stm32h562ag.pdf) 
-* [Referece manual](https://www.st.com/resource/en/reference_manual/rm0481-stm32h52333xx-stm32h56263xx-and-stm32h573xx-armbased-32bit-mcus-stmicroelectronics.pdf)
+* [Datasheet](https://www.st.com/resource/en/datasheet/stm32h562ri.pdf) 
+* [Reference manual](https://www.st.com/resource/en/reference_manual/rm0481-stm32h52333xx-stm32h56263xx-and-stm32h573xx-armbased-32bit-mcus-stmicroelectronics.pdf)
 * [HAL and LL documentation](https://www.st.com/resource/en/user_manual/um3132-description-of-stm32h5-hal-and-lowlayer-drivers-stmicroelectronics.pdf)
 
 ### ESP
