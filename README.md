@@ -1,6 +1,6 @@
 # pslab-mini-hardware
 
-This repository contains the PSLab-Mini hardware design files. PSLab Mini is a scaled-down version of the PSLab board, aiming to provide instruments for doing signal measurements. It consists of an Oscilloscope, a Logic analyzer, and a Multimeter. 
+This repository contains the PSLab-Mini hardware design files. PSLab-Mini is a scaled-down version of the PSLab board, aiming to provide instruments for doing signal measurements. It consists of an Oscilloscope, a Logic analyzer, and a Multimeter. 
 
 It also integrates an ESP chip in conjunction with the main MCU(STM32), for enabling wireless connectivity via the board.
 
@@ -57,7 +57,7 @@ All the ports remain accessible in the casing (USB, BNC Connectors, and battery 
 * [TLV9001IDCK](https://www.ti.com/lit/ds/symlink/tlv9001.pdf) - 1 channel Low-Speed CMOS Op-Amp
 * [IP5189T](https://www.lcsc.com/datasheet/C181698.pdf) - Battery management chip
 * [AMS1117-3.3](https://lcsc.com/datasheet/lcsc_datasheet_2410121508_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf) - 5 V to 3.3 V buck converter
-* [MT2496](https://www.lcsc.com/datasheet/C384594.pdf) - 5v to -2v, inverting buck converter
+* [MT2496](https://www.lcsc.com/datasheet/C384594.pdf) - 5 V to -2 V, inverting buck converter
 * [SP0503BAHT](https://www.lcsc.com/datasheet/C7074.pdf) - ESD Protector
 * Assorted resistors & capacitors
 
@@ -138,18 +138,17 @@ All the ports remain accessible in the casing (USB, BNC Connectors, and battery 
 
 | | |
 |:---:|:---:|
-| SPI_1 | Connected to External NAND |
+| SPI_1 | Connected to External NOR flash |
 | UART_1 | Connected to STM32 |
 | SPI_2 | Connected to STM32 |
 
 ## Reset functionality of the board
 
-The reset button on the board controls the reset for both, STM32 as well as ESP32.
+The reset button on the board resets both the STM32 and the ESP32 simultaneously.
 
-When pressed it resets both of them, at the same time.
+In addition, the STM32 can reset ESP32 through an output pin:
 
-Also, the STM32 also controls the reset for the ESP32 via an output pin.
-- PB5(STM32) -> CHIP_EN PIN(ESP32)
+`PB5` (STM32) → `CHIP_EN` (ESP32)
 
 ## Documentation related to the microcontroller 
 
