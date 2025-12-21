@@ -50402,7 +50402,7 @@
 		)
 	)
 	(gr_text "CH2"
-		(at 149.9 81.2 270)
+		(at 149.9 62.4 270)
 		(layer "B.SilkS")
 		(uuid "93cf4411-4f8f-440c-bb61-4d2d4c207ca5")
 		(effects
@@ -50571,7 +50571,7 @@
 		)
 	)
 	(gr_text "CH1"
-		(at 149.9 62.4 270)
+		(at 149.9 81.2 270)
 		(layer "B.SilkS")
 		(uuid "ec0b4dae-f137-48b4-82f3-222570003b43")
 		(effects
