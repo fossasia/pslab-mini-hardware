@@ -975,6 +975,14 @@
     [
       "93806d35-978a-41c3-895f-33e46b0d2e7c",
       "Root"
+    ],
+    [
+      "df7b347b-4840-440b-a95b-1a3d45ea8538",
+      "RP2350_80QFN_minimal"
+    ],
+    [
+      "8be24853-0fcf-4290-b17f-7f444c9bcd41",
+      "AFE"
     ]
   ],
   "text_variables": {}
